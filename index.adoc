@@ -1,0 +1,22 @@
+= CI/CD, le divorce serait-prononcé ?
+:source-highlighter: highlightjs
+
+== CI / CD c'est quoi ?
+
+== La pratique des pipelines
+
+=== Une méthode plus que des outils
+
+=== L'ère du "All As Code"
+
+== Parallèle avec les pratiques de dev
+
+=== Factorisation & Reuse
+
+=== Le découplage
+
+=== Gestion de l'erreur
+
+=== Pipeline micro-services ?
+
+== Allons plus loin

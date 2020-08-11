@@ -1,0 +1,8 @@
+version: "3.4"
+services:
+  node:
+    image: node:13-slim
+    working_dir: /usr/app
+    volumes:
+    - .:/usr/app
+    command: "npm run watch"
