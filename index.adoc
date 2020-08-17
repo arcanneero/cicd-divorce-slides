@@ -3,9 +3,126 @@
 
 == CI / CD c'est quoi ?
 
+Reprenons quelques définitions
+
+=== Continuous Integration
+
+Ensemble de contrôles permettant de fournir un retour rapide sur les développements :
+
+* Qualité
+* Non regression
+* Respect de règles
+* etc.
+
+[.notes]
+--
+On travaille ici directement sur le code/le produit
+On automatise via les outils d'intégration continue
+Peu importe l'outillage, ça va dépendre des contraintes (techniques, sécurité, etc.) et de ce qu'on cherche à vérifier
+
+Petit rappel, sur l'origine de l'intégration continue "on vérifie que chaque brick fonctionne les unes avec les autres"
+--
+
+=== CI : Les classiques
+
+* Build : construction de l'application (compilation, dépendances, etc.)
+* Tests : unitaire, fonctionnel, etc.
+* Contrôle de qualité : Sonar, Linter, etc.
+
+=== CI
+
+Non dépendant de l'environnement cible
+
+[.notes]
+--
+Potentiellement, on doit pouvoir faire fonctionner notre CI n'importe où
+--
+
+=== Continuous Delivery/Deployment
+
+Delivery : on publie à la fin de notre process
+Deployment : on déploie à la fin de notre process
+
+=== CD
+
+Dépendant :
+
+* de l'environnement
+* du cycle de déploiement/livraison de l'entreprise
+* des responsables du produit
+
+[.notes]
+--
+Workflow git pour le déploiement
+Outillage pour le déploiement (s'il y a)
+Phase de testing
+Nombre de plateforme/environnement
+etc ..
+--
+
+=== CD
+
+Ce n'est plus "que de la technique".
+
+=== Et un peu de vocabulaire
+
+* Process : ensemble d'action fait à la suite les uns des autres pour obtenir un résultat (un algo quoi !)
+* PIC : Plateforme d'Intégration Continue (outils permettant d'automatiser les process de CI/CD)
+
 == La pratique des pipelines
 
+(HDD : Hype Driven Development :D)
+
 === Une méthode plus que des outils
+
+* Pipeline == implémentation d'un process de CI/CD
+* Pipeline != script
+
+==== 1 ère étape : Définir les objectifs de notre CI
+
+Définition des contraintes du projet :
+
+* Besoin spécifique en perf/sécurité/qualité/accessibilité, etc ?
+* Build complexe ? Multi plateforme ?
+* Règles de l'entreprise à respecter (nommage, peu importe en fait)
+* Qui doit voir quoi ? quand ? et surtout comment ?
+
+[.notes]
+--
+Typiquement, on ne va pas attendre la même chose de la CI sur du Web que d'une appli lourde pour des drones.
+--
+
+==== 2 ème étape : Analyser les process de dev/déploiement existant
+
+Mise en place d'une CI :
+
+* Normalisation du process de dev
+* Ne pas "révolutionner" le process de dev
+* C'est un outil qui aider et non pas être une contrainte
+
+[.notes]
+--
+On va chercher une adhésion des utilisateurs, sinon c'est inutile ou ce sera mal vécu
+--
+
+==== 3 ème étape : Définir les étapes clés/cas particuliers
+
+On va déterminer les étapes clés du process (souvent lors d'un changement d'acteur)
+
+Ex.:
+
+* On déploie tous les mois
+* On a une équipe dédiée à vérifier que les titres sont en rouge
+* Il n'y a que le lead qui peut builder l'application
+* Les clés d'accès aux plateformes sont détenus par le chef uniquement
+
+==== 4 ème étape : Les retours/métriques
+
+==== 5 ème étape : Automatiser ou ne pas automatiser ?
+
+==== 6 ème étape : Choix des outils
+
+==== 7 ème étape : On commence seulement à implémenter
 
 === L'ère du "All As Code"
 
