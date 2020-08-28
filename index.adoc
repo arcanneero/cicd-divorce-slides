@@ -73,12 +73,14 @@ Ce n'est plus "que de la technique".
 
 (HDD : Hype Driven Development :D)
 
-=== Une méthode plus que des outils
+== Une méthode plus que des outils
 
 * Pipeline == implémentation d'un process de CI/CD
 * Pipeline != script
 
-==== 1 ère étape : Définir les objectifs de notre CI
+=== Proposition d'étapes
+
+=== 1 - Définir les objectifs de notre CI
 
 Définition des contraintes du projet :
 
@@ -92,20 +94,20 @@ Définition des contraintes du projet :
 Typiquement, on ne va pas attendre la même chose de la CI sur du Web que d'une appli lourde pour des drones.
 --
 
-==== 2 ème étape : Analyser les process de dev/déploiement existant
+=== 2 - Analyser les process de dev/déploiement existant
 
 Mise en place d'une CI :
 
 * Normalisation du process de dev
 * Ne pas "révolutionner" le process de dev
-* C'est un outil qui aider et non pas être une contrainte
+* C'est un outil qui doit aider et non pas être une contrainte
 
 [.notes]
 --
 On va chercher une adhésion des utilisateurs, sinon c'est inutile ou ce sera mal vécu
 --
 
-==== 3 ème étape : Définir les étapes clés/cas particuliers
+=== 3 - Etapes clés/cas particuliers
 
 On va déterminer les étapes clés du process (souvent lors d'un changement d'acteur)
 
@@ -116,21 +118,183 @@ Ex.:
 * Il n'y a que le lead qui peut builder l'application
 * Les clés d'accès aux plateformes sont détenus par le chef uniquement
 
-==== 4 ème étape : Les retours/métriques
+=== 4 - Les retours/métriques
 
-==== 5 ème étape : Automatiser ou ne pas automatiser ?
+En fonction des utilisateurs :
 
-==== 6 ème étape : Choix des outils
+* Niveau de précision (un indicateur/la totale)
+* Facilité d'accès (page web, envoie de mail, fichier, mail, etc.)
+* Intégration dans un système existant ?
 
-==== 7 ème étape : On commence seulement à implémenter
+=== 5 - Automatiser ou ne pas automatiser ?
 
-=== L'ère du "All As Code"
+Tout automatiser n'est pas toujours (voir rarement) la meilleure solution.
+
+* Complexité
+* Process
+* Equipes dev/ops différentes
+* CI / CD : problématiques/besoins différents
+* Déploiement auto sur tous les environnements ?
+
+[.notes]
+--
+C'est à ce moment qu'on se rend compte que CI et CD ne sont pas DU TOUT le même chose, en particulier pour du déploiement auto
+Ca permet d'éliminer immédiatement des problématiques d'implémentation
+MAIS ça reste de le process
+--
+
+=== 6 - Choix des outils
+
+On peut enfin choisir l'outillage.
+
+* Ils doivent pouvoir implémenter les règles découvertes par les étapes précédentes
+* CI : on se calle généralement sur les outils classiques du langage/metier
+* CD : ... ben ça dépend des stacks, process, etc.
+
+=== 7 - On commence seulement à implémenter
+
+* On a les process
+* On a les acteurs
+* On a les métriques
+* On a les outils
+
+Let's go dev !
+
+== L'ère du "All As Code"
+
+All as Code :
+
+* Reproductibilité
+* Maintenabilité
+* Versionning
+
+[.notes]
+--
+On passe rapidement sur les avantages, de toute façon l'audience devrait déjà les connaitres
+--
+
+=== Gestion des sources
+
+[source,bash]
+----
+.eslintrc
+.jenkins/
+.terraform/
+.docker/
+docs/
+Jenkinsfile
+sonar-project.properties
+package.json
+Dockerfile
+...
+----
+
+[.notes]
+--
+Voici à quoi ressemble la racine de nos projets maintenant
+--
+
+=== C'est le bordel
+
+=== Quelques conseils
+
+* Favoriser les outils configurables par fichier
+* Utiliser le nommage standard (si existant)
+* Définir des règles d'organisation
+* Export de certaines conf. dans un autre dépôt git ?
+
+[.notes]
+--
+Pourquoi les standards ? car TOUTES les documentations utilisent les règles standards et tout le monde les connait
+Vous allez avoir autre chose à maintenir qu'un nommage spécifique à votre entreprise/projet
+Par exemple, nous mettons un point devant nos repertoires de configuration
+Export : pour les pipelines standardisés
+--
+
+=== Utiliser les standards
+
+* Connus
+* Documentés
+* Un truc de moins à maintenir
+
+[.notes]
+--
+Ex. les fichiers de configuration, ne nous amuser à pas les renommer, vous allez galérer à les maintenir
+--
 
 == Parallèle avec les pratiques de dev
 
-=== Factorisation & Reuse
+A final, on retombe sur des problématiques classiques de développement.
+
+== Factorisation & Reuse
+
+* Factoriser les jobs unitaires si le SOLID est bien respecté
+* Sinon copier coller
+
+=== Ex. Job Sonar - the bad way (OpenClosed principle broken)
+
+[source,yaml]
+----
+.sonar:
+  image:
+    name: $CI_IMAGE_SONAR_SCANNER
+    entrypoint: [""]
+  variables:
+    SONAR_HOST_URL: 'http://mon-sonar'
+    SONAR_TOKEN: 'mon token'
+    PROJECT_KEY: ''
+    GIT_DEPTH: 0
+    PROJECT_VERSION: $CI_COMMIT_REF_SLUG
+  script:
+    - sonar-scanner
+      -Dsonar.qualitygate.wait=true
+      -Dsonar.projectKey=$PROJECT_KEY
+      -Dsonar.projectVersion=$PUBLISH_VERSION
+      -Dsonar.sources=./src
+      -Dsonar.tests=tests/
+----
+
+[.notes]
+--
+Ici, on impose une organisation aux sources du projet, c'est dommage et bloquant. EN gros, on ne respecte pas l'openclosed principe. La moindre modification est complexe.
+--
+
+=== Ex. Job Sonar - the good way
+
+[source,yaml]
+----
+.sonar:
+  image:
+    name: $CI_IMAGE_SONAR_SCANNER
+    entrypoint: [""]
+  variables:
+    SONAR_HOST_URL: ''
+    SONAR_TOKEN: ''
+    PROJECT_KEY: ''
+    GIT_DEPTH: 0
+    PROJECT_VERSION: $CI_COMMIT_REF_SLUG
+  script:
+    - sonar-scanner
+      -Dsonar.qualitygate.wait=true
+      -Dsonar.projectKey=$PROJECT_KEY
+      -Dsonar.projectVersion=$PUBLISH_VERSION
+      -Dproject.settings=./sonar-project.properties
+----
+
+[.notes]
+--
+Ici, on impose certaines règles relatives à sonar (project key, version), mais on laisse le reste extensible via les sonar properties
+Pas de modification à faire en fonction du projet
+--
 
 === Le découplage
+
+* Single responsability par exemple
+* Organiser vos jobs/steps comme vous découperiez des classes
+* Une approche développement par contrat (AKA interface) pour chaque jobs/steps
+* Bonus : Ca simplifiera le reuse et la factorisation
+
+"De quoi j'ai besoin pour effectuer cette action, qu'est ce que je livre en sortie"
 
 === Gestion de l'erreur
 
