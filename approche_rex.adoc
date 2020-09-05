@@ -1,0 +1,208 @@
+= CI/CD, le divorce serait-prononcé ?
+:source-highlighter: highlightjs
+
+[.notes]
+--
+On a eu tous les deux pas mal d'occasion de mettre en place des process CI/CD
+
+Un d'origine Java et l'autre PHP
+
+Pourquoi côté Yann :
+
+* S'assurer que le code produit soit de bonnes qualité et respecte les standards sur 15 projets en parallèle
+* Accélérer le testing fonctionnel / sécurité
+* Accélérer la vitesse/fréquence de MEP via le déploiement auto
+* S'assurer de la reproductibilité des différentes étapes (de l'env de dev à la livraison)
+* Remonter des métriques au boss
+
+
+--
+
+== CI/CD, c'est quoi ?
+
+... on presque d'accord
+
+[.notes]
+--
+Au fil de nos pérégrination, nous sommes tombés d'accord sur la définition suivantes
+--
+
+=== Continuous Integration
+
+Ensemble de contrôles permettant de fournir un retour rapide sur les développements :
+
+* Qualité
+* Non regression
+* Respect de règles
+* etc.
+
+[.notes]
+--
+On travaille ici directement sur le code/le produit
+On automatise via les outils d'intégration continue
+Peu importe l'outillage, ça va dépendre des contraintes (techniques, sécurité, etc.) et de ce qu'on cherche à vérifier
+
+Petit rappel, sur l'origine de l'intégration continue "on vérifie que chaque brick fonctionne les unes avec les autres"
+--
+
+=== CI : Les classiques
+
+* Build : construction de l'application (compilation, dépendances, etc.)
+* Tests : unitaire, fonctionnel, etc.
+* Contrôle de qualité : Sonar, Linter, etc.
+* Non dépendant de l'environnement cible
+
+[.notes]
+--
+Alors pour le build, on est pas d'accord/d'accord.
+Potentiellement, on doit pouvoir faire fonctionner notre CI n'importe où.
+--
+
+=== Langage compilé vs langage interprété
+
+* Stratégie de build différente
+
+[.notes]
+--
+* Yann : Le mieux, c'est l'autoporté, tout doit pouvoir se faire de manière autonome (ex. Dockerfile autonome pour le build)
+* Nico : NON NON NON, c'est trop lent, la PIC est là pour ça
+--
+
+=== Bref, c'est pas pareil
+
+=== Continuous Delivery/Deployment
+
+Delivery : on publie à la fin de notre process
+Deployment : on déploie à la fin de notre process
+Developpement : on boucle l'infinite devops
+
+=== CD
+
+Dépendant :
+
+* de l'environnement
+* du cycle de déploiement/livraison de l'entreprise
+* des responsables du produit
+* découpage de l'appli
+
+[.notes]
+--
+Workflow git pour le déploiement
+Outillage pour le déploiement (s'il y a)
+Phase de testing
+Nombre de plateforme/environnement
+etc ..
+--
+
+=== CD
+
+Ce n'est plus "que de la technique".
+
+=== Et un peu de vocabulaire
+
+Là, on est d'accord :
+
+* Process : ensemble d'actions fait à la suite les uns des autres pour obtenir un résultat (un algo quoi !)
+
+== La pratique des pipelines
+
+(HDD : Hype Driven Development :D)
+
+[.notes]
+--
+On va aborder quelques experiences vécues et les leçons que nous en avons tiré
+--
+
+== Le cas "Générique à donf" (MEAE)
+
+* Peu importe la technos, on veut les même étapes
+* Symfony (PHP)
+* Typescript
+
+[.notes]
+--
+* Décrire les étapes à réaliser est très différent de les automatiser.
+* Du coup, on est parti sur le classique TU, build, quality, deliver, deploy integration, TF
+--
+
+=== Les étapes prévues
+
+* TU
+* Build
+* Quality
+* Deliver
+* Deploy integration
+* TF
+
+=== Problème : Code compilé vs code Exécuté
+
+* Pour faire les tests en Typescript, il faut builder d'abord
+* Pas besoins en PHP
+
+Donc :
+
+* Build pour les tests ?
+* TU
+* Build pour la release ?
+* Quality
+
+
+== Problèmes
+
+* On passe plus de temps à maintenir le process qu'à ajouter des fonctionnalités
+* Réutilisabilité des jobs très complexe
+
+== Quelques solutions
+
+
+== Le cas "Faites ce que vous voulez" (OAB)
+
+* Objectif : industrialisez car c'est bien
+
+[.notes]
+--
+Yann: Industrialisation chez OAB
+--
+
+=== Résultat
+
+* Le process CI/CD fonctionne très bien
+* Métriques qualité précises et top
+
+* Obligé de bloquer certains jobs pour que ça ne parte pas en prod
+* Les managers ne comprennent pas ce qu'il se passe
+* Aucun contrôle du process
+
+== Le cas "Devops dans sa tour d'ivoire" (MEAE)
+
+=== Le contexte
+
+* ReactJs
+* Artifactory
+* Framework maison
+* VM standard pour la recette
+
+[.notes]
+--
+* Contexte particulier, silotage fort entre les équipes
+* Pas de relation avec les équipes de dev
+--
+
+=== Le besoin
+
+La mission demandée par le client :
+
+* Automatisation de la CI autour du framework
+* Déploiement auto en recette
+* Mise à dispo aux équipes de dev par la doc ...
+
+=== Résultat
+
+* 6 mois de travail
+
+* ne correspond pas au besoin des équipes de dev/managers
+* trop rigide par rapport à la diversité des types de projet
+* difficile à mettre en place
+* trop spécifique
+
+* V2 en cours ...
