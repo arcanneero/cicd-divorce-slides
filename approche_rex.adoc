@@ -6,21 +6,65 @@
 On a eu tous les deux pas mal d'occasion de mettre en place des process CI/CD
 
 Un d'origine Java et l'autre PHP
-
-Pourquoi côté Yann :
-
-* S'assurer que le code produit soit de bonnes qualité et respecte les standards sur 15 projets en parallèle
-* Accélérer le testing fonctionnel / sécurité
-* Accélérer la vitesse/fréquence de MEP via le déploiement auto
-* S'assurer de la reproductibilité des différentes étapes (de l'env de dev à la livraison)
-* Remonter des métriques au boss
-
-
 --
 
-== CI/CD, c'est quoi ?
+== Introduction
 
-... on presque d'accord
+* Yann : Tech Lead d'origine PHP - Forte audience - Déploiement fréquent
+* Nico : Tech Lead d'origine Java
+
+* Les deux : aiment automatiser des trucs :)
+
+== Les raisons de la CI/CD
+
+* S'assurer que le code produit soit de bonnes qualité et respecte les standards sur 15+ projets en parallèle
+* Simplifier le testing fonctionnel / sécurité
+* Accélérer la vitesse/fréquence de MEP via le déploiement auto
+* S'assurer de la reproductibilité des différentes étapes (de l'env de dev à la livraison)
+* Assurer un suivi niveau CP/Lead
+
+* Automatiser un max de tache
+
+[.notes]
+--
+Yann : c'est comme ça que je suis arrivée dedans.
+A l'époque Docker n'était pas dans le game, j'ai commencé avec de la VM partagé, puis du Vagrant Puppet avec du capistrano
+Symfony, les PSR, et composer (le package manager de PHP) n'existait pas, ou n'était pas connu
+Donc c'était vraiment à la mano
+--
+
+== Côté Nico
+
+[.notes]
+--
+A voir si ce genre d'intro te va
+--
+
+== D'un besoin personnel à la mission cliente
+
+* D'abord perso : automatiser des taches redondantes
+* Puis pour l'équipe : simplifier/industrialiser le build
+* Puis pour un centre de compétence complet : unifier les pratiques
+* Puis pour les managers : remonter des infos automatiquement sur le build
+* Finalement en tant que mission à part entière : appliquer ces principes pour des clients
+
+[.notes]
+--
+Ce process qui était à la base un outil interne pour nos équipes et devenu au final un outil "indispensable" pour toutes les équipes
+Aujourd'hui, nous avons des missions exclusivement dédiées à la mise en place de CI/CD et d'automatisation/industrialisation.
+--
+
+== La rencontre de deux mondes
+
+* Les mêmes approches, concepts, etc.
+* Pas la même implémentation ...
+* ... Mais alors pas du tout
+
+== ... Bref
+
+== CI/CD, c'est quoi ? Le merge de nos approches
+
+Là où on est presque d'accord
 
 [.notes]
 --
@@ -42,7 +86,7 @@ On travaille ici directement sur le code/le produit
 On automatise via les outils d'intégration continue
 Peu importe l'outillage, ça va dépendre des contraintes (techniques, sécurité, etc.) et de ce qu'on cherche à vérifier
 
-Petit rappel, sur l'origine de l'intégration continue "on vérifie que chaque brick fonctionne les unes avec les autres"
+Petit rappel, sur l'origine de l'intégration continue "on vérifie que chaque brique fonctionne les unes avec les autres"
 --
 
 === CI : Les classiques
@@ -54,11 +98,11 @@ Petit rappel, sur l'origine de l'intégration continue "on vérifie que chaque b
 
 [.notes]
 --
-Alors pour le build, on est pas d'accord/d'accord.
+Alors pour le build, on est d'accord/pas d'accord.
 Potentiellement, on doit pouvoir faire fonctionner notre CI n'importe où.
 --
 
-=== Langage compilé vs langage interprété
+=== Le cas du build : compilé vs interprété
 
 * Stratégie de build différente
 
@@ -113,11 +157,17 @@ Là, on est d'accord :
 On va aborder quelques experiences vécues et les leçons que nous en avons tiré
 --
 
+== Une méthode plus que des outils
+
+
+
 == Le cas "Générique à donf" (MEAE)
 
 * Peu importe la technos, on veut les même étapes
-* Symfony (PHP)
+* Java
+* Javascript
 * Typescript
+* Framework maison
 
 [.notes]
 --
@@ -206,3 +256,10 @@ La mission demandée par le client :
 * trop spécifique
 
 * V2 en cours ...
+
+
+
+=== Le cas du Linter : Sonar vs embarqué dans les sources
+
+* Sonar : analyses post-commit
+* L'idéal : pour faire les analyses avant le commit
