@@ -150,6 +150,16 @@ etc ..
 
 === CD
 
+Et maintenant,
+On déploie de l'infra !
+
+[.notes]
+--
+--
+
+
+=== CD
+
 Ce n'est plus "que de la technique".
 
 === Et un peu de vocabulaire
@@ -200,7 +210,7 @@ Yann: Industrialisation chez OAB
 * Les managers ne comprennent pas ce qu'il se passe
 * Aucun contrôle du process
 
-== Le cas "Devops dans sa tour d'ivoire" (MEAE)
+== Le cas "Equipe devops dans sa tour d'ivoire" (MEAE)
 
 === Le contexte
 
@@ -270,6 +280,13 @@ Définition des contraintes du projet :
 [.notes]
 --
 Typiquement, on ne va pas attendre la même chose de la CI sur du Web que d'une appli lourde pour des drones.
+--
+
+=== 1 - Définir les objectifs de notre CI
+
+Et on fait des dessins !
+[.notes]
+--
 --
 
 === 2 - Analyser les process de dev/déploiement existant
