@@ -10,6 +10,7 @@
 :defaultTiming: 30
 :customcss: {runtimePrezDir}short/style-devoxx.css
 
+include::content/intro.adoc[leveloffset=+1]
 
 include::content/ci-cd.adoc[leveloffset=+1]
 
