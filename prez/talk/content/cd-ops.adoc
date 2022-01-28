@@ -1,0 +1,21 @@
+= CD : C'est un truc d'OPS
+
+Dépendant :
+
+* de l'environnement
+* du cycle de déploiement/livraison de l'entreprise
+* des responsables du produit
+* découpage de l'appli
+
+[.notes]
+--
+Workflow git pour le déploiement
+Outillage pour le déploiement (s'il y a)
+Phase de testing
+Nombre de plateforme/environnement
+etc ..
+--
+
+== CD
+
+Ce n'est plus "que de la technique".

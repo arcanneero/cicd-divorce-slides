@@ -1,0 +1,67 @@
+= CI/CD, c'est quoi ? Le merge de nos approches
+
+Là où on est presque d'accord
+
+[.notes]
+--
+Au fil de nos pérégrinations, nous sommes tombés d'accord sur la définition suivante
+--
+
+== Continuous Integration
+
+Ensemble de contrôles permettant de fournir un retour rapide sur les développements :
+
+* Qualité
+* Non regression
+* Respect de règles
+* etc.
+
+[.notes]
+--
+On travaille ici directement sur le code/le produit
+On automatise via les outils d'intégration continue
+Peu importe l'outillage, ça va dépendre des contraintes (techniques, sécurité, etc.) et de ce qu'on cherche à vérifier
+
+Petit rappel, sur l'origine de l'intégration continue "on vérifie que chaque brique fonctionne les unes avec les autres"
+--
+
+=== CI : Les classiques
+
+* Build : construction de l'application (compilation, dépendances, etc.)
+* Tests : unitaire, fonctionnel, etc.
+* Contrôle de qualité : Sonar, Linter, etc.
+* Non dépendant de l'environnement cible
+
+[.notes]
+--
+Alors pour le build, on est d'accord/pas d'accord.
+Potentiellement, on doit pouvoir faire fonctionner notre CI n'importe où.
+--
+
+=== Le cas du build : compilé vs interprété
+
+* Stratégie de build différente
+
+[.notes]
+--
+* Yann : Le mieux, c'est l'autoporté, tout doit pouvoir se faire de manière autonome (ex. Dockerfile autonome pour le build)
+* Nico : NON NON NON, c'est trop lent, la PIC est là pour ça
+--
+
+=== Bref, c'est pas pareil
+
+== Continuous Delivery/Deployment
+
+Delivery : on publie à la fin de notre process
+Deployment : on déploie à la fin de notre process
+Developpement : on boucle l'infinite devops
+
+
+=== CD
+
+Et maintenant,
+On déploie de l'infra !
+
+[.notes]
+--
+--
