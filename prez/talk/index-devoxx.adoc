@@ -8,7 +8,7 @@
 :revealjs_history: true
 :revealjs_defaultTiming: 30
 :defaultTiming: 30
-:customcss: {runtimePrezDir}short/style-devoxx.css
+:customcss: {runtimePrezDir}style-devoxx.css
 
 include::content/intro.adoc[leveloffset=+1]
 

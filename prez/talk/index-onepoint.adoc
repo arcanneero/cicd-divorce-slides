@@ -6,7 +6,7 @@
 :revealjs_slideNumber: true
 :revealjs_history: true
 :revealjs_history: true
-:customcss: {runtimePrezDir}short/style-onepoint.css
+:customcss: {runtimePrezDir}style-onepoint.css
 
 include::content/intro.adoc[leveloffset=+1]
 
