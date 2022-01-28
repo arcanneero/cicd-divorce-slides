@@ -1,20 +1,31 @@
 {
-  "dependencies": {
-    "@asciidoctor/reveal.js": "^4.0.1",
-    "asciidoctor": "^2.0",
-    "npm-watch": "^0.6.0"
-  },
-  "watch": {
-    "build": {
-      "patterns": [
-        "."
-      ],
-      "extensions": "js,adoc",
-      "quiet": false
-    }
+  "name": "cdcd-divorce-slides",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@asciidoctor/reveal.js": "4.1.0",
+    "asciidoctor": "2.2.1",
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-exec": "^3.0.2",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sequence": "^1.0.0",
+    "gulp-tap": "^1.0.1",
+    "map-stream": "^0.0.7",
+    "mermaid.cli": "^0.5.1",
+    "opal": "^0.6.4"
   },
   "scripts": {
-    "build": "node asciidoctor-revealjs.js",
-    "watch": "npm-watch build"
-  }
+    "test": "echo \"no test\" && exit 0",
+    "build": "gulp default",
+    "serve": "gulp serve",
+    "build-diagrams": "gulp copy-and-generate-mermaid-png",
+    "lint": "echo \"no lint\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC"
 }

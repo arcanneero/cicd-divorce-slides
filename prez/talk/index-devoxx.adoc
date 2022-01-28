@@ -1,0 +1,32 @@
+[.main-title.background]
+= CI/CD, le divorce serait-il prononcé ?
+:source-highlighter: highlightjs
+:revealjs_theme: league
+:revealjs_progress: true
+:revealjs_slideNumber: true
+:revealjs_history: true
+:revealjs_history: true
+:revealjs_defaultTiming: 30
+:defaultTiming: 30
+:customcss: {runtimePrezDir}short/style-devoxx.css
+
+
+include::content/ci-cd.adoc[leveloffset=+1]
+
+include::content/pipelines.adoc[leveloffset=+1]
+
+include::content/all-as-code.adoc[leveloffset=+1]
+
+include::content/ci-dev.adoc[leveloffset=+1]
+
+include::content/cd-ops.adoc[leveloffset=+1]
+
+include::content/devops-a-trois.adoc[leveloffset=+1]
+
+include::content/next.adoc[leveloffset=+1]
+
+
+[NOTE.speaker]
+====
+====
+
