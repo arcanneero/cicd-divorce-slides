@@ -1,3 +1,18 @@
+Déroulé du speech
+
+On présente :
+
+* les concepts de CI/CD
+* le principe des pipelines
+* l'avenement du all-as-code
+* Donc, on peut appliquer les bonnes pratiques de développement (SOLID, etc)
+* MAIS ca ne veut pas dire qu'on doit mettre la CI et la CD dans le même pipeline
+* Reprise des particularités de la CI
+* Reprise des particularités de la CD
+* On montre que c'est différent et qu'on ne peut pas les traiter de la même manière
+* Et les équipes devops, c'est pas ouf, il faut rester prêt des devs
+* Ouverture sur la suite
+
 = CI/CD, le divorce serait-prononcé ?
 :source-highlighter: highlightjs
 
