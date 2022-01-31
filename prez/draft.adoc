@@ -34,3 +34,125 @@ Potentiellement, on doit pouvoir faire fonctionner notre CI n'importe où.
 --
 
 === Bref, c'est pas pareil
+
+
+
+[.oab]
+== Le cas "Faites ce que vous voulez"
+
+* Objectif : industrialisez car c'est bien  (en gros, trouver un truc pour qu'on gagne plus d'argent)
+
+* Problème : fait par des devs pour des devs
+
+[NOTE.speaker]
+====
+#Yann#
+
+Cas OAB : Industrialisation
+====
+
+[.oab]
+=== Résultat
+
+* Le process CI/CD fonctionne très bien
+* Métriques qualité précises et top
+
+* Obligé de bloquer certains jobs pour que ça ne parte pas en prod
+* Les managers ne comprennent pas ce qu'il se passe
+* Aucun contrôle du process
+
+
+[.meae]
+== Le cas "Equipe devops dans sa tour d'ivoire"
+
+[.meae]
+== Le contexte
+
+* ReactJs
+* Artifactory
+* Framework maison
+* VM standard pour la recette
+
+[.notes]
+--
+* Contexte particulier, silotage fort entre les équipes
+* Pas de relation avec les équipes de dev
+--
+
+[.meae]
+== Le besoin
+
+La mission demandée par le client :
+
+* Automatisation de la CI autour du framework
+* Déploiement auto en recette
+* Mise à dispo aux équipes de dev par la doc ...
+
+
+[.meae]
+== Mal vécu et inutile
+
+* Pas d'adhésion des équipes de dev
+* Vécu comme une punition, pas comme une aide
+* Ne correspond pas à leur manière de travailler
+
+=== Ex.: Sonar
+
+* Sonar : analyses post-commit
+* Les règles de nommage ne sont pas normalisées entre les projets
+* L'architecture des projets n'est pas normalisées non plus
+* La configuration des postes n'est pas la même que celle de Sonar
+
+[.meae]
+== Ex.: Build
+
+* L'enfer, chaque projet avait une stratégie de build différente
+
+[.meae]
+== Résultat
+
+* 6 mois de travail
+
+* ne correspond pas au besoin des équipes de dev/managers
+* trop rigide par rapport à la diversité des types de projet
+* difficile à mettre en place
+* trop spécifique
+
+* V2 en cours ...
+
+
+
+=== 5 - Automatiser ou ne pas automatiser ?
+
+Tout automatiser n'est pas toujours (voir rarement) la meilleure solution.
+
+* Complexité
+* Process
+* Equipes dev/ops différentes
+* CI / CD : problématiques/besoins différents
+* Déploiement auto sur tous les environnements ?
+
+[.notes]
+--
+C'est à ce moment qu'on se rend compte que CI et CD ne sont pas DU TOUT le même chose, en particulier pour du déploiement auto
+Ca permet d'éliminer immédiatement des problématiques d'implémentation
+MAIS ça reste de le process
+--
+
+=== 6 - Choix des outils
+
+On peut enfin choisir l'outillage.
+
+* Ils doivent pouvoir implémenter les règles découvertes par les étapes précédentes
+* CI : on se calle généralement sur les outils classiques du langage/metier
+* CD : ... ben ça dépend des stacks, process, etc.
+
+=== 7 - On commence seulement à implémenter
+
+* On a les process
+* On a les acteurs
+* On a les métriques
+* On a les outils
+
+Let's go dev !
+
