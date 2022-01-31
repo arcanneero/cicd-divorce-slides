@@ -1,8 +1,10 @@
 version: "3.4"
 services:
   node:
-    image: node:13-slim
+    image: node:14-slim
     working_dir: /usr/app
     volumes:
     - .:/usr/app
-    command: "npm run watch"
+    command: "npm run serve"
+    ports:
+      - "3000:3000"
