@@ -1,13 +1,41 @@
-= CI/CD, c'est quoi ? Le merge de nos approches
+= CI/CD : La rencontre !
 
-Là où on est presque d'accord
+== Cycle de vie d'une application
 
-[.notes]
---
-Au fil de nos pérégrinations, nous sommes tombés d'accord sur la définition suivante
---
+image::./images/cicd-pipeline.png[]
 
+[NOTE.speaker]
+====
+Représentation plus ou moins classique du cycle de vie d'une application.
+Chaque phase part d'un point, réalise des actions et produit quelque chose.
+La sortie d'une phase est généralement l'entrée de la phase suivante !
+
+Attention à la phase test, parce que finalement desd tests,
+on peut en retrouver sur toutes les phases, mais on y reviendra !
+====
+
+[.ci]
+== Continuous Build
+
+image::./images/cicd-cicd.build.png[Build]
+
+[NOTE.speaker]
+====
+On travaille ici directement sur le code/le produit
+On automatise via les outils de build
+Peu importe l'outillage, ça va dépendre des contraintes (techniques, sécurité, etc.) et de ce qu'on cherche à vérifier
+
+
+* Build : construction de l'application (compilation, dépendances, etc.)
+====
+
+[.ci]
 == Continuous Integration
+
+image::./images/cicd-cicd.integration.png[]
+
+[NOTE.speaker]
+====
 
 Ensemble de contrôles permettant de fournir un retour rapide sur les développements :
 
@@ -15,53 +43,148 @@ Ensemble de contrôles permettant de fournir un retour rapide sur les développe
 * Non regression
 * Respect de règles
 * etc.
+====
 
-[.notes]
---
-On travaille ici directement sur le code/le produit
-On automatise via les outils d'intégration continue
-Peu importe l'outillage, ça va dépendre des contraintes (techniques, sécurité, etc.) et de ce qu'on cherche à vérifier
+[.ci]
+== Sa raison d'être
 
-Petit rappel, sur l'origine de l'intégration continue "on vérifie que chaque brique fonctionne les unes avec les autres"
---
-
-=== CI : Les classiques
-
-* Build : construction de l'application (compilation, dépendances, etc.)
-* Tests : unitaire, fonctionnel, etc.
-* Contrôle de qualité : Sonar, Linter, etc.
-* Non dépendant de l'environnement cible
-
-[.notes]
---
-Alors pour le build, on est d'accord/pas d'accord.
-Potentiellement, on doit pouvoir faire fonctionner notre CI n'importe où.
---
-
-=== Le cas du build : compilé vs interprété
-
-* Stratégie de build différente
-
-[.notes]
---
-* Yann : Le mieux, c'est l'autoporté, tout doit pouvoir se faire de manière autonome (ex. Dockerfile autonome pour le build)
-* Nico : NON NON NON, c'est trop lent, la PIC est là pour ça
---
-
-=== Bref, c'est pas pareil
-
-== Continuous Delivery/Deployment
-
-Delivery : on publie à la fin de notre process
-Deployment : on déploie à la fin de notre process
-Developpement : on boucle l'infinite devops
+Vérifier que chacune des briques fonctionnent les unes avec les autres
 
 
-=== CD
+[NOTE.speaker]
+====
+
+* S'assurer que le code produit soit de bonnes qualité et respecte les standards sur 15+ projets en parallèle
+* Simplifier le testing fonctionnel / sécurité
+* Accélérer la vitesse/fréquence de MEP via le déploiement auto
+* S'assurer de la reproductibilité des différentes étapes (de l'env de dev à la livraison)
+* Assurer un suivi niveau CP/Lead
+
+====
+
+[.cd]
+== Continuous Delivery
+
+image::./images/cicd-cicd.delivery.png[]
+
+[NOTE.speaker]
+====
+CD lui, il est beaucoup plus polymorphe voir schizophréne !
+Ici, c'est son coté délivery :  on publie à la fin de la phase.
+
+Vous noterez qu'ici on triche un peu, vu qu'on part du binaire, et non des métriques...
+Mais c'est pour les besoins du schéma !!!
 
 Et maintenant,
 On déploie de l'infra !
+====
+
+
+[.cd]
+== Continuous Deployment
+
+image::./images/cicd-cicd.deployment.png[]
+
+[NOTE.speaker]
+====
+Son coté Deployment : on déploie à la fin de la phase
+====
+
+
+[.cd]
+== Continuous Development
+
+image::./images/cicd-cicd.development.png[]
+
+[NOTE.speaker]
+====
+Developpement : On va en production !!!!
+====
+
+[.cd]
+== Sa raison d'être
+
+Emmener la valeur produit en production
+
+[NOTE.speaker]
+====
+====
+
+== La rencontre
+
+image::./images/cicd-cicd-split.png[]
+
+== Une complémentarité
+
+image::./images/cicd-cicd.png[]
+
+
+[.who]
+== Pourquoi on vous parle de ca ?
+
+[NOTE.speaker]
+====
+* Yann : Tech Lead d'origine PHP - Forte audience - Déploiement fréquent
+Au fil de nos pérégrinations, nous sommes tombés d'accord sur la définition suivante
+====
+
+[.who]
+== Qui sommes nous ?
+
+[NOTE.speaker]
+====
+* Yann : Tech Lead d'origine PHP - Forte audience - Déploiement fréquent
+Au fil de nos pérégrinations, nous sommes tombés d'accord sur la définition suivante
+====
+
+[.who]
+== Qui sommes nous ?
+
+[NOTE.speaker]
+====
+* Nico : Tech Lead d'origine Java
+====
+
+[.who]
+== Comment on en arrive là ?
+
+[NOTE.speaker]
+====
+
+* D'abord perso : automatiser des taches redondantes
+* Puis pour l'équipe : simplifier/industrialiser le build
+* Puis pour un centre de compétence complet : unifier les pratiques
+* Puis pour les managers : remonter des infos automatiquement sur le build
+* Finalement en tant que mission à part entière : appliquer ces principes pour des clients
 
 [.notes]
 --
+Ce process qui était à la base un outil interne pour nos équipes et devenu au final un outil "indispensable" pour toutes les équipes
+Aujourd'hui, nous avons des missions exclusivement dédiées à la mise en place de CI/CD et d'automatisation/industrialisation.
 --
+
+====
+
+[.who]
+== La rencontre de deux mondes
+
+* Les mêmes approches, concepts, etc.
+* Pas la même implémentation ...
+* ... Mais alors pas du tout
+
+
+[.disclamer]
+== ... Bref
+
+[NOTE.speaker]
+====
+On ne nous mettera pas d'accord...
+On se concentre sur nos convergences pour mettre en évidence nos divergences !
+
+* On va vous donner des clé de compréhension
+* On va tenter de souligner des clé de résolutions
+* On va éviter les outils (même si on parlera surement !)
+
+====
+
+

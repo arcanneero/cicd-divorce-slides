@@ -10,7 +10,15 @@
 :defaultTiming: 30
 :customcss: {runtimePrezDir}style-devoxx.css
 
-include::content/intro.adoc[leveloffset=+1]
+[NOTE.speaker]
+====
+Ca fait quelques années que nous travaillons sur des projets IT,
+et globalement on s'est toujours retrouvé, plus ou moins volontairement, à automatiser des taches de construction, ou de déploiements
+
+Et depuis beaucoup moins longtemps, on a inventé des métiers et décrit des concepts qui correspondent plus ou moins à notre quotidien.
+
+Mais avant de vous parler de la vie de ce petit couple, on va revenir un peu sur l'enfance des deux partis !
+====
 
 include::content/ci-cd.adoc[leveloffset=+1]
 
