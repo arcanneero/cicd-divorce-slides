@@ -6,7 +6,7 @@
   "devDependencies": {
     "@asciidoctor/reveal.js": "4.1.0",
     "asciidoctor": "2.2.1",
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.23.6",
     "del": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-exec": "^3.0.2",
