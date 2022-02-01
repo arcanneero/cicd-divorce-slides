@@ -41,6 +41,7 @@ gulp.task('convert', () =>
         .pipe(extReplace('.html'))
         .pipe(gulp.dest(prezOutDir))
 
+
 );
 
 gulp.task('copy-and-generate-mermaid-png', () =>
@@ -85,12 +86,17 @@ gulp.task('serveAndWatch', () => {
         port: 3000
     });
 
-    gulp.watch(adocWatchExtensions, () => gulp.series('convert', browserSync.reload));
-    gulp.watch(mediasExtensions, () => gulp.series('copy-medias', browserSync.reload));
-    gulp.watch(cssExtensions, () => gulp.series('copy-css', browserSync.reload));
-    gulp.watch(themesExtensions, () => gulp.series('copy-themes', browserSync.reload));
-    gulp.watch(jsExtensions, () => gulp.series('copy-js', browserSync.reload));
-    gulp.watch(mermaidWatchExtensions, () => gulp.series('copy-and-generate-mermaid-png', browserSync.reload));
+    function browserSyncReload(cb) {
+        browserSync.reload();
+        cb();
+    }
+
+    gulp.watch(adocWatchExtensions, gulp.series('convert', browserSyncReload));
+    gulp.watch(mediasExtensions, gulp.series('copy-medias', browserSyncReload));
+    gulp.watch(cssExtensions, gulp.series('copy-css', browserSyncReload));
+    gulp.watch(themesExtensions, gulp.series('copy-themes', browserSyncReload));
+    gulp.watch(jsExtensions, gulp.series('copy-js', browserSyncReload));
+    gulp.watch(mermaidWatchExtensions, gulp.series('copy-and-generate-mermaid-png', browserSyncReload));
 });
 
 
@@ -108,7 +114,6 @@ gulp.task('default', gulp.series(
 // Build dev files
 gulp.task('serve', gulp.series('default', 'serveAndWatch')
 );
-
 
 function convertAdocToHtml() {
 
