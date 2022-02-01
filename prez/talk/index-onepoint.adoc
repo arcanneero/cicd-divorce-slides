@@ -8,8 +8,6 @@
 :revealjs_history: true
 :customcss: {runtimePrezDir}style-onepoint.css
 
-include::content/intro.adoc[leveloffset=+1]
-
 include::content/ci-cd.adoc[leveloffset=+1]
 
 include::content/pipelines.adoc[leveloffset=+1]
