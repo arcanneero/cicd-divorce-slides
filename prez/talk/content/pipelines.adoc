@@ -1,4 +1,4 @@
-= La pratique des pipelines
+= Ils emménagent ensemble : les pipelines
 
 (HDD : Hype Driven Development :D)
 

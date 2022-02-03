@@ -1,4 +1,4 @@
-= CD : C'est un truc d'OPS
+= Le quotidien de CD : C'est un truc d'OPS
 
 Dépendant :
 
