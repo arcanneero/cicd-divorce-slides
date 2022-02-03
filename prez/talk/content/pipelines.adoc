@@ -7,13 +7,13 @@
 On va aborder quelques experiences vécues et les leçons que nous en avons tiré
 --
 
-== Quelques REX
+== Quelques experiences
 
-== Le cas "Faites ce que vous voulez" (OAB)
+== Le cas "Industrialisez car c'est bien" (OAB)
 
-* Objectif : industrialisez car c'est bien  (en gros, trouver un truc pour qu'on gagne plus d'argent)
+* Objectif : Tout le monde le fait, donc faites-le (en gros, trouver un truc pour qu'on gagne plus d'argent)
 
-* Problème : fait par des devs pour des devs
+* Problème : Mis en place par les devs, pour des devs
 
 [.notes]
 --
@@ -23,13 +23,17 @@ Yann: Industrialisation chez OAB
 === Résultat
 
 * Le process CI/CD fonctionne très bien
-* Métriques qualité précises et top
+* Métriques qualités précises et top
 
 * Obligé de bloquer certains jobs pour que ça ne parte pas en prod
 * Les managers ne comprennent pas ce qu'il se passe
 * Aucun contrôle du process
 
-== Le cas "Equipe devops dans sa tour d'ivoire" (MEAE)
+=== Conclusion
+
+* Ce pipeline vit très bien seul, mais ne peut pas vivre dans une société plus complexe
+
+== Le cas "Les pipelines préformatés/théorisés"
 
 === Le contexte
 
@@ -40,6 +44,7 @@ Yann: Industrialisation chez OAB
 
 [.notes]
 --
+* MEAE
 * Contexte particulier, silotage fort entre les équipes
 * Pas de relation avec les équipes de dev
 --
@@ -54,9 +59,9 @@ La mission demandée par le client :
 
 === Mal vécu et inutile
 
+* On force/impose une façon de travailler
 * Pas d'adhésion des équipes de dev
 * Vécu comme une punition, pas comme une aide
-* Ne correspond pas à leur manière de travailler
 
 === Ex.: Sonar
 
@@ -80,7 +85,7 @@ La mission demandée par le client :
 
 * V2 en cours ...
 
-== Une méthode plus que des outils
+== Notre approche : une méthode plus que des outils
 
 * Pipeline == implémentation d'un process de CI/CD
 * Pipeline != script
