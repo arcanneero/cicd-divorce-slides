@@ -59,4 +59,6 @@ Aujourd'hui, nous avons des missions exclusivement dédiées à la mise en place
 * Pas la même implémentation ...
 * ... Mais alors pas du tout
 
-=== ... Bref
+=== Nous sommes
+
+Des psychologues de couples CI/CD
