@@ -41,6 +41,23 @@ A cette étape là, même si on en reve, on ne parle pas :
 * etc...
 ====
 
+== ... Et des personnes
+
+image::../images/pipeline-people.png[]
+
+[NOTE.speaker]
+====
+Qui vont être impacté de manière plus ou moins importante par ce pipeline.
+
+Et qui ont des revendications !
+
+Mais qui :
+
+* Ne sont pas toujours d'accord
+* Ont  des besoins différents
+* Des compétences différentes
+* Ont tous raison
+====
 
 == L'excuse...
 
