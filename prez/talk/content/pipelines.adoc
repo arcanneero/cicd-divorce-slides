@@ -5,16 +5,7 @@
 Eurent beaucoup de pipelines...
 
 Et un tas de question d'éducation se sont posées...
-
-(HDD : Hype Driven Development :D)
-
-On va sortir un peu de notre fable, mais ce point nous parait essentiel...
 ====
-
-== Une méthode plus que des outils
-
-* Pipeline == implémentation d'un process de CI/CD
-* Pipeline != script
 
 == La définition d'un pipeline
 
@@ -30,7 +21,7 @@ Et si vous êtes vieux, vous avez peut être même appelé ca des grafcets !!!!!
 
 == C'est un dessin...
 
-image::../images/flowchart-draw.png[]
+image::./images/flowchart-draw.png[]
 
 [NOTE.speaker]
 ====
@@ -43,7 +34,7 @@ A cette étape là, même si on en reve, on ne parle pas :
 
 == ... Et des personnes
 
-image::../images/pipeline-people.png[]
+image::./images/pipeline-people.png[]
 
 [NOTE.speaker]
 ====
@@ -55,13 +46,13 @@ Mais qui :
 
 * Ne sont pas toujours d'accord
 * Ont  des besoins différents
-* Des compétences différentes
-* Ont tous raison
+* Des compétences complémentaires
+* Ont tous (leurs) raison
 ====
 
 == L'excuse...
 
-image::../images/flowchart-complex.jpg[]
+image::./images/flowchart-complex.jpg[]
 
 [NOTE.speaker]
 ====
@@ -86,7 +77,7 @@ Parce que si vous n'avrivez pas à le représenter, il va être très difficile 
 
 TODO insérer un autre diagramme
 
-image::../images/flowchart-complex.jpg[]
+image::./images/flowchart-complex.jpg[]
 
 [NOTE.speaker]
 ====
@@ -127,6 +118,26 @@ On va chercher une adhésion des utilisateurs, sinon c'est inutile ou ce sera ma
 * Il n'y a que le lead qui peut builder l'application
 * Les clés d'accès aux plateformes sont détenus par le chef uniquement
 
+
+=== Automatiser ou ne pas automatiser ?
+
+Tout automatiser n'est pas toujours (voir rarement) la meilleure solution.
+
+* Complexité
+* Process
+*  Actions ou déclencheur ?
+* Equipes dev/ops différentes
+* CI / CD : problématiques/besoins différents
+* Déploiement auto sur tous les environnements ?
+
+[.notes]
+--
+C'est à ce moment qu'on se rend compte que CI et CD ne sont pas DU TOUT le même chose, en particulier pour du déploiement auto
+Ca permet d'éliminer immédiatement des problématiques d'implémentation
+MAIS ça reste de le process
+--
+
+
 [.tips]
 == Avoir des feedbacks à différents niveaux
 
@@ -137,13 +148,14 @@ On va chercher une adhésion des utilisateurs, sinon c'est inutile ou ce sera ma
 
 == Ca ne vous rappel rien ?
 
-image::../images/Extreme_Programming.svg[]
+image::./images/Extreme_Programming.svg[]
 
 [NOTE.speaker]
 ====
 On ne vous dit pas que XP est fait pour les pipelines,
 mais si on peut garder ça à l'esprit, Est ce qu'on se simplifierait pas la vie ?
 ====
+
 
 [.transition]
 == !
