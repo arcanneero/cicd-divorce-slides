@@ -1,67 +1,73 @@
-= CI/CD, c'est quoi ? Le merge de nos approches
+= Ils ont de grande qualités...
 
-Là où on est presque d'accord
+== CI, ca va sans dire...
 
-[.notes]
---
-Au fil de nos pérégrinations, nous sommes tombés d'accord sur la définition suivante
---
+[NOTE.speaker]
+====
+...mais ca va mieux en le disant !
 
-== Continuous Integration
+Autrement dit, on va passer rapidement dessus, ca fait des années qu'on en parle !0
+====
 
-Ensemble de contrôles permettant de fournir un retour rapide sur les développements :
+== On vous parlait d'XP...
 
-* Qualité
-* Non regression
-* Respect de règles
-* etc.
+image::./images/Extreme_Programming.svg[]
 
-[.notes]
---
-On travaille ici directement sur le code/le produit
-On automatise via les outils d'intégration continue
-Peu importe l'outillage, ça va dépendre des contraintes (techniques, sécurité, etc.) et de ce qu'on cherche à vérifier
+[NOTE.speaker]
+====
+Tests unitaires, non régression, check des dépendances...
+La CI vient juste automatiser, ou systématiser ces pratiques !
 
-Petit rappel, sur l'origine de l'intégration continue "on vérifie que chaque brique fonctionne les unes avec les autres"
---
+On veut juste revenir sur deux petits tips
+====
 
-=== CI : Les classiques
+[.tips]
+== Build once, ...
 
-* Build : construction de l'application (compilation, dépendances, etc.)
-* Tests : unitaire, fonctionnel, etc.
-* Contrôle de qualité : Sonar, Linter, etc.
-* Non dépendant de l'environnement cible
+[NOTE.speaker]
+====
+* Ne reconstruisez pas vos binaires dans les phases suivantes
+* Gestion des dépendances potentiellement risquée (suivant les technos)
+====
 
-[.notes]
---
-Alors pour le build, on est d'accord/pas d'accord.
-Potentiellement, on doit pouvoir faire fonctionner notre CI n'importe où.
---
+[.tips]
+== Les Merge/Pull Request
 
-=== Le cas du build : compilé vs interprété
-
-* Stratégie de build différente
-
-[.notes]
---
-* Yann : Le mieux, c'est l'autoporté, tout doit pouvoir se faire de manière autonome (ex. Dockerfile autonome pour le build)
-* Nico : NON NON NON, c'est trop lent, la PIC est là pour ça
---
-
-=== Bref, c'est pas pareil
-
-== Continuous Delivery/Deployment
-
-Delivery : on publie à la fin de notre process
-Deployment : on déploie à la fin de notre process
-Developpement : on boucle l'infinite devops
+[NOTE.speaker]
+====
+Jouer autant que possible vos tests sur le résultat du merge,
+et non pas sur la branche !
+====
 
 
-=== CD
+[.tips]
+== Travaux en autonomie
 
-Et maintenant,
-On déploie de l'infra !
+[NOTE.speaker]
+====
+Très spécifique à l'équipe de développement
+
+=> peu d'interaction et impacts externes
+====
+
+== CD : C'est un truc d'OPS
+
+Dépendant :
+
+* de l'environnement
+* du cycle de déploiement/livraison de l'entreprise
+* des responsables du produit
+* découpage de l'appli
 
 [.notes]
 --
+Workflow git pour le déploiement
+Outillage pour le déploiement (s'il y a)
+Phase de testing
+Nombre de plateforme/environnement
+etc ..
 --
+
+== CD
+
+Ce n'est plus "que de la technique".

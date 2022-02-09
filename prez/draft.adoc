@@ -1,0 +1,331 @@
+
+* Automatiser un max de tache
+
+[.notes]
+--
+Yann : c'est comme ça que je suis arrivée dedans.
+A l'époque Docker n'était pas dans le game, j'ai commencé avec de la VM partagé, puis du Vagrant Puppet avec du capistrano
+Symfony, les PSR, et composer (le package manager de PHP) n'existait pas, ou n'était pas connu
+Donc c'était vraiment à la mano
+--
+
+
+
+=== CI : Les classiques
+
+* Tests : unitaire, fonctionnel, etc.
+* Contrôle de qualité : Sonar, Linter, etc.
+* Non dépendant de l'environnement cible
+
+[.notes]
+--
+Alors pour le build, on est d'accord/pas d'accord.
+Potentiellement, on doit pouvoir faire fonctionner notre CI n'importe où.
+--
+
+=== Le cas du build : compilé vs interprété
+
+* Stratégie de build différente
+
+[.notes]
+--
+* Yann : Le mieux, c'est l'autoporté, tout doit pouvoir se faire de manière autonome (ex. Dockerfile autonome pour le build)
+* Nico : NON NON NON, c'est trop lent, la PIC est là pour ça
+--
+
+=== Bref, c'est pas pareil
+
+
+
+[.oab]
+== Le cas "Faites ce que vous voulez"
+
+* Objectif : industrialisez car c'est bien  (en gros, trouver un truc pour qu'on gagne plus d'argent)
+
+* Problème : fait par des devs pour des devs
+
+[NOTE.speaker]
+====
+#Yann#
+
+Cas OAB : Industrialisation
+====
+
+[.oab]
+=== Résultat
+
+* Le process CI/CD fonctionne très bien
+* Métriques qualité précises et top
+
+* Obligé de bloquer certains jobs pour que ça ne parte pas en prod
+* Les managers ne comprennent pas ce qu'il se passe
+* Aucun contrôle du process
+
+
+[.meae]
+== Le cas "Equipe devops dans sa tour d'ivoire"
+
+[.meae]
+== Le contexte
+
+* ReactJs
+* Artifactory
+* Framework maison
+* VM standard pour la recette
+
+[.notes]
+--
+* Contexte particulier, silotage fort entre les équipes
+* Pas de relation avec les équipes de dev
+--
+
+[.meae]
+== Le besoin
+
+La mission demandée par le client :
+
+* Automatisation de la CI autour du framework
+* Déploiement auto en recette
+* Mise à dispo aux équipes de dev par la doc ...
+
+
+[.meae]
+== Mal vécu et inutile
+
+* Pas d'adhésion des équipes de dev
+* Vécu comme une punition, pas comme une aide
+* Ne correspond pas à leur manière de travailler
+
+=== Ex.: Sonar
+
+* Sonar : analyses post-commit
+* Les règles de nommage ne sont pas normalisées entre les projets
+* L'architecture des projets n'est pas normalisées non plus
+* La configuration des postes n'est pas la même que celle de Sonar
+
+[.meae]
+== Ex.: Build
+
+* L'enfer, chaque projet avait une stratégie de build différente
+
+[.meae]
+== Résultat
+
+* 6 mois de travail
+
+* ne correspond pas au besoin des équipes de dev/managers
+* trop rigide par rapport à la diversité des types de projet
+* difficile à mettre en place
+* trop spécifique
+
+* V2 en cours ...
+
+
+
+=== 5 - Automatiser ou ne pas automatiser ?
+
+Tout automatiser n'est pas toujours (voir rarement) la meilleure solution.
+
+* Complexité
+* Process
+* Equipes dev/ops différentes
+* CI / CD : problématiques/besoins différents
+* Déploiement auto sur tous les environnements ?
+
+[.notes]
+--
+C'est à ce moment qu'on se rend compte que CI et CD ne sont pas DU TOUT le même chose, en particulier pour du déploiement auto
+Ca permet d'éliminer immédiatement des problématiques d'implémentation
+MAIS ça reste de le process
+--
+
+=== 6 - Choix des outils
+
+On peut enfin choisir l'outillage.
+
+* Ils doivent pouvoir implémenter les règles découvertes par les étapes précédentes
+* CI : on se calle généralement sur les outils classiques du langage/metier
+* CD : ... ben ça dépend des stacks, process, etc.
+
+=== 7 - On commence seulement à implémenter
+
+* On a les process
+* On a les acteurs
+* On a les métriques
+* On a les outils
+
+Let's go dev !
+
+
+
+* Les mêmes approches, concepts, etc.
+* Pas la même implémentation ...
+* ... Mais alors pas du tout
+
+
+
+== Une méthode plus que des outils
+
+* Pipeline == implémentation d'un process de CI/CD
+* Pipeline != script
+
+
+
+
+
+== Quelques conseils
+
+* Favoriser les outils configurables par fichier
+* Utiliser le nommage standard (si existant)
+* Définir des règles d'organisation
+* Export de certaines conf. dans un autre dépôt git ?
+
+[.notes]
+--
+Pourquoi les standards ? car TOUTES les documentations utilisent les règles standards et tout le monde les connait
+Vous allez avoir autre chose à maintenir qu'un nommage spécifique à votre entreprise/projet
+Par exemple, nous mettons un point devant nos repertoires de configuration
+Export : pour les pipelines standardisés
+--
+
+== Utiliser les standards
+
+* Connus
+* Documentés
+* Un truc de moins à maintenir
+
+[.notes]
+--
+Ex. les fichiers de configuration, ne nous amuser à pas les renommer, vous allez galérer à les maintenir
+--
+
+== Parallèle avec les pratiques de dev
+
+Au final, on retombe sur des problématiques classiques de développement.
+
+== Quelques REX
+
+== Le cas "Générique à donf" (MEAE)
+
+* Peu importe la technos, on veut les même étapes pour :
+** Java
+** Javascript
+** Typescript
+** Framework maison basé sur React
+
+[.notes]
+--
+* Décrire les étapes à réaliser est très différent de les automatiser.
+* Du coup, on est parti sur le classique TU, build, quality, deliver, deploy integration, TF
+--
+
+=== Les étapes prévues
+
+* TU
+* Build
+* Quality
+* Deliver
+* Deploy integration
+* TF
+
+=== Problème : Code compilé vs code Exécuté
+
+* Pour faire les tests en Typescript, il faut builder d'abord
+* Pas besoins en Javascript
+
+Donc :
+
+* Build pour les tests ?
+* TU
+* Build pour la release ?
+* Quality
+
+[.notes]
+--
+Des problèmes de cas particulier, de généricité, viennent polluer vos scripts, comme on en rencontre de le dev classique
+--
+
+=== Résultats
+
+* On passe plus de temps à maintenir le process dû aux cas particuliers qu'à ajouter des fonctionnalités
+* Réutilisation des jobs/stages très complexes
+
+=== Quelques solutions
+
+* Soit avoir un pipeline (script) générique trèèèèès haut niveau (avec seulement les I/O de chaque job, et l'ordre d'exécution et encore)
+* Soit pas de pipeline (script) générique
+
+
+
+
+
+
+== Factorisation & Reuse
+
+* Factoriser les jobs unitaires si le SOLID est bien respecté
+* Sinon copier coller
+
+=== Ex. Job Sonar - the bad way (OpenClosed principle broken)
+
+[source,yaml]
+----
+.sonar:
+  image:
+    name: $CI_IMAGE_SONAR_SCANNER
+    entrypoint: [""]
+  variables:
+    SONAR_HOST_URL: 'http://mon-sonar'
+    SONAR_TOKEN: 'mon token'
+    PROJECT_KEY: ''
+    GIT_DEPTH: 0
+    PROJECT_VERSION: $CI_COMMIT_REF_SLUG
+  script:
+    - sonar-scanner
+      -Dsonar.qualitygate.wait=true
+      -Dsonar.projectKey=$PROJECT_KEY
+      -Dsonar.projectVersion=$PUBLISH_VERSION
+      -Dsonar.sources=./src
+      -Dsonar.tests=tests/
+----
+
+[.notes]
+--
+Ici, on impose une organisation aux sources du projet, c'est dommage et bloquant. EN gros, on ne respecte pas l'openclosed principe. La moindre modification est complexe.
+--
+
+=== Ex. Job Sonar - the good way
+
+[source,yaml]
+----
+.sonar:
+  image:
+    name: $CI_IMAGE_SONAR_SCANNER
+    entrypoint: [""]
+  variables:
+    SONAR_HOST_URL: ''
+    SONAR_TOKEN: ''
+    PROJECT_KEY: ''
+    GIT_DEPTH: 0
+    PROJECT_VERSION: $CI_COMMIT_REF_SLUG
+  script:
+    - sonar-scanner
+      -Dsonar.qualitygate.wait=true
+      -Dsonar.projectKey=$PROJECT_KEY
+      -Dsonar.projectVersion=$PUBLISH_VERSION
+      -Dproject.settings=./sonar-project.properties
+----
+
+[.notes]
+--
+Ici, on impose certaines règles relatives à sonar (project key, version), mais on laisse le reste extensible via les sonar properties
+Pas de modification à faire en fonction du projet
+--
+
+=== Le découplage
+
+* Single responsability par exemple
+* Organiser vos jobs/steps comme vous découperiez des classes
+* Une approche développement par contrat (AKA interface) pour chaque jobs/steps
+* Bonus : Ca simplifiera le reuse et la factorisation
+
+"De quoi j'ai besoin pour effectuer cette action, qu'est ce que je livre en sortie"
