@@ -1,190 +1,73 @@
-= CI/CD : La rencontre !
+= Ils ont de grande qualités...
 
-== Cycle de vie d'une application
-
-image::./images/cicd-pipeline.png[]
+== CI, ca va sans dire...
 
 [NOTE.speaker]
 ====
-Représentation plus ou moins classique du cycle de vie d'une application.
-Chaque phase part d'un point, réalise des actions et produit quelque chose.
-La sortie d'une phase est généralement l'entrée de la phase suivante !
+...mais ca va mieux en le disant !
 
-Attention à la phase test, parce que finalement desd tests,
-on peut en retrouver sur toutes les phases, mais on y reviendra !
+Autrement dit, on va passer rapidement dessus, ca fait des années qu'on en parle !0
 ====
 
-[.ci]
-== Continuous Build
+== On vous parlait d'XP...
 
-image::./images/cicd-cicd.build.png[Build]
+image::./images/Extreme_Programming.svg[]
 
 [NOTE.speaker]
 ====
-On travaille ici directement sur le code/le produit
-On automatise via les outils de build
-Peu importe l'outillage, ça va dépendre des contraintes (techniques, sécurité, etc.) et de ce qu'on cherche à vérifier
+Tests unitaires, non régression, check des dépendances...
+La CI vient juste automatiser, ou systématiser ces pratiques !
 
-
-* Build : construction de l'application (compilation, dépendances, etc.)
+On veut juste revenir sur deux petits tips
 ====
 
-[.ci]
-== Continuous Integration
-
-image::./images/cicd-cicd.integration.png[]
+[.tips]
+== Build once, ...
 
 [NOTE.speaker]
 ====
-
-Ensemble de contrôles permettant de fournir un retour rapide sur les développements :
-
-* Qualité
-* Non regression
-* Respect de règles
-* etc.
+* Ne reconstruisez pas vos binaires dans les phases suivantes
+* Gestion des dépendances potentiellement risquée (suivant les technos)
 ====
 
-[.ci]
-== Sa raison d'être
-
-Vérifier que chacune des briques fonctionnent les unes avec les autres
-
+[.tips]
+== Les Merge/Pull Request
 
 [NOTE.speaker]
 ====
-
-* S'assurer que le code produit soit de bonnes qualité et respecte les standards sur 15+ projets en parallèle
-* Simplifier le testing fonctionnel / sécurité
-* Accélérer la vitesse/fréquence de MEP via le déploiement auto
-* S'assurer de la reproductibilité des différentes étapes (de l'env de dev à la livraison)
-* Assurer un suivi niveau CP/Lead
-
+Jouer autant que possible vos tests sur le résultat du merge,
+et non pas sur la branche !
 ====
 
-[.cd]
-== Continuous Delivery
 
-image::./images/cicd-cicd.delivery.png[]
+[.tips]
+== Travaux en autonomie
 
 [NOTE.speaker]
 ====
-CD lui, il est beaucoup plus polymorphe voir schizophréne !
-Ici, c'est son coté délivery :  on publie à la fin de la phase.
+Très spécifique à l'équipe de développement
 
-Vous noterez qu'ici on triche un peu, vu qu'on part du binaire, et non des métriques...
-Mais c'est pour les besoins du schéma !!!
-
-Et maintenant,
-On déploie de l'infra !
+=> peu d'interaction et impacts externes
 ====
 
+== CD : C'est un truc d'OPS
 
-[.cd]
-== Continuous Deployment
+Dépendant :
 
-image::./images/cicd-cicd.deployment.png[]
-
-[NOTE.speaker]
-====
-Son coté Deployment : on déploie à la fin de la phase
-====
-
-
-[.cd]
-== Continuous Development
-
-image::./images/cicd-cicd.development.png[]
-
-[NOTE.speaker]
-====
-Developpement : On va en production !!!!
-====
-
-[.cd]
-== Sa raison d'être
-
-Emmener la valeur produit en production
-
-[NOTE.speaker]
-====
-====
-
-== La rencontre
-
-image::./images/cicd-cicd-split.png[]
-
-== Une complémentarité
-
-image::./images/cicd-cicd.png[]
-
-
-[.who]
-== Pourquoi on vous parle de ca ?
-
-[NOTE.speaker]
-====
-* Yann : Tech Lead d'origine PHP - Forte audience - Déploiement fréquent
-Au fil de nos pérégrinations, nous sommes tombés d'accord sur la définition suivante
-====
-
-[.who]
-== Qui sommes nous ?
-
-[NOTE.speaker]
-====
-* Yann : Tech Lead d'origine PHP - Forte audience - Déploiement fréquent
-Au fil de nos pérégrinations, nous sommes tombés d'accord sur la définition suivante
-====
-
-[.who]
-== Qui sommes nous ?
-
-[NOTE.speaker]
-====
-* Nico : Tech Lead d'origine Java
-====
-
-[.who]
-== Comment on en arrive là ?
-
-[NOTE.speaker]
-====
-
-* D'abord perso : automatiser des taches redondantes
-* Puis pour l'équipe : simplifier/industrialiser le build
-* Puis pour un centre de compétence complet : unifier les pratiques
-* Puis pour les managers : remonter des infos automatiquement sur le build
-* Finalement en tant que mission à part entière : appliquer ces principes pour des clients
+* de l'environnement
+* du cycle de déploiement/livraison de l'entreprise
+* des responsables du produit
+* découpage de l'appli
 
 [.notes]
 --
-Ce process qui était à la base un outil interne pour nos équipes et devenu au final un outil "indispensable" pour toutes les équipes
-Aujourd'hui, nous avons des missions exclusivement dédiées à la mise en place de CI/CD et d'automatisation/industrialisation.
+Workflow git pour le déploiement
+Outillage pour le déploiement (s'il y a)
+Phase de testing
+Nombre de plateforme/environnement
+etc ..
 --
 
-====
+== CD
 
-[.who]
-== La rencontre de deux mondes
-
-* Les mêmes approches, concepts, etc.
-* Pas la même implémentation ...
-* ... Mais alors pas du tout
-
-
-[.disclamer]
-== ... Bref
-
-[NOTE.speaker]
-====
-On ne nous mettera pas d'accord...
-On se concentre sur nos convergences pour mettre en évidence nos divergences !
-
-* On va vous donner des clé de compréhension
-* On va tenter de souligner des clé de résolutions
-* On va éviter les outils (même si on parlera surement !)
-
-====
-
-
+Ce n'est plus "que de la technique".

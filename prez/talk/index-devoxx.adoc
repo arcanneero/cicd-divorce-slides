@@ -17,8 +17,10 @@ et globalement on s'est toujours retrouvé, plus ou moins volontairement, à aut
 
 Et depuis beaucoup moins longtemps, on a inventé des métiers et décrit des concepts qui correspondent plus ou moins à notre quotidien.
 
-Mais avant de vous parler de la vie de ce petit couple, on va revenir un peu sur l'enfance des deux partis !
+Mais avant de vous parler de la vie de ce petit couple, on va revenir un peu sur leur histoire...
 ====
+
+include::content/rencontre.adoc[leveloffset=+1]
 
 include::content/ci-cd.adoc[leveloffset=+1]
 
@@ -26,9 +28,7 @@ include::content/pipelines.adoc[leveloffset=+1]
 
 include::content/all-as-code.adoc[leveloffset=+1]
 
-include::content/ci-dev.adoc[leveloffset=+1]
-
-include::content/cd-ops.adoc[leveloffset=+1]
+include::content/therapie.adoc[leveloffset=+1]
 
 include::content/devops-a-trois.adoc[leveloffset=+1]
 
