@@ -1,0 +1,73 @@
+= Ils ont de grande qualités...
+
+== CI, ca va sans dire...
+
+[NOTE.speaker]
+====
+...mais ca va mieux en le disant !
+
+Autrement dit, on va passer rapidement dessus, ca fait des années qu'on en parle !0
+====
+
+== On vous parlait d'XP...
+
+image::./images/Extreme_Programming.svg[]
+
+[NOTE.speaker]
+====
+Tests unitaires, non régression, check des dépendances...
+La CI vient juste automatiser, ou systématiser ces pratiques !
+
+On veut juste revenir sur deux petits tips
+====
+
+[.tips]
+== Build once, ...
+
+[NOTE.speaker]
+====
+* Ne reconstruisez pas vos binaires dans les phases suivantes
+* Gestion des dépendances potentiellement risquée (suivant les technos)
+====
+
+[.tips]
+== Les Merge/Pull Request
+
+[NOTE.speaker]
+====
+Jouer autant que possible vos tests sur le résultat du merge,
+et non pas sur la branche !
+====
+
+
+[.tips]
+== Travaux en autonomie
+
+[NOTE.speaker]
+====
+Très spécifique à l'équipe de développement
+
+=> peu d'interaction et impacts externes
+====
+
+== CD : C'est un truc d'OPS
+
+Dépendant :
+
+* de l'environnement
+* du cycle de déploiement/livraison de l'entreprise
+* des responsables du produit
+* découpage de l'appli
+
+[.notes]
+--
+Workflow git pour le déploiement
+Outillage pour le déploiement (s'il y a)
+Phase de testing
+Nombre de plateforme/environnement
+etc ..
+--
+
+== CD
+
+Ce n'est plus "que de la technique".

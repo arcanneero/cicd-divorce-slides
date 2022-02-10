@@ -1,0 +1,41 @@
+[.main-title.background]
+= CI/CD, le divorce serait-il prononcé ?
+:source-highlighter: highlightjs
+:revealjs_theme: league
+:revealjs_progress: true
+:revealjs_slideNumber: true
+:revealjs_history: true
+:revealjs_history: true
+:revealjs_defaultTiming: 30
+:defaultTiming: 30
+:customcss: {runtimePrezDir}style-devoxx.css
+
+[NOTE.speaker]
+====
+Ca fait quelques années que nous travaillons sur des projets IT,
+et globalement on s'est toujours retrouvé, plus ou moins volontairement, à automatiser des taches de construction, ou de déploiements
+
+Et depuis beaucoup moins longtemps, on a inventé des métiers et décrit des concepts qui correspondent plus ou moins à notre quotidien.
+
+Mais avant de vous parler de la vie de ce petit couple, on va revenir un peu sur leur histoire...
+====
+
+include::content/rencontre.adoc[leveloffset=+1]
+
+include::content/ci-cd.adoc[leveloffset=+1]
+
+include::content/pipelines.adoc[leveloffset=+1]
+
+include::content/all-as-code.adoc[leveloffset=+1]
+
+include::content/therapie.adoc[leveloffset=+1]
+
+include::content/devops-a-trois.adoc[leveloffset=+1]
+
+include::content/next.adoc[leveloffset=+1]
+
+
+[NOTE.speaker]
+====
+====
+
