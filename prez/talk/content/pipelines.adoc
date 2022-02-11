@@ -61,10 +61,7 @@ Si vous en êtes là, vous avez un problème, et déjà des solutions !
 
 == Pas simple => pas clair !
 
-Ce que l’on conçoit bien s’énonce clairement, Et les mots pour le dire arrivent aisément
 
-[.ref]
-Nicolas Boileau
 
 [NOTE.speaker]
 ====
@@ -89,7 +86,7 @@ Voici notre premier concepte de dev applicable à nos pipelines !
 == {blank}
 
 [.tips]
-image::./images/pipeline-steps-1.png[step 1, 75%]
+image::../images/pipeline-steps-1.png[step 1, 75%]
 
 [NOTE.speaker]
 ====
@@ -103,10 +100,10 @@ Définir les objectifs et contraintes de chaîne :
 * Qui doit voir quoi ? quand ? et surtout comment ?
 ====
 
-== {blank}
+== !
 
 [.tips]
-image::./images/pipeline-steps-2.png[step 1, 75%]
+image::../images/pipeline-steps-2.png[step 1, 75%]
 
 [NOTE.speaker]
 ====
@@ -122,7 +119,7 @@ Analyser les process de dev/déploiement existant :
 == {blank}
 
 [.tips]
-image::./images/pipeline-steps-3.png[step 1, 75%]
+image::../images/pipeline-steps-3.png[step 1, 75%]
 
 [NOTE.speaker]
 ====
@@ -135,7 +132,7 @@ image::./images/pipeline-steps-3.png[step 1, 75%]
 == {blank}
 
 [.tips]
-image::./images/pipeline-steps-4.png[step 1, 75%]
+image::../images/pipeline-steps-4.png[step 1, 75%]
 
 [.notes]
 --
@@ -151,7 +148,7 @@ Avoir des feedbacks à différents niveaux :
 == {blank}
 
 [.tips]
-image::./images/pipeline-steps-5.png[step 1, 75%]
+image::../images/pipeline-steps-5.png[step 1, 75%]
 
 
 [.notes]

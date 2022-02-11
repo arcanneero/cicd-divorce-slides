@@ -1,0 +1,16 @@
+= Nos deux tourtereaux
+:includedir: ../partials
+
+[NOTE.speaker]
+====
+include::{includedir}/1.adoc[lines=ranges]
+
+ Autre choses en plus !
+====
+
+== CI
+
+[NOTE.speaker]
+====
+include::{includedir}/1.1.adoc[]
+====

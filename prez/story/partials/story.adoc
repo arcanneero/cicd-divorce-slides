@@ -1,6 +1,10 @@
 = CI/CD le divorce est-il prononcé ?
 :toc:
 
+<<<
+
+# tag::intro[]
+
 Ca fait quelques années que nous travaillons sur des projets IT,
 et globalement on s'est toujours retrouvé, plus ou moins volontairement,
 à automatiser des taches de construction, ou de déploiements
@@ -12,6 +16,10 @@ Et depuis beaucoup moins longtemps,
 on a inventé des métiers et décrit des concepts qui correspondent plus ou moins à notre quotidien.
 
 Donc de petit couple, ca fait un petit paquet d'année qu'on le fréquente...
+
+# end::intro[]
+
+<<<
 
 == Nos deux tourtereaux
 
@@ -79,6 +87,8 @@ Yann, développeur back, originellement PHP, etc...
 Nicolas, également développeur back, mais plutôt tourné vers le Java, etc...
 
 Nous vous embarquons avec nous pour vous raconter la suite...
+
+<<<
 
 == Les petits pipelines
 
@@ -183,6 +193,8 @@ Mais nous, développeurs, avons quelques techniques pour cela.
 Le concept de séparation des responsabilités (separation of concerns) va nous permettre de découper notre processus en plusieurs briques.
 Et il y e à même de fortes chances que certaine soient dans le périmètre de CI, et d'autre dans celui de CD
 
+<<<
+
 == L'élément perturbateur
 
 Les années ont passé, une forme d'habitude s'était installée, chacun dans une forme de zone de confort.
@@ -219,6 +231,8 @@ les risques d'échecs sont nombreux.
 CI et ses commit WIP à n'en plus finir, et CD qui suffixait tout en .old _au cas où_ ...
 
 Les habitudes avaient la vie dure, il fallait agir !
+
+<<<
 
 == La thérapie
 
@@ -291,7 +305,7 @@ et continuer de profiter de l'automatisation pour les actions suivantes !!!!
 
 Et voila comment CI et CD, riche de leurs qualités, peuvent former un couple SOLID !
 
-==== Le lâcher prise
+=== Le lâcher prise
 
 Si on reprend ce qu'on vous a dit précédemment, malgré nos différences, nous avons de vraies convergences,
 et surtout une grande complémentarité entre ces deux là !
@@ -317,6 +331,8 @@ plus que d'échanges physiques (ce n'est pas à la mode ne plus...) !
 On vous l'a dit, il y a une complexité dont on ne peut pas se passer, la complexité essentielle,
 ou qu'on ne peut réduire au départ, celle qui est, au moins au départ, obligatoire...
 Mais si on peut éviter d'ajouter de la complexité accidentelle, nous y seront tous gagnant !
+
+<<<
 
 == Un plan à trois
 
@@ -357,6 +373,8 @@ Et on remarque que dans de nombreuses structures, les difficultés de compréhen
 soit entre la réalisation et l'équipe dite DevOps, soit entre cette dernière et les ops.
 
 Bref, ajouter un concept n'a jamais fluidifié les échanges et un médiateur n'a pas systématiquement le même impact sur tous les couples !
+
+<<<
 
 == C'est l'heure du choix...
 
