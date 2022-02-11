@@ -1,7 +1,13 @@
 = CI/CD : La rencontre !
 
+[NOTE.speaker]
+====
+//TODO: Trouver une Transition
+====
+
 == Cycle de vie d'une application
 
+//FIXME: Schéma en Franglais
 image::./images/cicd-pipeline.png[]
 
 [NOTE.speaker]

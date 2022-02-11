@@ -1,0 +1,60 @@
+= L'élément perturbateur
+:includedir: ../partials
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=all-as-code]
+====
+
+== Tous l'admiraient
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=all-as-code-everything]
+====
+
+== Gestion des sources
+
+[source,bash]
+----
+.eslintrc
+.jenkins/
+.terraform/
+.docker/
+docs/
+Jenkinsfile
+sonar-project.properties
+package.json
+Dockerfile
+...
+----
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=all-as-code-result]
+
+=> Même en suivant les 12 factors
+====
+
+== C'est le bordel
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=all-as-code-mess]
+====
+
+== Fusionner les deux process
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=all-as-code-end]
+====
+
+[.transition]
+== !
+
+[NOTE.speaker]
+====
+Il est temps ...
+====
+

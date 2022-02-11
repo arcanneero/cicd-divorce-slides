@@ -1,0 +1,104 @@
+= La thérapie de couple
+:includedir: ../partials
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=therapie]
+====
+
+== DRY...
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=dry]
+====
+
+== ...mais pas trop !
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=dry-do]
+====
+
+== Un couple SOLID ?
+
+[NOTE.speaker]
+====
+On peut se poser la question ...
+====
+
+== Une responsabilité unique
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=solid-s]
+====
+
+== Rester ouvert...
+
+Mais pas trop !
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=solid-o]
+====
+
+== Liskov à la rescousse...
+
+...ou pas !
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=solid-l]
+====
+
+== Spécialisation
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=solid-i]
+====
+
+== Une inversion de contrôle ?
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=solid-d]
+====
+
+== Un peu de lacher prise ?
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=lacher]
+====
+
+== Pouvoir debrayer !
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=debrayage]
+====
+
+== Le monde des Bisounours
+
+KISS
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=kiss]
+====
+
+== Oups ...
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=accidentelle]
+====
+
+[.transition]
+== !
+
+[NOTE.speaker]
+====
+====

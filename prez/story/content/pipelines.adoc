@@ -1,0 +1,129 @@
+= Les petits pipelines
+:includedir: ../partials
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipelines]
+====
+
+== La définition d'un pipeline
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=theories-dessins]
+====
+
+== C'est un dessin...
+
+image::flowchart-draw.png[Dessin, 60%]
+
+[NOTE.speaker]
+====
+====
+
+== ... Et des personnes
+
+image::pipeline-people.png[Personnes, 80%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=theories-atelier]
+====
+
+== Dis, comment on fait des pipelines ?
+
+== !
+
+image::pipeline-steps-1.png[step 1, 75%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-objectifs]
+====
+
+== !
+
+image::pipeline-steps-2.png[step 1, 75%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-process]
+====
+
+== !
+
+image::pipeline-steps-3.png[step 1, 75%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-steps]
+====
+
+== !
+
+image::pipeline-steps-4.png[step 1, 75%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-feedback]
+====
+
+
+== !
+
+image::pipeline-steps-5.png[step 1, 75%]
+
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-auto]
+====
+
+== !
+
+image::pipeline-steps-6.png[step 1, 75%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-outils]
+====
+
+== Attention
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-outils-warn]
+====
+
+== !
+
+image::pipeline-steps-7.png[step 1, 75%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-implem]
+====
+
+== Et voilà !
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=responsability-start]
+====
+
+== !
+
+include::{includedir}/story.adoc[tag=responsability-citation]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=responsability-complexe]
+====
+
+
+[.transition]
+== !
+
+[NOTE.speaker]
+====
+====

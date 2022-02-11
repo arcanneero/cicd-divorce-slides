@@ -1,0 +1,49 @@
+= Un plan à trois
+:includedir: ../partials
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=a-trois]
+====
+
+== L'arivée...
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=devops]
+====
+
+== La boucle DevOps
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=infinite]
+====
+
+== L'émergence
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=team]
+====
+
+== Une question de communication
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=communication]
+====
+
+== Bref...
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=mediateur]
+====
+
+[.transition]
+== !
+
+[NOTE.speaker]
+====
+====

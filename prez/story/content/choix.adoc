@@ -1,0 +1,58 @@
+= C'est l'heure du choix
+:includedir: ../partials
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=choice]
+
+On va vous proposer trois possibilités qui ne sont pas exhaustives !
+====
+
+== Séparation ?
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=separation-ci]
+====
+
+== Séparation ?
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=separation-cd]
+====
+
+== Médiation ?
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=mediation]
+====
+
+== Et pourquoi pas...
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=transverse]
+====
+
+== Union ?
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=union]
+====
+
+== Aller plus loin ...
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=craft]
+====
+
+[.transition]
+== !
+
+[NOTE.speaker]
+====
+====
