@@ -3,14 +3,105 @@
 
 [NOTE.speaker]
 ====
-include::{includedir}/1.adoc[lines=ranges]
-
- Autre choses en plus !
+include::{includedir}/story.adoc[tag=tourtereaux]
 ====
 
 == CI
 
 [NOTE.speaker]
 ====
-include::{includedir}/1.1.adoc[]
+include::{includedir}/story.adoc[tag=ci-start]
+====
+
+== Continious Build
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=ci-build]
+====
+
+== Continious Integration
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=ci-integration]
+====
+
+== Bref...
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=ci-end]
+====
+
+== CD
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=cd-start]
+====
+
+== Delivery
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=cd-delivery]
+====
+
+== Deployment
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=cd-deployment]
+====
+
+== Development
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=cd-development]
+====
+
+
+== Bref...
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=cd-end]
+====
+
+== La rencontre...
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=rencontre-start]
+====
+
+== Un avenir tout tracé !
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=rencontre-ensemble]
+====
+
+== Yann
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=yann]
+====
+
+== Nicolas
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=nico]
+====
+
+[.transition]
+== !
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=rencontre-end]
 ====

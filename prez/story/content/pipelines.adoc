@@ -1,0 +1,130 @@
+= Les petits pipelines
+:includedir: ../partials
+:imagesdir: ./images
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipelines]
+====
+
+== La définition d'un pipeline
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=theories-dessins]
+====
+
+== C'est un dessin...
+
+image::{imagesdir}/flowchart-draw.png[]
+
+[NOTE.speaker]
+====
+====
+
+== ... Et des personnes
+
+image::{imagesdir}/pipeline-people.png[]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=theories-atelier]
+====
+
+== Dis, comment on fait des pipelines ?
+
+== !
+
+image::{imagesdir}/pipeline-steps-1.png[step 1, 75%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-objectifs]
+====
+
+== !
+
+image::{imagesdir}/pipeline-steps-2.png[step 1, 75%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-process]
+====
+
+== !
+
+image::{imagesdir}/pipeline-steps-3.png[step 1, 75%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-steps]
+====
+
+== !
+
+image::{imagesdir}/pipeline-steps-4.png[step 1, 75%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-feedback]
+====
+
+
+== !
+
+image::{imagesdir}/pipeline-steps-5.png[step 1, 75%]
+
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-auto]
+====
+
+== !
+
+image::{imagesdir}/pipeline-steps-6.png[step 1, 75%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-outils]
+====
+
+== Attention
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-outils-warn]
+====
+
+== !
+
+image::{imagesdir}/pipeline-steps-7.png[step 1, 75%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=pipeline-implem]
+====
+
+== Et voilà !
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=responsability-start]
+====
+
+== !
+
+include::{includedir}/story.adoc[tag=responsability-citation]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=responsability-complexe]
+====
+
+
+[.transition]
+== !
+
+[NOTE.speaker]
+====
+====

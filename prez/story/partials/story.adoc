@@ -2,9 +2,7 @@
 :toc:
 
 <<<
-
-# tag::intro[]
-
+// tag::intro[]
 Ca fait quelques années que nous travaillons sur des projets IT,
 et globalement on s'est toujours retrouvé, plus ou moins volontairement,
 à automatiser des taches de construction, ou de déploiements
@@ -16,88 +14,127 @@ Et depuis beaucoup moins longtemps,
 on a inventé des métiers et décrit des concepts qui correspondent plus ou moins à notre quotidien.
 
 Donc de petit couple, ca fait un petit paquet d'année qu'on le fréquente...
-
-# end::intro[]
-
+// end::intro[]
 <<<
 
 == Nos deux tourtereaux
 
+// tag::tourtereaux[]
 Et comme nous avons pas mal d'annecdotes,
 nous allons nous permettre de revenir un peu sur leurs histoires, leurs raisons d'être...
 
 Et bien sur on se permettra quelques incursions dans leur intimité !
+// end::tourtereaux[]
 
 === CI
 
+// tag::ci[]
+// tag::ci-start[]
 Au commencement, il y avait du code, un peu partout.
 Sur nos postes, dans des dépôts plus ou moins centralisés, ou encore ailleurs.
 Les projets se sont structurés, les librairies sont apparues et les gestionnaires de dépendances sont arrivées...
+// end::ci-start[]
 
+// tag::ci-build[]
 Notre code est devenu dépendant de code tiers et il devenait indispensable de les agréger,
 voir dans certains cas, les compiler.
 Et à chaque modification, nous avons eu besoin de savoir si tout fonctionnait ensemble...
 
 Le continious build n'était que la première étape...
 Depuis le code, on construisait, on compilait, on assemblait, bref... On fabrique un binaire !
+// end::ci-build[]
 
+// tag::ci-integration[]
 Mais en grandissant, de nouveaux attributs se sont ajoutés.
 Tests, standards syntaxiques, identification de faille, analyse de dépendances, le binaire s'est enrichie de métriques.
 
 De construction, la maturité l'a naturellement, conduit à intégration
 Et ces métriques, évoluant dans le temps, servent d'indicateur, voir de protections pour garder le contrôle...
+// end::ci-integration[]
 
+// tag::ci-end[]
 Bref, CI à évoluée, grandie, peut être même murie, mais tout ca de facon très autonome et sans avoir de réels impacts sur ce qui l'entourait...
 Sans doute son côté introvertie !!!
+// end::ci-end[]
+// end::ci[]
 
 === CD
 
+// tag::cd[]
+// tag::cd-start[]
 CD de son côté a eu une adolescence plus compliquée...
+// end::cd-start[]
 
+// tag::cd-delivery[]
 Il a toujours été clair pour lui que binaire isolé n'avait aucune valeur !
 Il les récupérait, les assemblait, les étiquetait, et les diffusait.
+// end::cd-delivery[]
 
+// tag::cd-deployment[]
 Mais rapidement délivrer ne suffisait pas, il fallait aller plus loin...
 Déployer : Cela devient sa nouvelle obsession, presque une drogue
 Mais les binaires venaient de plus en plus rapidement,
 et réagir à ces arrivées devenait une nécessité pour rendre ces fonctionnalités disponibles...
+// end::cd-deployment[]
 
+// tag::cd-development[]
 Mais attentions, quand on dit disponible, ce n'est pas pour jouer avec les applications !
 C'est bien pour rendre un service, que ces applications sont fabriquées,
 et elles n'ont de valeur que si elles servent à ceux à qui elles sont destinées !
+// end::cd-development[]
 
+// tag::cd-end[]
 Bref, CD clairement développé une forme de schizophrénie.
 Et délivrer, déployer, développer en continu pour rendre un service sont toujours ses trois obsessions !!!
+// end::cd-end[]
+// end::cd[]
 
 === La rencontre
 
+// tag::rencontre[]
+// tag::rencontre-start[]
 Et puis un jour, ils se sont rencontrés...
 Leur point commun, le produit, leur a vite sauté aux yeux, mais ils avaient clairement des visions différentes.
 Une différence, qui deviendra bientôt une complémentarité !
+// end::rencontre-start[]
 
+// tag::rencontre-ensemble[]
 Entre l'un qui passe sont temps à vérifier que chacune des briques fonctionnent les unes avec les autres,
 et l'autre qui ne pense qu'à emmener la valeur produit en production...
 
 Leur avenir semblait évident...
-
 Et c'est pour celà que nous sommes là aujourd'hui.
+// end::rencontre-ensemble[]
+
+// tag::yann[]
 //FIXME : Hitsoire de Yann
 Yann, développeur back, originellement PHP, etc...
+// end::yann[]
+
+// tag::nico[]
 //FIXME : Hitsoire de Nico
 Nicolas, également développeur back, mais plutôt tourné vers le Java, etc...
+// end::nico[]
 
+// tag::rencontre-end[]
 Nous vous embarquons avec nous pour vous raconter la suite...
+// end::rencontre-end[]
+// end::rencontre[]
 
 <<<
 
 == Les petits pipelines
 
+// tag::pipelines[]
 Sans succomber à la mode de la Hype (driven development), leur histoire est sommes toute assez conventionnelle !
 
 Ils ont eu des projets, se sont posé pleins de question lors de la réalisation et ont dû faire face à leurs premiers renoncements...
+// end::pipelines[]
 
 === Les grandes théories !
 
+// tag::theories[]
+// tag::theories-dessins[]
 Ils sont rapidement tombés d'accord sur certains points...
 Faire des pipelines oui, mais pas n'importe comment !
 
@@ -107,7 +144,9 @@ Et si vous êtes vieux, ou avec une culture d'informatique industrielle,  vous a
 
 Alors ils ont commencé à prendre des carnets, des crayons, tracer des esquisses.
 Conscient qu'ils n'avaient pas tous les éléments, ils ont demandé des avis, des conseils...
+// end::theories-dessins[]
 
+// tag::theories-atelier[]
 Bref, ils ont fini par convier tous les acteurs qui graviteront autour de ces pipelines !
 Une sorte  atelier où nn regroupe toutes les parties prenantes et ou on modélise les processus pour venir répondre aux contraintes de chacun.
 Et le plus dur pour nos tourteaux dans ce moment est sans aucun doute de ne pas parler d'outils, ou d'automatisation !
@@ -115,10 +154,12 @@ Et le plus dur pour nos tourteaux dans ce moment est sans aucun doute de ne pas 
 Si vous connaissez les ateliers d'event storming, appliqués au produit, on pourrait pratiquement les appliquer à nos pipeline.
 
 Il y a cependant un tas de questions qui vont se poser...
+// end::theories-atelier[]
+// end::theories[]
 
 === Dis, comment on fait des pipelines ?
 
-//1
+// tag::pipeline-objectifs[]
 Ca peut vous sembler évident, mais avant de se lancer, la première question qui se pose est *pourquoi ?*
 Bien évidement commencer par définir les objectifs est essentiel à la construction d'un projet commun.
 Mais les raisons d'être et contraintes des parties prenantes étant tellement différente, cette étape est indispensable.
@@ -127,32 +168,36 @@ Besoins spécifiques (perf/sécurité/qualité/accessibilité),
 complexité de la construction ou du déploiement (multiplatforme par example),
 règles imposé par le contexte (nommage, disponibilité, etc...),
 ou encore qui peut voir et faire quoi, ne sont que des examples !
+// end::pipeline-objectifs[]
 
-//2
+// tag::pipeline-process[]
 Ensuite, nos tourtereaux ne partent pas de rien ! Ils ont leur existant.
 Une analyse de leur processus (réalisation et déploiement) est donc une étape indispensable.
 
 Il sera peut-être nécessaire de normaliser ou de standardiser les réalisations,
 tout en prenant garde à ne pas révolutionner les processus !
 On ne fait pas des pipelines par contrainte, mais bien pour aider !!!
+// end::pipeline-process[]
 
-//3
+// tag::pipeline-steps[]
 Mais malgré toute leur bonne volonté, il n'en demeure pas moins qu'il y a forcément des étapes clés ou des cas particuliers.
 Pas la peine de les mettre sous le tapis, il faut les identifier !
 
 Est-ce qu'on ne peut déployer que tous les mois ? Ulcère assuré pour CD...
 Est-ce qu'on a des personnes clé pour des actions particulières ?
 Validation, déclenchement, action technique, droit d'accès ne sont que des example de question qui se sont posées !
+// end::pipeline-steps[]
 
-//4
+// tag::pipeline-feedback[]
 Sauf que pour pouvoir orchestrer tout cela, ils le savent : Ils vont avoir besoin de rétroactions (des feedbacks)
 Mais même ça, ce n'est pas trivial.
 
 Niveau de précision, rapidité et densité des retours, accès aux informations.
 Des questions qui peuvent sembler simple, mais nous le savons tous : faire simple, c'est compliqué !
 Et encore plus si on a déjà de l'outillage existant auquel il faut s'intégrer !
+// end::pipeline-feedback[]
 
-//5
+// tag::pipeline-auto[]
 Mais derrière cette idylle, les premiers conflits approchent...
 C'est à ce moment qu'on se rend compte que CI et CD ne sont pas *du tout* sur les mêmes enjeux,
 en particulier sur la phase de déploiement !
@@ -160,70 +205,95 @@ en particulier sur la phase de déploiement !
 Et surtout si on se trouve dans des structures organisationnelle dense (complexe),
 tout automatiser n'est pas toujours (voir rarement) la meilleure solution.
 Et ce sera l'occasion de définir des déclencheurs qui permettront d'enclencher les étapes suivantes... ou pas !
+// end::pipeline-auto[]
 
-//6
+// tag::pipeline-outils[]
 Patience, on approche du but, et surtout, on va parler des choses qu'on aime : les outils !
 C'est le moment... Un seul pour les gouverner tous ? Ou le meilleur pour chaque action ?
 
 Les débats d'experts sont très, voir trop, nombreux sur ce sujet, mais ils ont identifié certains consensus.
 Coté CI, il y a beaucoup de standards. On essai donc de s'y conforter au maximum en fonction de son écosystème (langage).
 Coté CD, c'est beaucoup plus dépendant des stacks (on premise, cloud, autre...), et des process choisis (fait par les dev, par les ops, etc...)
+// end::pipeline-outils[]
 
+// tag::pipeline-outils-warn[]
 Attention toutefois à ne pas choisir des outils de niche que personne ne maitrise.
 Vous pouvez perdre l'intéret de l'outil si vous ne trouver personne pour l'utiliser correctement !
+// end::pipeline-outils-warn[]
 
-//7
+// tag::pipeline-implem[]
 Et voila, nous y sommes, on va pouvoir fabriquer nos pipelines...
+// end::pipeline-implem[]
 
 === Chacun ses responsabilités
 
+// tag::responsability-start[]
 Ils se sont lancés...
 
 Malgré les nombreux échanges, la réflexion qui en a découlé, voir les frictions,
 ils ont quand même trouvé un terrain d'entente !
+// end::responsability-start[]
+
+// tag::responsability-complexe[]
 Ce qui est clair, c'est que dans la plupart des organisations,
 dessiner ou modéliser ce qui concerne CI/CD est au minimum complexe.
 Mais c'est généralement une fausse excuse pour ne pas s'y pencher sérieusement.
 
-Si _ce que l’on conçoit bien s’énonce clairement, et les mots pour le dire arrivent aisément_!footnote:nboileau[Nicolas Boileau],
-Il en va de même pour les dessins. Et si vous ne pouvez pas représenter le processus,
+Si
+// tag::responsability-citation[]
+_ce que l’on conçoit bien s’énonce clairement, et les mots pour le dire arrivent aisément_!footnote:nboileau[Nicolas Boileau]
+// end::responsability-citation[]
+,Il en va de même pour les dessins. Et si vous ne pouvez pas représenter le processus,
 il y a de grandes chances que vous ne puissiez pas l'appréhender !
+// end::responsability-complexe[]
 
+
+// tag::responsability-soc[]
 Mais nous, développeurs, avons quelques techniques pour cela.
 Le concept de séparation des responsabilités (separation of concerns) va nous permettre de découper notre processus en plusieurs briques.
 Et il y e à même de fortes chances que certaine soient dans le périmètre de CI, et d'autre dans celui de CD
+// end::responsability-soc[]
 
 <<<
 
 == L'élément perturbateur
 
+// tag::all-as-code[]
 Les années ont passé, une forme d'habitude s'était installée, chacun dans une forme de zone de confort.
 Tout le monde y trouvait plus ou moins son compte.
 
 Mais il est arrivé, venant perturber cet équilibre, ayant des impacts imprévus et un dénouement pour le moins inattendu,
+// end::all-as-code[]
 
 === Tous l'admiraient
 
+// tag::all-as-code-everything[]
 Il s'appelait Everything, Everything AsCode, et tout le monde l'admirait !
 
 CI, pour qui il avait toujours été à la base de tout, comprenait bien cet engouement.
 On pouvait le versionner, y faire de la relecture, améliorer la reproductibilité, voir même la maintenabilité.
 Pour CD, il y avait un côté plus exotique ! Partagé entre l'attirance l'autre et la crainte de l'inconnu.
 Une vague d'évolution, de changement, voir de révolution se profilait.
+// end::all-as-code-everything[]
 
 === Un résultat étrange
 
+// tag::all-as-code-result[]
 Les pipelines, la configuration des outils, l'infrastructure, les dépendances, et même la configuration des applications...
 Tout allait rejoindre le code si chèr à CI, et CD ne savait plus trop comment se positioner !
 
 Les discussions, pour ne pas dire les disputes, reprirent de plus belle...
 On se souvient avec tendresse de ces réunions de deux heures pour savoir si on devait mettre un point devant le nom d'un répertoire,
 sans être capable de nous mettre d'accord...
+// end::all-as-code-result[]
 
+// tag::all-as-code-mess[]
 Vue d'ici ca ressemble plus à un beau bordel qu'a une évolution paisible...
+// end::all-as-code-mess[]
 
 === Le début de la fin ?
 
+// tag::all-as-code-end[]
 ...Et c'est bien le cas !
 
 Quand on se retrouve à devoir fusionner deux processus qui ont des habitudes et des manière de travailler très différents,
@@ -231,11 +301,13 @@ les risques d'échecs sont nombreux.
 CI et ses commit WIP à n'en plus finir, et CD qui suffixait tout en .old _au cas où_ ...
 
 Les habitudes avaient la vie dure, il fallait agir !
+// tag::all-as-code-end[]
 
 <<<
 
 == La thérapie
 
+// tag::therapie[]
 Des deux cotés, leurs point forts ont fait leurs preuves.
 Dans la famille de CI, les Dev, aucunes actions n'est irréversible, et se planter est finalement le cas nominal !
 Et maintenir du code... Ah ça, ils savent faire !
@@ -246,9 +318,11 @@ Alors nous, à l'origine, nous sommes plutôt de la famille de CI...
 Et on va essayer de regarder comment certains principes peuvent venir en aide à la belle famille !
 
 Surtout si maintenant on peut coder !!!!
+// end::therapie[]
 
 === DRY mais pas trop !
 
+// tag::dry[]
 Une des premières que l'on nous apprend quand on dev, c'est de ne pas copier/coller de code !
 
 Il ne faut pas se répéter (Don't Repeat Yourself), factoriser votre code.
@@ -257,23 +331,27 @@ il n'en demeure pas moins que l'idée première est de limiter les impacts de ma
 
 Adapter à ces pipelines, cela veut dire qu'on peut factoriser un certain nombre d'actions,
 Afin d'apporter rapidement des automatisations à des processus à condition qu'ils répondent à certains standards.
+// end::dry[]
 
+// tag::dry-do[]
 Attention cependant à trop de factorisation...
 Si une amélioration apportée à une action factorisée profite à tous,
 une erreur dans une actions factoriser aura un impact beaucoup plus important...
 Et ca généralement CD, il n'aime pas...
+// end::dry-do[]
 
 === Un couple SOLID
 
-//S
+// tag::solid-s[]
 Nul doute que si la séparation des responsabilités à fait ses preuves dans les processus,
 le fait que chaque action ait une responsabilité unique est également un facteur de réussite !
 
 Appliqué aux pipelines, comprenez qu'un job, ne doit faire qu'une et une seule chose !
 Cela vous permettra d'avoir des éléments plus unitaires, plus simple à maintenir,
 plus répétable (si ca plante...), et surtout plus simple à insérer dans un processus !
+// end::solid-s[]
 
-//O
+// tag::solid-o[]
 Un des impacts de la factorisation, décrite précédemment,
 est que l'on va avoir tendance à rendre les actions figées pour tous
 Il est donc indispensable que des jobs factorisés puis contraindre ce qui est de sa responsabilité,
@@ -281,20 +359,23 @@ mais laisser libre ce qui relève de son intégration dans le processus
 
 Un job qui assure un build java standardiser les outils qu'il utilise (gradle, version de java).
 Mais il va permettre de configurer le lieu du dépot d'artefact ou son mode de gestion de version.
+// end::solid-o[]
 
-//L
+// tag::solid-l[]
 Le troisième principe applicable à la programmation objet ne l'est pas aux pipelines...
 On ne va même pas vous le décrire, il faut avoir conscience de ses limites !!!!!
+// end::solid-l[]
 
-//I
+// tag::solid-i[]
 La notion d'interface dans les pipelines est, elle aussi, difficile à identifier.
 Pour autant, la réflexion sous-jacente incitant à ce que des sous ensemble soient spécialisé sur une famille d'actions cohérentes est intéressante
 
 Si vous avez généralisé des jobs pour définir un processus complet, si vous voulez le réutiliser vous devrez vous conformer à l'ensemble !
 En revanche, si vous avez produit des groupes de jobs, un pour vos terraform, un pour votre lib python, un pour votre documentation,
 Vous pourrez selon les fonctions utiliser par vos projets, utiliser les groupes de jobs indépendamment des autres (ou presque).
+// tag::solid-i[]
 
-//D
+// tag::solid-d[]
 Quand en POO vous essayer de faire les choses pas trop mal et que vous tendez vers les clean architectures,
 les organisations hexagonales, vous êtes invité à préférer les dépendances aux interfaces (ou abstraction) plus qu'aux implémentations
 
@@ -302,46 +383,62 @@ Adapté à vos pipelines, cela signifie qu'autant que possible vous devez dépen
 et non de l'action précédente en elle-même.
 CEà va vous permettre, en sas de problème de réaliser manuellement l'action précédente
 et continuer de profiter de l'automatisation pour les actions suivantes !!!!
+// end::solid-d[]
 
+
+// tag::solid[]
 Et voila comment CI et CD, riche de leurs qualités, peuvent former un couple SOLID !
+// end::solid[]
 
 === Le lâcher prise
 
+// tag::lacher[]
 Si on reprend ce qu'on vous a dit précédemment, malgré nos différences, nous avons de vraies convergences,
 et surtout une grande complémentarité entre ces deux là !
 
 Si on reprend l'enchainement de nos phases qui emmène le code jusqu'en production on voit bien que chacun peut apporter sa pierre à l'édifice.
-Mais il y a une condition pour ca : Qu'un gran de sable ne vienne pas bloquer toute la chaine.
+Mais il y a une condition pour ca : Qu'un grain de sable ne vienne pas bloquer toute la chaine.
+// end::lacher[]
 
+
+// tag::debrayage[]
 Nous en avons un peu parlé sur le D de SOLID, mais la dépendance, aussi inévitable soit-elle, doit être réfléchie.
 Selon nous, l'une des clés de la réussite réside dans la présence régulière de point d'inférence qui sont bien matérialisé sur ce schéma.
 
 Ainsi chaque phase va à la fois être dépendant du résultat de la précédente, mais indépendant en terme d'action.
 Si vos pipelines répondent à ces principes vous gagnerez naturellement en lisibilité, et en maintenabilité,
 et vous aurez la possibilité de débrayer ou non le coté automatique de l'étape !
+// end::debrayage[]
 
 === C'est pas le monde des bisounours !
 
+// tag::kiss[]
 Mais quand même...
 Le lien la relation, les marques d'affection restent essentiel, alors pensons KISS s'il vous plait !
 
 Vous l'aurez compris, on parle ici de penser les choses plus simplement (Keep It Simple Stupid),
 plus que d'échanges physiques (ce n'est pas à la mode ne plus...) !
+// end::kiss[]
 
+// tag::accidentelle[]
 On vous l'a dit, il y a une complexité dont on ne peut pas se passer, la complexité essentielle,
 ou qu'on ne peut réduire au départ, celle qui est, au moins au départ, obligatoire...
 Mais si on peut éviter d'ajouter de la complexité accidentelle, nous y seront tous gagnant !
+// end::accidentelle[]
 
 <<<
 
 == Un plan à trois
 
+// tag::a-trois[]
 On vous a parlé de CI, issue de la famille Dev.
 De CD, dont les origines se trouvent plutôt dans la famille Ops...
 Mais relativement récemment nous avons constaté la présence d'un troisième larron : DevOps
+// end::a-trois[]
 
 === L'arrivé de devops
 
+// tag::devops[]
 Directement lié à la présence de tout, et peut être de n'importe quoi, dans le code,
 mais aussi de lié à la volonté de rapprocher deux mondes avec des enjeux très différents,
 de nouvelles tendances sont arrivées...
@@ -349,7 +446,10 @@ de nouvelles tendances sont arrivées...
 Là, évidemment, depuis le début, vous nous voyez arriver ...
 Nous vons avons présenté un processus relativement linéaire qui part du code,
 et qui arrive à un service disponible pour ses utilisateurs.
+// end::devops[]
 
+
+// tag::infinite[]
 Mais comment savoir ce qui se passe vraiment ?
 On conceptualise alors deux phases supplémentaires : Monitor et Plan.
 La première vis à mesurer ce qui se passe en production,
@@ -357,71 +457,92 @@ et à le reboucler vers les responsables métier pour qu'ils fassent évoluer le
 La seconde intègre au processus global la planification des modifications fermant la boucle et la rendant infinie !
 
 Intéressant d'un point de marketing non ?
+// tag::infinite[]
 
 === La communication au centre
 
+// tag::team[]
 Les difficultés que pose la culture dEvOps dans beaucoup de structure sont souvent
-le manque de compétences pour adosser des outils aux processus définis.
+le manque de compétences pour adosser des outils à des processus définis.
 
 Et assez naturellement ce qui va arriver est l'émergence d'une équipe DevOps
 entre les équipes de réalisation et les responsables infrastructure.
+// tag::team[]
 
+// tag::communication[]
 Et finalement au lieu de favoriser la communication entre deux entités,
 on en a inventé une troisième qu'on a mise au milieu.
 Une sorte de médiateur de couple, souvent issu de monde de dev, donc proche de CI.
 Et on remarque que dans de nombreuses structures, les difficultés de compréhensions demeurent,
 soit entre la réalisation et l'équipe dite DevOps, soit entre cette dernière et les ops.
+// end::communication[]
 
+// tag::mediateur[]
 Bref, ajouter un concept n'a jamais fluidifié les échanges et un médiateur n'a pas systématiquement le même impact sur tous les couples !
+// end::mediateur[]
 
 <<<
 
 == C'est l'heure du choix...
 
+// tag::choice[]
 Et c'est bien connu : Choisir c'est renoncer ! Mais renoncer à quoi ?
+// end::choice[]
 
 === Séparation ?
 
+// tag::separation-ci[]
 C'est un peu la facette _monde d'avant_ que l'on vous propose !
 
 Maintenir la responsabilité de la CI,
 et éventuellement du Delivery (production de package) à la main de la famille Dev.
 ELle possède ses propres outils, vie sa vie dans son coin sans embêter personne (ou presque).
+// end::separation-ci[]
 
+// tag::separation-cd[]
 CD lui conserve la responsabilité des mises en services quelques soit les envrionnements.
 La famille Ops peut imposer certaines règles qui ne seront généralement pas comprise par Dev...
 
 Mais finalement, est-ce que dans des organisations très (trop) structurée ça ne fonctionne pas bien comme ça ?
 Même si ce n'est pas notre point de vue,
 il vaut peut-être mieux ce type d'organisation qui fonctionnent que d'autre qui partent dans le mur...
+// end::separation-cd[]
 
 === Médiation ?
 
+// tag::mediation[]
 Cette option-là est un vrai choix stratégique !
 
 On s'autorise à ajouter de l'entropie à l'organisation pour permettre aux services ou aux produits,
 qui le veulent ou le peuvent, d'intégrer une structure technique tendant vers le Continious Developpement,
 voir le DevOps selon les stacks en jeu !
+// end::mediation[]
 
+
+// tag::transverse[]
 En un sens, une très bonne _équipe DevOps_ (comprendre une équipe de médiation technique qui propose des services _It for IT_ et évangélise sur ces outils)
 peut être une pierre angulaire à la transformation d'un SI.
 
 En effets si elle propose sans imposer, qu'elle critique sans discréditer,
 ou simplement qu'elle accompagne la prise en main des outils, voir la montée en compétences des équipiers,
 elle peut avoir une vraie valeur dans la chaine CI/CD.
+// end::transverse[]
 
 === Union ?
 
+// tag::union[]
 C'est sans aucuns doutes notre choix du cœur...
 
 On peut reconnaitre en revanche que c'est sans doute la plus délicate à mettre en oeuvre.
 Les compétences de l'ensemble de votre équipe (pas de vous seul hein : soyez conscient de vos limites)
 et l'état d'esprit nécessaire pour que tout ce petit monde travaille ensemble n'est pas facile à obtenir.
+// end::union[]
 
+// tag::craft[]
 Mais pour celles et ceux qui ont un brin l'esprit _crafters_, pouvoir prendre en considération les problématiques métier d'un côté,
 les enjeux organisationnels tout au long de la chaine et les contraintes de production (perfs, sécu, etc...)
 est une grande source de motivation et de satisfaction sur le long terme !
 
 Alors ça ne vous garantie pas de meilleurs produits ou une mise en service plus rapide (quoi que...),
 mais ça devrait grandement améliorer la fluidité des réalisations, et l'empathie générale des uns envers les autres dans votre organisation.
-
+// end::craft[]

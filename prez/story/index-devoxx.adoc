@@ -11,6 +11,7 @@
 :customcss: {runtimePrezDir}style-devoxx.css
 :includedir: partials
 :contentdir: content
+:imagesdir: ./images
 
 [NOTE.speaker]
 ====
@@ -19,7 +20,18 @@ include::{includedir}/story.adoc[tag=intro]
 
 include::{contentdir}/tourtereaux.adoc[leveloffset=+1]
 
+include::{contentdir}/pipelines.adoc[leveloffset=+1]
 
+include::{contentdir}/perturbateur.adoc[leveloffset=+1]
+
+include::{contentdir}/therapie.adoc[leveloffset=+1]
+
+include::{contentdir}/plan-a-trois.adoc[leveloffset=+1]
+
+include::{contentdir}/choix.adoc[leveloffset=+1]
+
+[.end]
+== A vous de jouer !
 
 [NOTE.speaker]
 ====
