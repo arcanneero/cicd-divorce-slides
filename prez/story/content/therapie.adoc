@@ -43,7 +43,7 @@ Mais pas trop !
 include::{includedir}/story.adoc[tag=solid-o]
 ====
 
-== Linkov à la rescousse...
+== Liskov à la rescousse...
 
 ...ou pas !
 

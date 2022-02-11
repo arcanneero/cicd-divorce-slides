@@ -457,7 +457,7 @@ et à le reboucler vers les responsables métier pour qu'ils fassent évoluer le
 La seconde intègre au processus global la planification des modifications fermant la boucle et la rendant infinie !
 
 Intéressant d'un point de marketing non ?
-// tag::infinite[]
+// end::infinite[]
 
 === La communication au centre
 
@@ -467,7 +467,7 @@ le manque de compétences pour adosser des outils à des processus définis.
 
 Et assez naturellement ce qui va arriver est l'émergence d'une équipe DevOps
 entre les équipes de réalisation et les responsables infrastructure.
-// tag::team[]
+// end::team[]
 
 // tag::communication[]
 Et finalement au lieu de favoriser la communication entre deux entités,
@@ -529,6 +529,10 @@ elle peut avoir une vraie valeur dans la chaine CI/CD.
 // end::transverse[]
 
 === Union ?
+
+// FIXME : Ce qu'on aimerait tous atteindre
+// Manque de maturité de l'organisation (équipe, ou entreprise) ? Accompagnement ?
+// Equipe devops n'est plus nécessaire au bon fonctionnement (Redistribution ou redéploiement sur d'autres problématiques)
 
 // tag::union[]
 C'est sans aucuns doutes notre choix du cœur...

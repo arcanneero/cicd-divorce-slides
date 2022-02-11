@@ -1,6 +1,5 @@
 = Les petits pipelines
 :includedir: ../partials
-:imagesdir: ./images
 
 [NOTE.speaker]
 ====
@@ -16,7 +15,7 @@ include::{includedir}/story.adoc[tag=theories-dessins]
 
 == C'est un dessin...
 
-image::{imagesdir}/flowchart-draw.png[]
+image::flowchart-draw.png[Dessin, 60%]
 
 [NOTE.speaker]
 ====
@@ -24,7 +23,7 @@ image::{imagesdir}/flowchart-draw.png[]
 
 == ... Et des personnes
 
-image::{imagesdir}/pipeline-people.png[]
+image::pipeline-people.png[Personnes, 80%]
 
 [NOTE.speaker]
 ====
@@ -35,7 +34,7 @@ include::{includedir}/story.adoc[tag=theories-atelier]
 
 == !
 
-image::{imagesdir}/pipeline-steps-1.png[step 1, 75%]
+image::pipeline-steps-1.png[step 1, 75%]
 
 [NOTE.speaker]
 ====
@@ -44,7 +43,7 @@ include::{includedir}/story.adoc[tag=pipeline-objectifs]
 
 == !
 
-image::{imagesdir}/pipeline-steps-2.png[step 1, 75%]
+image::pipeline-steps-2.png[step 1, 75%]
 
 [NOTE.speaker]
 ====
@@ -53,7 +52,7 @@ include::{includedir}/story.adoc[tag=pipeline-process]
 
 == !
 
-image::{imagesdir}/pipeline-steps-3.png[step 1, 75%]
+image::pipeline-steps-3.png[step 1, 75%]
 
 [NOTE.speaker]
 ====
@@ -62,7 +61,7 @@ include::{includedir}/story.adoc[tag=pipeline-steps]
 
 == !
 
-image::{imagesdir}/pipeline-steps-4.png[step 1, 75%]
+image::pipeline-steps-4.png[step 1, 75%]
 
 [NOTE.speaker]
 ====
@@ -72,7 +71,7 @@ include::{includedir}/story.adoc[tag=pipeline-feedback]
 
 == !
 
-image::{imagesdir}/pipeline-steps-5.png[step 1, 75%]
+image::pipeline-steps-5.png[step 1, 75%]
 
 
 [NOTE.speaker]
@@ -82,7 +81,7 @@ include::{includedir}/story.adoc[tag=pipeline-auto]
 
 == !
 
-image::{imagesdir}/pipeline-steps-6.png[step 1, 75%]
+image::pipeline-steps-6.png[step 1, 75%]
 
 [NOTE.speaker]
 ====
@@ -98,7 +97,7 @@ include::{includedir}/story.adoc[tag=pipeline-outils-warn]
 
 == !
 
-image::{imagesdir}/pipeline-steps-7.png[step 1, 75%]
+image::pipeline-steps-7.png[step 1, 75%]
 
 [NOTE.speaker]
 ====

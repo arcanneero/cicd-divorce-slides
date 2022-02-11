@@ -15,12 +15,16 @@ include::{includedir}/story.adoc[tag=ci-start]
 
 == Continious Build
 
+image::../images/cicd-cicd.build.png[]
+
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=ci-build]
 ====
 
 == Continious Integration
+
+image::../images/cicd-cicd.integration.png[]
 
 [NOTE.speaker]
 ====
@@ -43,6 +47,8 @@ include::{includedir}/story.adoc[tag=cd-start]
 
 == Delivery
 
+image::../images/cicd-cicd.delivery.png[]
+
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=cd-delivery]
@@ -50,12 +56,16 @@ include::{includedir}/story.adoc[tag=cd-delivery]
 
 == Deployment
 
+image::../images/cicd-cicd.deployment.png[]
+
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=cd-deployment]
 ====
 
 == Development
+
+image::../images/cicd-cicd.development.png[]
 
 [NOTE.speaker]
 ====
@@ -72,12 +82,16 @@ include::{includedir}/story.adoc[tag=cd-end]
 
 == La rencontre...
 
+image::../images/cicd-cicd-split.png[]
+
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=rencontre-start]
 ====
 
 == Un avenir tout tracé !
+
+image::../images/cicd-cicd.png[]
 
 [NOTE.speaker]
 ====
