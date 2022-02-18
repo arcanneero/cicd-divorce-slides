@@ -28,6 +28,10 @@ On veut juste revenir sur deux petits tips
 ====
 * Ne reconstruisez pas vos binaires dans les phases suivantes
 * Gestion des dépendances potentiellement risquée (suivant les technos)
+* Le respect de quelques règles parmi 12 factors, vous aidera:
+** One codebase tracked in revision control, many deploys
+** Store config in the environment
+** Keep development, staging, and production as similar as possible
 ====
 
 [.tips]
@@ -38,7 +42,6 @@ On veut juste revenir sur deux petits tips
 Jouer autant que possible vos tests sur le résultat du merge,
 et non pas sur la branche !
 ====
-
 
 [.tips]
 == Travaux en autonomie
@@ -71,3 +74,7 @@ etc ..
 == CD
 
 Ce n'est plus "que de la technique".
+
+== Les dommages collatéraux
+
+image
