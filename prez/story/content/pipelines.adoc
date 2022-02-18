@@ -93,13 +93,17 @@ image::pipeline-steps-6.png[step 1, 75%]
 include::{includedir}/story.adoc[tag=pipeline-outils]
 ====
 
-== Attention
+[transition=none]
+== !
+
+image::pipeline-steps-6-warning.png[step 1, 75%]
 
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=pipeline-outils-warn]
 ====
 
+[transition=none]
 == !
 
 image::pipeline-steps-7.png[step 1, 75%]
