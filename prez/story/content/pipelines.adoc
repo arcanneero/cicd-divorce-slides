@@ -115,6 +115,8 @@ include::{includedir}/story.adoc[tag=pipeline-implem]
 
 == Et voilà !
 
+image::faire-part.png[step 1, 75%]
+
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=responsability-start]
