@@ -1,5 +1,6 @@
 = La thérapie de couple
 :includedir: ../partials
+:figure-caption!:
 
 [NOTE.speaker]
 ====
@@ -7,6 +8,29 @@ include::{includedir}/story.adoc[tag=therapie]
 ====
 
 == DRY...
+
+[source,yaml]
+----
+.deliver:
+  variables:
+    DELIVER_TASK: ''
+  script:
+    - ./is_it_friday.sh
+    - $DELIVER_TASK
+    - ./alert_ops_team.sh
+    - ./send_an_email_to_PO.sh
+
+deliver_npm_package:
+  extends: .deliver
+  variables:
+    DELIVER_TASK: npm publish
+    etc.
+
+deliver_app:
+  extends: .deliver
+  variables:
+    DELIVER_TASK: ftp -u myapp.tar.gz
+----
 
 [NOTE.speaker]
 ====
@@ -29,6 +53,29 @@ On peut se poser la question ...
 
 == Une responsabilité unique
 
+[source,yaml]
+----
+analyse_code:
+  script:
+    - if [ -n $IS_PHP_PROJECT]; then vendor/bin/phpcs src; fi
+    - if [ -f Dockerfile ]; hadolint Dockerfile; fi
+    - sonar-scanner ...
+
+# VS
+
+php_lint:
+  script:
+    - vendor/bin/phpcs src
+
+hadolint:
+  script:
+    - hadolint Dockerfile
+
+sonar_analysis:
+  script:
+    - sonar-scanner ...
+----
+
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=solid-s]
@@ -38,12 +85,46 @@ include::{includedir}/story.adoc[tag=solid-s]
 
 Mais pas trop !
 
+[source,yaml]
+----
+.sonar:
+  variables:
+    PROJECT_KEY: ''
+  script:
+    - |
+        sonar-scanner -Dsonar.projectKey=$PROJECT_KEY
+        -Dsonar.sources=./src
+        -Dsonar.tests=tests/
+
+# VS
+
+.sonar:
+  variables:
+    PROJECT_KEY: ''
+  script:
+    - sonar-scanner -Dsonar.projectKey=$PROJECT_KEY -Dproject.settings=./sonar-project.properties
+
+# OU
+
+.sonar:
+  variables:
+    PROJECT_KEY: ''
+    SONAR_EXTRA_PARAMETERS: ''
+  script:
+    - sonar-scanner -Dsonar.projectKey=$PROJECT_KEY $SONAR_EXTRA_PARAMETERS
+
+
+----
+
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=solid-o]
 ====
 
 == Liskov à la rescousse...
+
+.Barbara Liskov
+image::../images/barbara_liskov.png["Barbara Liskov", 75%]
 
 ...ou pas !
 
