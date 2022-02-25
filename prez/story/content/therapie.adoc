@@ -53,9 +53,102 @@ On peut se poser la question ...
 
 == Une responsabilité unique
 
+[cols="1,1",grid=none]
+|===
+a|[source,yaml]
+----
+deploy:
+  script:
+    - ./deploy_doc.sh
+    - ./deploy_app.sh
+    - ./deploy_db.sh
+
+
+----
+|
+image:../images/solid/single-respo-bad.png[]
+2+^|VS
+a|[source,yaml]
+----
+deploy_doc:
+  ...
+
+deploy_app:
+  ...
+
+deploy_db:
+  ...
+----
+
+|
+image:../images/solid/single-respo-good.png[]
+|===
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=solid-s]
+====
+
+== Rester ouvert...
+
+Mais pas trop !
+
+[grid=none]
+|===
+2+a|[source,yaml]
+----
+# L'ajout d'information demande une modification du job
+.bad-sonar:
+  variables:
+    PROJECT_KEY: ''
+  script:
+    - \|
+        sonar-scanner -Dsonar.projectKey=$PROJECT_KEY
+        -Dsonar.sources=./src
+        -Dsonar.tests=tests/
+----
+
+|
+image:../images/solid/open-closed-bad.png[]
+2+^|VS
+2+a|[source,yaml]
+----
+# On peut étendre via le sonar-project.properties
+# ou les extraparameters
+.good-sonar:
+  variables:
+    PROJECT_KEY: ''
+    SONAR_EXTRA_PARAMETERS: ''
+  script:
+    - sonar-scanner -Dsonar.projectKey=$PROJECT_KEY \
+      -Dproject.settings=./sonar-project.properties \
+      $SONAR_EXTRA_PARAMETERS
+----
+|
+image:../images/solid/open-closed-good.png[]
+|===
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=solid-o]
+====
+
+== Liskov à la rescousse...
+
+.Barbara Liskov
+image::../images/barbara_liskov.png["Barbara Liskov", 75%]
+
+...ou pas !
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=solid-l]
+====
+
+== Spécialisation
+
 [source,yaml]
 ----
-analyse_code:
+analyse_code: # Le truc fait toutes les analyses
   script:
     - if [ -n $IS_PHP_PROJECT]; then vendor/bin/phpcs src; fi
     - if [ -f Dockerfile ]; hadolint Dockerfile; fi
@@ -78,69 +171,31 @@ sonar_analysis:
 
 [NOTE.speaker]
 ====
-include::{includedir}/story.adoc[tag=solid-s]
-====
-
-== Rester ouvert...
-
-Mais pas trop !
-
-[source,yaml]
-----
-.sonar:
-  variables:
-    PROJECT_KEY: ''
-  script:
-    - |
-        sonar-scanner -Dsonar.projectKey=$PROJECT_KEY
-        -Dsonar.sources=./src
-        -Dsonar.tests=tests/
-
-# VS
-
-.sonar:
-  variables:
-    PROJECT_KEY: ''
-  script:
-    - sonar-scanner -Dsonar.projectKey=$PROJECT_KEY -Dproject.settings=./sonar-project.properties
-
-# OU
-
-.sonar:
-  variables:
-    PROJECT_KEY: ''
-    SONAR_EXTRA_PARAMETERS: ''
-  script:
-    - sonar-scanner -Dsonar.projectKey=$PROJECT_KEY $SONAR_EXTRA_PARAMETERS
-
-
-----
-
-[NOTE.speaker]
-====
-include::{includedir}/story.adoc[tag=solid-o]
-====
-
-== Liskov à la rescousse...
-
-.Barbara Liskov
-image::../images/barbara_liskov.png["Barbara Liskov", 75%]
-
-...ou pas !
-
-[NOTE.speaker]
-====
-include::{includedir}/story.adoc[tag=solid-l]
-====
-
-== Spécialisation
-
-[NOTE.speaker]
-====
 include::{includedir}/story.adoc[tag=solid-i]
 ====
 
 == Une inversion de contrôle ?
+
+[source,yaml]
+----
+deliver:
+  script: ./push_artefact_to_repo.sh
+
+deploy: # Attend que l'étape de livraison soit ok
+  needs: [deliver]
+  script: ./deploy.sh
+
+# VS
+deliver: # Doit déposer l'artefact au bon endroit
+  script: ./push_artefact_to_repo.sh
+
+check_artefact_readiness: # Vérifie que l'artefact soit bien présent
+  script: ./check_artefact.sh
+
+deploy: # Vérifie que l'artefact soit bien présent
+  needs: [check_artefact_readiness]
+  script: ./deploy.sh
+----
 
 [NOTE.speaker]
 ====
@@ -155,6 +210,38 @@ include::{includedir}/story.adoc[tag=lacher]
 ====
 
 == Pouvoir debrayer !
+
+[source,json]
+.Jenkinsfile.build
+----
+{
+  ...,
+  stage ('deliver') {
+    build '../proj-deliver/master'
+  }
+}
+----
+
+[source,json]
+.Jenkinsfile.deliver
+----
+{
+  stage('check requirements') {}
+  ...,
+  stage ('deploy') {
+    build '../proj-deliver/master'
+  }
+}
+----
+
+[source,json]
+.Jenkinsfile.deploy
+----
+{
+  stage('check requirements') {}
+  ...,
+}
+----
 
 [NOTE.speaker]
 ====
