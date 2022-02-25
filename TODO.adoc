@@ -4,7 +4,6 @@
 - Mettre une page de ref.
 - Revoir le style des references
 
-
 Idée de représentation :
 
 - CI : Eclair => automatisation
