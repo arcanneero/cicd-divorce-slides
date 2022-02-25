@@ -373,7 +373,7 @@ Pour autant, la réflexion sous-jacente incitant à ce que des sous ensemble soi
 Si vous avez généralisé des jobs pour définir un processus complet, si vous voulez le réutiliser vous devrez vous conformer à l'ensemble !
 En revanche, si vous avez produit des groupes de jobs, un pour vos terraform, un pour votre lib python, un pour votre documentation,
 Vous pourrez selon les fonctions utiliser par vos projets, utiliser les groupes de jobs indépendamment des autres (ou presque).
-// tag::solid-i[]
+// end::solid-i[]
 
 // tag::solid-d[]
 Quand en POO vous essayer de faire les choses pas trop mal et que vous tendez vers les clean architectures,
