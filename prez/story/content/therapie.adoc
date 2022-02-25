@@ -7,8 +7,18 @@
 include::{includedir}/story.adoc[tag=therapie]
 ====
 
-== DRY...
+== DRY ...
 
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=dry]
+====
+
+== Exemple
+
+[cols=2]
+|===
+a|
 [source,yaml]
 ----
 .deliver:
@@ -24,17 +34,38 @@ deliver_npm_package:
   extends: .deliver
   variables:
     DELIVER_TASK: npm publish
-    etc.
 
 deliver_app:
   extends: .deliver
   variables:
     DELIVER_TASK: ftp -u myapp.tar.gz
 ----
+a|
+[source,yaml]
+----
+.deliver:
+  variables:
+    DELIVER_TASK: ''
+  before_script:
+    - ./is_it_friday.sh
+  after_script:
+    - ./alert_ops_team.sh
+    - ./send_an_email_to_PO.sh
 
+deliver_npm_package:
+  extends: .deliver
+  script:
+    - npm publish
+
+deliver_app:
+  extends: .deliver
+  script:
+    - ftp -u myapp.tar.gz
+----
+|===
 [NOTE.speaker]
 ====
-include::{includedir}/story.adoc[tag=dry]
+Dans les exemples présents, on va tout simplement 2 manières d'utiliser les templates gitlab pour factoriser les actions à faire avant et après le déploiement. Avec Jenkins, on pourrait définir des méthodes en groovy permettant de faire la même chose.
 ====
 
 == ...mais pas trop !
@@ -46,12 +77,21 @@ include::{includedir}/story.adoc[tag=dry-do]
 
 == Un couple SOLID ?
 
+image:../images/guylookingatgirl.png[]
+
 [NOTE.speaker]
 ====
 On peut se poser la question ...
 ====
 
 == Une responsabilité unique
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=solid-s]
+====
+
+== Exemple
 
 [cols="1,1",grid=none]
 |===
@@ -83,20 +123,28 @@ deploy_db:
 |
 image:../images/solid/single-respo-good.png[]
 |===
+
 [NOTE.speaker]
 ====
-include::{includedir}/story.adoc[tag=solid-s]
+Ici, on va préférer avec des jobs différents pour les différents types d'élément à déployer. Ce sera plus simple à maintenir dans le temps, et ce n'est tout simplement pas la même chose. De plus, de cette façon, vous pourrez plus facilement réutiliser vos jobs.
 ====
+
 
 == Rester ouvert...
 
 Mais pas trop !
 
-[grid=none]
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=solid-o]
+====
+
+== Exemple
+
+[cols=3, grid=none]
 |===
 2+a|[source,yaml]
 ----
-# L'ajout d'information demande une modification du job
 .bad-sonar:
   variables:
     PROJECT_KEY: ''
@@ -107,13 +155,11 @@ Mais pas trop !
         -Dsonar.tests=tests/
 ----
 
-|
-image:../images/solid/open-closed-bad.png[]
-2+^|VS
-2+a|[source,yaml]
+|image:../images/solid/open-closed-bad.png[]
+3+^|VS
+2+a|
+[source,yaml]
 ----
-# On peut étendre via le sonar-project.properties
-# ou les extraparameters
 .good-sonar:
   variables:
     PROJECT_KEY: ''
@@ -129,7 +175,11 @@ image:../images/solid/open-closed-good.png[]
 
 [NOTE.speaker]
 ====
-include::{includedir}/story.adoc[tag=solid-o]
+Nous trouvons ici un template de job permettant de faire une analyse sonar. On peut voir dans le premier cas, que si on veut ajouter des nouveaux paramètres à Sonar, il va falloir modifier la ligne de commande ou la surcharger complètement.
+
+Dans le deuxième, le template nous propose deux manières d'étendre le job, on peut passer par le fichier de configuration de sonar ou ajouter directement des paramètres à la ligne de commande via les variables.
+
+On conserve donc le fait que l'on exige la définition du project_key mais le reste de configuration est complètement modifiable.
 ====
 
 == Liskov à la rescousse...
@@ -146,9 +196,16 @@ include::{includedir}/story.adoc[tag=solid-l]
 
 == Spécialisation
 
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=solid-i]
+====
+
+== Exemple
+
 [source,yaml]
 ----
-analyse_code: # Le truc fait toutes les analyses
+.analyse_code: # Le truc fait toutes les analyses
   script:
     - if [ -n $IS_PHP_PROJECT]; then vendor/bin/phpcs src; fi
     - if [ -f Dockerfile ]; hadolint Dockerfile; fi
@@ -156,25 +213,34 @@ analyse_code: # Le truc fait toutes les analyses
 
 # VS
 
-php_lint:
+.php_lint:
   script:
     - vendor/bin/phpcs src
 
-hadolint:
+.hadolint:
   script:
     - hadolint Dockerfile
 
-sonar_analysis:
+.sonar_analysis:
   script:
     - sonar-scanner ...
 ----
 
 [NOTE.speaker]
 ====
-include::{includedir}/story.adoc[tag=solid-i]
+Dans les templates suivants, on voit que le développeur cherche à factoriser l'analyse de code, mais ici, l'"interface" permet de couvrir tous les outils et les technos. L'exemple est un peu grossier, mais on le retrouve de temps.
+
+Il vaut mieux avoir des jobs/templates spécialisés
 ====
 
 == Une inversion de contrôle ?
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=solid-d]
+====
+
+== Exemple
 
 [source,yaml]
 ----
@@ -199,7 +265,9 @@ deploy: # Vérifie que l'artefact soit bien présent
 
 [NOTE.speaker]
 ====
-include::{includedir}/story.adoc[tag=solid-d]
+Dans notre premier cas, le job deploy est dépendant de l'execution de deliver, ce qui est assez classique.
+
+Mais pour rendre le job indépendant, on peut très bien définir un job "de contrôle" (une interface) qui va vérifier que l'artefact doit être bien présent au bon endroit avant de lancer le déploiement. Ainsi, c'est le job deliver (ou un job de transition ou "un adapter par exemple") qui doit "respecter" les règles imposées par le job deploy. Ce qui rend mécaniquement les jobs indépendants l'un de l'autre.
 ====
 
 == Un peu de lacher prise ?
