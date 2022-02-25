@@ -13,7 +13,8 @@ include::{includedir}/story.adoc[tag=tourtereaux]
 include::{includedir}/story.adoc[tag=ci-start]
 ====
 
-== Continious Build
+[transition="slide-in none-out"]
+== Continuous Build
 
 image::../images/cicd-cicd.build.png[]
 
@@ -22,7 +23,8 @@ image::../images/cicd-cicd.build.png[]
 include::{includedir}/story.adoc[tag=ci-build]
 ====
 
-== Continious Integration
+[transition=none]
+== Continuous Integration
 
 image::../images/cicd-cicd.integration.png[]
 
@@ -45,6 +47,7 @@ include::{includedir}/story.adoc[tag=ci-end]
 include::{includedir}/story.adoc[tag=cd-start]
 ====
 
+[transition="slide-in none-out"]
 == Delivery
 
 image::../images/cicd-cicd.delivery.png[]
@@ -54,6 +57,7 @@ image::../images/cicd-cicd.delivery.png[]
 include::{includedir}/story.adoc[tag=cd-delivery]
 ====
 
+[transition=none]
 == Deployment
 
 image::../images/cicd-cicd.deployment.png[]
@@ -63,6 +67,7 @@ image::../images/cicd-cicd.deployment.png[]
 include::{includedir}/story.adoc[tag=cd-deployment]
 ====
 
+[transition=none]
 == Development
 
 image::../images/cicd-cicd.development.png[]
@@ -80,6 +85,7 @@ include::{includedir}/story.adoc[tag=cd-development]
 include::{includedir}/story.adoc[tag=cd-end]
 ====
 
+[transition="slide-in none-out"]
 == La rencontre...
 
 image::../images/cicd-cicd-split.png[]
@@ -89,6 +95,7 @@ image::../images/cicd-cicd-split.png[]
 include::{includedir}/story.adoc[tag=rencontre-start]
 ====
 
+[transition=none]
 == Un avenir tout tracé !
 
 image::../images/cicd-cicd.png[]
@@ -99,6 +106,8 @@ include::{includedir}/story.adoc[tag=rencontre-ensemble]
 ====
 
 == Yann
+
+image::../images/yann.png[]
 
 [NOTE.speaker]
 ====
