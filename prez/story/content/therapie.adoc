@@ -296,6 +296,13 @@ include::{includedir}/story.adoc[tag=lacher]
 
 == Pouvoir debrayer !
 
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=debrayage]
+====
+
+== Exemple
+
 [cols=2]
 |===
 a|
@@ -309,13 +316,14 @@ a|
   }
 }
 ----
-
 [source,json]
 .Jenkinsfile.deliver
 ----
 {
   stage('check requirements') {}
-  ...,
+  stage('Deploy approval') {
+    input "Deploy to prod ?"
+  }
   stage ('deploy') {
     build '../proj-deliver/master'
   }
@@ -333,14 +341,15 @@ a|
 a|
 image::../images/solid/debrayable.png[]
 |===
+
 [NOTE.speaker]
 ====
-include::{includedir}/story.adoc[tag=debrayage]
+Ici, on voit deux façons d'intervenir pendant le déroulement d'un pipeline, on peut faire des pipelines différents qui se déclenchent les uns les autres :ce qui nous permet de déclencher soit toutes les actions, soit lancer les pipelines à différentes étapes. Et une autre possibilité, c'est de mettre des points d'arrêt dans les pipelines permettant d'attendre une action manuelle avant de continuer.
 ====
 
 == Le monde des Bisounours
 
-KISS
+image::../images/bisounours.png[]
 
 [NOTE.speaker]
 ====
