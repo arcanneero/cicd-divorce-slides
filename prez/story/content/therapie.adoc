@@ -203,6 +203,9 @@ include::{includedir}/story.adoc[tag=solid-i]
 
 == Exemple
 
+[cols=3, grid=none]
+|===
+2+a|
 [source,yaml]
 ----
 .analyse_code: # Le truc fait toutes les analyses
@@ -210,8 +213,12 @@ include::{includedir}/story.adoc[tag=solid-i]
     - if [ -n $IS_PHP_PROJECT]; then vendor/bin/phpcs src; fi
     - if [ -f Dockerfile ]; hadolint Dockerfile; fi
     - sonar-scanner ...
-
-# VS
+----
+|image:../images/solid/interface-segragation-bad.png[]
+3+^|VS
+2+a|
+[source,yaml]
+----
 
 .php_lint:
   script:
@@ -225,12 +232,14 @@ include::{includedir}/story.adoc[tag=solid-i]
   script:
     - sonar-scanner ...
 ----
+|image:../images/solid/interface-segragation-good.png[]
+|===
 
 [NOTE.speaker]
 ====
-Dans les templates suivants, on voit que le développeur cherche à factoriser l'analyse de code, mais ici, l'"interface" permet de couvrir tous les outils et les technos. L'exemple est un peu grossier, mais on le retrouve de temps.
+Dans les templates suivants, on voit que le développeur cherche à factoriser l'analyse de code, mais ici, l'"interface" permet de couvrir tous les outils et les technos. L'exemple est un peu grossier, mais on le retrouve de temps en temps.
 
-Il vaut mieux avoir des jobs/templates spécialisés
+Il vaut mieux avoir des jobs/templates spécialisés qui permettront d'être réutiliser et/ou débrancher au besoin.
 ====
 
 == Une inversion de contrôle ?
@@ -242,16 +251,23 @@ include::{includedir}/story.adoc[tag=solid-d]
 
 == Exemple
 
+[cols=3, grid=none]
+|===
+2+a|
 [source,yaml]
 ----
-deliver:
+deliver-on-artifactory:
   script: ./push_artefact_to_repo.sh
 
 deploy: # Attend que l'étape de livraison soit ok
   needs: [deliver]
   script: ./deploy.sh
-
-# VS
+----
+|image:../images/solid/dependency-inversion-bad.png[]
+3+^|VS
+2+a|
+[source,yaml]
+----
 deliver: # Doit déposer l'artefact au bon endroit
   script: ./push_artefact_to_repo.sh
 
@@ -262,7 +278,8 @@ deploy: # Vérifie que l'artefact soit bien présent
   needs: [check_artefact_readiness]
   script: ./deploy.sh
 ----
-
+|image:../images/solid/dependency-inversion-good.png[]
+|===
 [NOTE.speaker]
 ====
 Dans notre premier cas, le job deploy est dépendant de l'execution de deliver, ce qui est assez classique.
