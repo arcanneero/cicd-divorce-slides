@@ -296,6 +296,9 @@ include::{includedir}/story.adoc[tag=lacher]
 
 == Pouvoir debrayer !
 
+[cols=2]
+|===
+a|
 [source,json]
 .Jenkinsfile.build
 ----
@@ -327,7 +330,9 @@ include::{includedir}/story.adoc[tag=lacher]
   ...,
 }
 ----
-
+a|
+image::../images/solid/debrayable.png[]
+|===
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=debrayage]
