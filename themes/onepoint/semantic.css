@@ -1,14 +1,167 @@
 
+div.backgrounds .basics {
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px 200px, 200px 200px ;
+    background-position: 0 0, 0 0;
+    background-image: url("images/angle-wh.png"), linear-gradient(black, black);
+}
 
-.main-title h1 {
+
+section.basics.present:not(.stack) {
+}
+
+.basics h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: black;
     text-transform: none;
 }
 
-section.main-title {
+.basics p {
+    text-shadow: none;
+    color: black;
+}
+
+div.backgrounds .ci {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/bolt-solid.svg"), url("images/angle-wh.png"), linear-gradient(#ffcd22, #ffcd22);
 }
 
 
-section.part-2-constraints {
+section.ci.present:not(.stack) {
+}
 
+.ci h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: #ffcd22;
+    text-transform: none;
+}
+
+.ci p {
+    text-shadow: none;
+    color: black;
+}
+
+
+div.backgrounds .cd {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/gear-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkblue, darkblue);
+}
+
+section.cd.present:not(.stack) {
+}
+
+.cd h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: darkblue;
+    text-transform: none;
+}
+
+.cd p {
+    text-shadow: none;
+    color: black;
+}
+
+
+
+div.backgrounds .ci-cd {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/heart-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkmagenta, darkmagenta);
+}
+
+section.ci-cd.present:not(.stack) {
+}
+
+.ci-cd h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: darkmagenta;
+    text-transform: none;
+}
+
+.ci-cd p {
+    text-shadow: none;
+    color: black;
+}
+
+
+
+div.backgrounds .code {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/code-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkred, darkred);
+}
+
+section.code.present:not(.stack) {
+}
+
+.code h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: darkred;
+    text-transform: none;
+}
+
+.code p {
+    text-shadow: none;
+    color: black;
+}
+
+
+
+
+div.backgrounds .devops {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/infinity-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkgreen, darkgreen);
+}
+
+section.devops.present:not(.stack) {
+}
+
+.devops h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: darkgreen;
+    text-transform: none;
+}
+
+.devops p {
+    text-shadow: none;
+    color: darkgreen;
+}
+
+
+
+div.backgrounds .separation {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/heart-crack-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkgoldenrod, darkgoldenrod);
+}
+
+section.separation.present:not(.stack) {
+}
+
+.separation h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: darkgoldenrod;
+    text-transform: none;
+}
+
+.separation p {
+    text-shadow: none;
+    color: darkgoldenrod;
 }
 
