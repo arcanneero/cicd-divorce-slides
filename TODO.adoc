@@ -15,11 +15,11 @@ Idée de représentation :
 Part 2. : Thème CD et Thème CD
 
 - Slide : 2.1 mettre le thème
-- Slide : 2.5 Pour le bref de CI, illustration du graphique de l'volution geek
+OK - Slide : 2.5 Pour le bref de CI, illustration du graphique de l'volution geek
 - Slide : 2.6 mettre le thème (couleur picto)
-- Slide : 2.8 Schéma, Continuous Developpement => Continuous Development
-- Slide : 2.9 Schéma, griser les services
-- Slide : 2.10 schéma de l'évolution 2
+OK - Slide : 2.8 Schéma, Continuous Developpement => Continuous Development
+OK - Slide : 2.9 Schéma, griser les services
+OK - Slide : 2.10 schéma de l'évolution 2
 
 - Slide : 2.14 Picto pour Nico
 - Slide : 2.15 Slide de transition => trouver les illustrations
