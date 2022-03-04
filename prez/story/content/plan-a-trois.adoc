@@ -6,7 +6,7 @@
 include::{includedir}/story.adoc[tag=a-trois]
 ====
 
-== L'arivée...
+== L'arrivée...
 
 [NOTE.speaker]
 ====
@@ -15,12 +15,16 @@ include::{includedir}/story.adoc[tag=devops]
 
 == La boucle DevOps
 
+image:../images/devops.png[]
+
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=infinite]
 ====
 
 == L'émergence
+
+image::../images/puzzle.png[width=50%]
 
 [NOTE.speaker]
 ====

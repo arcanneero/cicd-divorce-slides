@@ -68,8 +68,8 @@ Trouvez un jeu d'illustration cohérente
 
 - Slide 6.1 : illustrer avec le même du mec qui regarde une autre nana de dos
 - Slide 6.2 : Trouver une illustration
-- Slide 6.3 : Mettre la boucle
-- Slide 6.4 : Illustration
+OK - Slide 6.3 : Mettre la boucle
+OK - Slide 6.4 : Illustration
 - Slide 6.5 : 
 
 Part 7. : Thème CI/CD
