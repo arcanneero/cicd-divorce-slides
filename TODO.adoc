@@ -30,7 +30,7 @@ Part 3. : Thème pipeline
 - Slide 3.2 : Mettre le schéma du pipeline complet et déplacer la dernière note sur la slide suivante
 - Slide 3.4 : Déplacer la deux dernière notre sur la slide suivanyr
 - Slide 3.5 : trouver une image d'event storming
-- Slide 3.6 : Refaire la definition du pipeline avec des bulles
+OK - Slide 3.6 : Refaire la definition du pipeline avec des bulles
 
 - Slide 3.14 : Refaire le faire-part
 - Slide 3.15 : Majuscule
