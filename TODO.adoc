@@ -40,10 +40,10 @@ OK - Slide 3.6 : Refaire la definition du pipeline avec des bulles
 Part 4. : Thème All as code
 
 - Slide 4.1 : Un troisième thème pour l'équipe DevOps
-- Slide 4.2 : Tapis rouge => la star des plateaux
-- Slide 4.3 : Revoir tout le slide, déplacé l'image du code source dans le slide suivant
+OK - Slide 4.2 : Tapis rouge => la star des plateaux
+OK - Slide 4.3 : Revoir tout le slide, déplacé l'image du code source dans le slide suivant
 - Slide 4.4 :
-- Slide 4.5 : Mettre une image de fusion, attention les notes vont jusqu'à la fin
+OK - Slide 4.5 : Mettre une image de fusion, attention les notes vont jusqu'à la fin
 - Slide 4.6 : Slide de transition
 
 Part 5. : Thème pipeline

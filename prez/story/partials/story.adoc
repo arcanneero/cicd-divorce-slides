@@ -304,7 +304,7 @@ les risques d'échecs sont nombreux.
 CI et ses commit WIP à n'en plus finir, et CD qui suffixait tout en .old _au cas où_ ...
 
 Les habitudes avaient la vie dure, il fallait agir !
-// tag::all-as-code-end[]
+// end::all-as-code-end[]
 
 <<<
 
