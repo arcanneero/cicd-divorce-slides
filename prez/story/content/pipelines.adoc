@@ -35,7 +35,7 @@ include::{includedir}/story.adoc[tag=theories-atelier]
 [transition="slide-in none-out"]
 == !
 
-image::pipeline-steps-1.png[step 1, 75%]
+image::pipeline-steps-1.png[step 1]
 
 [NOTE.speaker]
 ====
@@ -45,7 +45,7 @@ include::{includedir}/story.adoc[tag=pipeline-objectifs]
 [transition=none]
 == !
 
-image::pipeline-steps-2.png[step 1, 75%]
+image::pipeline-steps-2.png[step 1]
 
 [NOTE.speaker]
 ====
@@ -55,7 +55,7 @@ include::{includedir}/story.adoc[tag=pipeline-process]
 [transition=none]
 == !
 
-image::pipeline-steps-3.png[step 1, 75%]
+image::pipeline-steps-3.png[step 1]
 
 [NOTE.speaker]
 ====
@@ -65,7 +65,7 @@ include::{includedir}/story.adoc[tag=pipeline-steps]
 [transition=none]
 == !
 
-image::pipeline-steps-4.png[step 1, 75%]
+image::pipeline-steps-4.png[step 1]
 
 [NOTE.speaker]
 ====
@@ -75,7 +75,7 @@ include::{includedir}/story.adoc[tag=pipeline-feedback]
 [transition=none]
 == !
 
-image::pipeline-steps-5.png[step 1, 75%]
+image::pipeline-steps-5.png[step 1]
 
 
 [NOTE.speaker]
@@ -86,7 +86,7 @@ include::{includedir}/story.adoc[tag=pipeline-auto]
 [transition=none]
 == !
 
-image::pipeline-steps-6.png[step 1, 75%]
+image::pipeline-steps-6.png[step 1]
 
 [NOTE.speaker]
 ====
@@ -96,7 +96,7 @@ include::{includedir}/story.adoc[tag=pipeline-outils]
 [transition=none]
 == !
 
-image::pipeline-steps-6-warning.png[step 1, 75%]
+image::pipeline-steps-6-warning.png[step 1]
 
 [NOTE.speaker]
 ====
@@ -106,7 +106,7 @@ include::{includedir}/story.adoc[tag=pipeline-outils-warn]
 [transition=none]
 == !
 
-image::pipeline-steps-7.png[step 1, 75%]
+image::pipeline-steps-7.png[step 1]
 
 [NOTE.speaker]
 ====
