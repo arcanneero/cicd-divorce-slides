@@ -27,8 +27,9 @@ OK - Slide : 2.10 schéma de l'évolution 2
 Part 3. : Thème pipeline
 
 - Slide 3.1 : "Et eurent plein de petits pipelines" thème mélange des deux
-- Slide 3.2 : Mettre le schéma du pipeline complet et déplacer la dernière note sur la slide suivante
-- Slide 3.4 : Déplacer la deux dernière notre sur la slide suivanyr
+- Slide 3.2 : Mettre le schéma du pipeline complet
+OK - Slide 3.2 : déplacer la dernière note sur la slide suivante
+OK - Slide 3.4 : Déplacer la deux dernière notre sur la slide suivanyr
 - Slide 3.5 : trouver une image d'event storming
 OK - Slide 3.6 : Refaire la definition du pipeline avec des bulles
 

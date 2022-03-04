@@ -10,7 +10,7 @@ include::{includedir}/story.adoc[tag=pipelines]
 
 [NOTE.speaker]
 ====
-include::{includedir}/story.adoc[tag=theories-dessins]
+include::{includedir}/story.adoc[tag=theories-workflow]
 ====
 
 == C'est un dessin...
@@ -19,6 +19,7 @@ image::flowchart-draw.png[Dessin, 60%]
 
 [NOTE.speaker]
 ====
+include::{includedir}/story.adoc[tag=theories-dessins]
 ====
 
 == ... Et des personnes
@@ -31,6 +32,11 @@ include::{includedir}/story.adoc[tag=theories-atelier]
 ====
 
 == Dis, comment on fait des pipelines ?
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=theories-eventstorming]
+====
 
 [transition="slide-in none-out"]
 == !
