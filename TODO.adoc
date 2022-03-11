@@ -15,11 +15,11 @@ Idée de représentation :
 Part 2. : Thème CD et Thème CD
 
 - Slide : 2.1 mettre le thème
-- Slide : 2.5 Pour le bref de CI, illustration du graphique de l'volution geek
+OK - Slide : 2.5 Pour le bref de CI, illustration du graphique de l'volution geek
 - Slide : 2.6 mettre le thème (couleur picto)
-- Slide : 2.8 Schéma, Continuous Developpement => Continuous Development
-- Slide : 2.9 Schéma, griser les services
-- Slide : 2.10 schéma de l'évolution 2
+OK - Slide : 2.8 Schéma, Continuous Developpement => Continuous Development
+OK - Slide : 2.9 Schéma, griser les services
+OK - Slide : 2.10 schéma de l'évolution 2
 
 - Slide : 2.14 Picto pour Nico
 - Slide : 2.15 Slide de transition => trouver les illustrations
@@ -27,10 +27,11 @@ Part 2. : Thème CD et Thème CD
 Part 3. : Thème pipeline
 
 - Slide 3.1 : "Et eurent plein de petits pipelines" thème mélange des deux
-- Slide 3.2 : Mettre le schéma du pipeline complet et déplacer la dernière note sur la slide suivante
-- Slide 3.4 : Déplacer la deux dernière notre sur la slide suivanyr
+- Slide 3.2 : Mettre le schéma du pipeline complet
+OK - Slide 3.2 : déplacer la dernière note sur la slide suivante
+OK - Slide 3.4 : Déplacer la deux dernière notre sur la slide suivanyr
 - Slide 3.5 : trouver une image d'event storming
-- Slide 3.6 : Refaire la definition du pipeline avec des bulles
+OK - Slide 3.6 : Refaire la definition du pipeline avec des bulles
 
 - Slide 3.14 : Refaire le faire-part
 - Slide 3.15 : Majuscule
@@ -39,10 +40,10 @@ Part 3. : Thème pipeline
 Part 4. : Thème All as code
 
 - Slide 4.1 : Un troisième thème pour l'équipe DevOps
-- Slide 4.2 : Tapis rouge => la star des plateaux
-- Slide 4.3 : Revoir tout le slide, déplacé l'image du code source dans le slide suivant
+OK - Slide 4.2 : Tapis rouge => la star des plateaux
+OK - Slide 4.3 : Revoir tout le slide, déplacé l'image du code source dans le slide suivant
 - Slide 4.4 :
-- Slide 4.5 : Mettre une image de fusion, attention les notes vont jusqu'à la fin
+OK - Slide 4.5 : Mettre une image de fusion, attention les notes vont jusqu'à la fin
 - Slide 4.6 : Slide de transition
 
 Part 5. : Thème pipeline
@@ -67,8 +68,8 @@ Trouvez un jeu d'illustration cohérente
 
 - Slide 6.1 : illustrer avec le même du mec qui regarde une autre nana de dos
 - Slide 6.2 : Trouver une illustration
-- Slide 6.3 : Mettre la boucle
-- Slide 6.4 : Illustration
+OK - Slide 6.3 : Mettre la boucle
+OK - Slide 6.4 : Illustration
 - Slide 6.5 : 
 
 Part 7. : Thème CI/CD

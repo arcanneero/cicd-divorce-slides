@@ -134,14 +134,16 @@ Ils ont eu des projets, se sont posé pleins de question lors de la réalisation
 === Les grandes théories !
 
 // tag::theories[]
-// tag::theories-dessins[]
+// tag::theories-workflow[]
 Ils sont rapidement tombés d'accord sur certains points...
 Faire des pipelines oui, mais pas n'importe comment !
 
 Ils ont établi que cela consistait en un ensemble de taches qui se succèdent pour donner un résultat !
 Si on se positionne coté produit (ou métier), on appelle ca des workflows.
 Et si vous êtes vieux, ou avec une culture d'informatique industrielle,  vous avez peut être même appelé ça des grafcets !!!!!
+// end::theories-workflow[]
 
+// tag::theories-dessins[]
 Alors ils ont commencé à prendre des carnets, des crayons, tracer des esquisses.
 Conscient qu'ils n'avaient pas tous les éléments, ils ont demandé des avis, des conseils...
 // end::theories-dessins[]
@@ -150,11 +152,12 @@ Conscient qu'ils n'avaient pas tous les éléments, ils ont demandé des avis, d
 Bref, ils ont fini par convier tous les acteurs qui graviteront autour de ces pipelines !
 Une sorte  atelier où nn regroupe toutes les parties prenantes et ou on modélise les processus pour venir répondre aux contraintes de chacun.
 Et le plus dur pour nos tourteaux dans ce moment est sans aucun doute de ne pas parler d'outils, ou d'automatisation !
-
-Si vous connaissez les ateliers d'event storming, appliqués au produit, on pourrait pratiquement les appliquer à nos pipeline.
+// end::theories-atelier[]
+// tag::theories-eventstorming[]
+Si vous connaissez les ateliers d'event storming, appliqués au produit, on pourrait pratiquement les appliquer à nos pipelines.
 
 Il y a cependant un tas de questions qui vont se poser...
-// end::theories-atelier[]
+// end::theories-eventstorming[]
 // end::theories[]
 
 === Dis, comment on fait des pipelines ?
@@ -301,7 +304,7 @@ les risques d'échecs sont nombreux.
 CI et ses commit WIP à n'en plus finir, et CD qui suffixait tout en .old _au cas où_ ...
 
 Les habitudes avaient la vie dure, il fallait agir !
-// tag::all-as-code-end[]
+// end::all-as-code-end[]
 
 <<<
 

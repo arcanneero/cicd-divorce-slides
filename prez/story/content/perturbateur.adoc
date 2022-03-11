@@ -8,12 +8,23 @@ include::{includedir}/story.adoc[tag=all-as-code]
 
 == Tous l'admiraient
 
+image::../images/red-carpet.png[]
+
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=all-as-code-everything]
 ====
 
 == Gestion des sources
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=all-as-code-result]
+
+=> Même en suivant les 12 factors
+====
+
+== C'est le bordel
 
 [source,bash]
 ----
@@ -31,19 +42,12 @@ Dockerfile
 
 [NOTE.speaker]
 ====
-include::{includedir}/story.adoc[tag=all-as-code-result]
-
-=> Même en suivant les 12 factors
-====
-
-== C'est le bordel
-
-[NOTE.speaker]
-====
 include::{includedir}/story.adoc[tag=all-as-code-mess]
 ====
 
 == Fusionner les deux process
+
+image::../images/fusion.png[]
 
 [NOTE.speaker]
 ====
