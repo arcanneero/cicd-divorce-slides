@@ -1,3 +1,4 @@
+[.ci-cd.background]
 = Les petits pipelines
 :includedir: ../partials
 
@@ -6,6 +7,7 @@
 include::{includedir}/story.adoc[tag=pipelines]
 ====
 
+[.ci-cd.background]
 == La définition d'un pipeline
 
 [NOTE.speaker]
@@ -13,6 +15,7 @@ include::{includedir}/story.adoc[tag=pipelines]
 include::{includedir}/story.adoc[tag=theories-workflow]
 ====
 
+[.ci-cd.background]
 == C'est un dessin...
 
 image::flowchart-draw.png[Dessin, 60%]
@@ -22,6 +25,7 @@ image::flowchart-draw.png[Dessin, 60%]
 include::{includedir}/story.adoc[tag=theories-dessins]
 ====
 
+[.ci-cd.background]
 == ... Et des personnes
 
 image::pipeline-people.png[Personnes, 80%]
@@ -31,6 +35,7 @@ image::pipeline-people.png[Personnes, 80%]
 include::{includedir}/story.adoc[tag=theories-atelier]
 ====
 
+[.ci-cd.background]
 == Dis, comment on fait des pipelines ?
 
 [NOTE.speaker]
@@ -38,7 +43,7 @@ include::{includedir}/story.adoc[tag=theories-atelier]
 include::{includedir}/story.adoc[tag=theories-eventstorming]
 ====
 
-[transition="slide-in none-out"]
+[.ci-cd.background, transition="slide-in none-out"]
 == !
 
 image::pipeline-steps-1.png[step 1]
@@ -48,7 +53,7 @@ image::pipeline-steps-1.png[step 1]
 include::{includedir}/story.adoc[tag=pipeline-objectifs]
 ====
 
-[transition=none]
+[.ci-cd.background, transition=none]
 == !
 
 image::pipeline-steps-2.png[step 1]
@@ -58,7 +63,7 @@ image::pipeline-steps-2.png[step 1]
 include::{includedir}/story.adoc[tag=pipeline-process]
 ====
 
-[transition=none]
+[.ci-cd.background, transition=none]
 == !
 
 image::pipeline-steps-3.png[step 1]
@@ -68,7 +73,7 @@ image::pipeline-steps-3.png[step 1]
 include::{includedir}/story.adoc[tag=pipeline-steps]
 ====
 
-[transition=none]
+[.ci-cd.background, transition=none]
 == !
 
 image::pipeline-steps-4.png[step 1]
@@ -78,7 +83,7 @@ image::pipeline-steps-4.png[step 1]
 include::{includedir}/story.adoc[tag=pipeline-feedback]
 ====
 
-[transition=none]
+[.ci-cd.background, transition=none]
 == !
 
 image::pipeline-steps-5.png[step 1]
@@ -89,7 +94,7 @@ image::pipeline-steps-5.png[step 1]
 include::{includedir}/story.adoc[tag=pipeline-auto]
 ====
 
-[transition=none]
+[.ci-cd.background, transition=none]
 == !
 
 image::pipeline-steps-6.png[step 1]
@@ -99,17 +104,17 @@ image::pipeline-steps-6.png[step 1]
 include::{includedir}/story.adoc[tag=pipeline-outils]
 ====
 
-[transition=none]
+[.ci-cd.background, transition=none]
 == !
 
-image::pipeline-steps-6-warning.png[step 1]
+image::pipeline-steps-6-warning.png[step 1, 75%]
 
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=pipeline-outils-warn]
 ====
 
-[transition=none]
+[.ci-cd.background, transition=none]
 == !
 
 image::pipeline-steps-7.png[step 1]
@@ -119,6 +124,7 @@ image::pipeline-steps-7.png[step 1]
 include::{includedir}/story.adoc[tag=pipeline-implem]
 ====
 
+[.ci-cd.background]
 == Et voilà !
 
 image::faire-part.png[step 1, 75%]
@@ -128,6 +134,7 @@ image::faire-part.png[step 1, 75%]
 include::{includedir}/story.adoc[tag=responsability-start]
 ====
 
+[.ci-cd.background]
 == !
 
 include::{includedir}/story.adoc[tag=responsability-citation]
@@ -138,7 +145,7 @@ include::{includedir}/story.adoc[tag=responsability-complexe]
 ====
 
 
-[.transition]
+[.basics.background, .transition]
 == !
 
 [NOTE.speaker]

@@ -1,3 +1,4 @@
+[.devops.background]
 = Un plan à trois
 :includedir: ../partials
 
@@ -6,6 +7,7 @@
 include::{includedir}/story.adoc[tag=a-trois]
 ====
 
+[.devops.background]
 == L'arrivée...
 
 [NOTE.speaker]
@@ -13,6 +15,7 @@ include::{includedir}/story.adoc[tag=a-trois]
 include::{includedir}/story.adoc[tag=devops]
 ====
 
+[.devops.background]
 == La boucle DevOps
 
 image:../images/devops.png[]
@@ -22,6 +25,7 @@ image:../images/devops.png[]
 include::{includedir}/story.adoc[tag=infinite]
 ====
 
+[.devops.background]
 == L'émergence
 
 image::../images/puzzle.png[width=50%]
@@ -31,6 +35,7 @@ image::../images/puzzle.png[width=50%]
 include::{includedir}/story.adoc[tag=team]
 ====
 
+[.devops.background]
 == Une question de communication
 
 [NOTE.speaker]
@@ -38,6 +43,7 @@ include::{includedir}/story.adoc[tag=team]
 include::{includedir}/story.adoc[tag=communication]
 ====
 
+[.devops.background]
 == Bref...
 
 [NOTE.speaker]
@@ -45,7 +51,7 @@ include::{includedir}/story.adoc[tag=communication]
 include::{includedir}/story.adoc[tag=mediateur]
 ====
 
-[.transition]
+[.basics.background, .transition]
 == !
 
 [NOTE.speaker]

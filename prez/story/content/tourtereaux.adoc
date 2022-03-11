@@ -1,3 +1,4 @@
+[.basics.background]
 = Nos deux tourtereaux
 :includedir: ../partials
 
@@ -6,6 +7,7 @@
 include::{includedir}/story.adoc[tag=tourtereaux]
 ====
 
+[.ci.background]
 == CI
 
 [NOTE.speaker]
@@ -13,7 +15,7 @@ include::{includedir}/story.adoc[tag=tourtereaux]
 include::{includedir}/story.adoc[tag=ci-start]
 ====
 
-[transition="slide-in none-out"]
+[.ci.background, transition="slide-in fade-out"]
 == Continuous Build
 
 image::../images/cicd-cicd.build.png[]
@@ -23,7 +25,8 @@ image::../images/cicd-cicd.build.png[]
 include::{includedir}/story.adoc[tag=ci-build]
 ====
 
-[transition=none]
+
+[.ci.background, transition="fade-in slide-out"]
 == Continuous Integration
 
 image::../images/cicd-cicd.integration.png[]
@@ -33,6 +36,7 @@ image::../images/cicd-cicd.integration.png[]
 include::{includedir}/story.adoc[tag=ci-integration]
 ====
 
+[.ci.background]
 == Bref...
 image::../images/geek-evolution.png[]
 
@@ -41,6 +45,7 @@ image::../images/geek-evolution.png[]
 include::{includedir}/story.adoc[tag=ci-end]
 ====
 
+[.cd.background]
 == CD
 
 [NOTE.speaker]
@@ -48,7 +53,8 @@ include::{includedir}/story.adoc[tag=ci-end]
 include::{includedir}/story.adoc[tag=cd-start]
 ====
 
-[transition="slide-in none-out"]
+
+[.cd.background, transition="slide-in none-out"]
 == Delivery
 
 image::../images/cicd-cicd.delivery.png[]
@@ -58,7 +64,7 @@ image::../images/cicd-cicd.delivery.png[]
 include::{includedir}/story.adoc[tag=cd-delivery]
 ====
 
-[transition=none]
+[.cd.background, transition=none]
 == Deployment
 
 image::../images/cicd-cicd.deployment.png[]
@@ -68,7 +74,7 @@ image::../images/cicd-cicd.deployment.png[]
 include::{includedir}/story.adoc[tag=cd-deployment]
 ====
 
-[transition=none]
+[.cd.background, transition=none]
 == Development
 
 image::../images/cicd-cicd.development.png[]
@@ -78,7 +84,7 @@ image::../images/cicd-cicd.development.png[]
 include::{includedir}/story.adoc[tag=cd-development]
 ====
 
-
+[.cd.background]
 == Bref...
 image::../images/geek-evolution.png[]
 [NOTE.speaker]
@@ -86,7 +92,7 @@ image::../images/geek-evolution.png[]
 include::{includedir}/story.adoc[tag=cd-end]
 ====
 
-[transition="slide-in none-out"]
+[.ci-cd.background, transition="slide-in none-out"]
 == La rencontre...
 
 image::../images/cicd-cicd-split.png[]
@@ -96,7 +102,7 @@ image::../images/cicd-cicd-split.png[]
 include::{includedir}/story.adoc[tag=rencontre-start]
 ====
 
-[transition=none]
+[.ci-cd.background, transition=none]
 == Un avenir tout tracé !
 
 image::../images/cicd-cicd.png[]
@@ -122,7 +128,7 @@ include::{includedir}/story.adoc[tag=yann]
 include::{includedir}/story.adoc[tag=nico]
 ====
 
-[.transition]
+[.basics.background, .transition]
 == !
 
 [NOTE.speaker]

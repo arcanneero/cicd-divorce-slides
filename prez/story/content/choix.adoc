@@ -1,3 +1,4 @@
+[.basics.background]
 = C'est l'heure du choix
 :includedir: ../partials
 
@@ -8,6 +9,7 @@ include::{includedir}/story.adoc[tag=choice]
 On va vous proposer trois possibilités qui ne sont pas exhaustives !
 ====
 
+[.separation.background]
 == Séparation ?
 
 [NOTE.speaker]
@@ -15,6 +17,7 @@ On va vous proposer trois possibilités qui ne sont pas exhaustives !
 include::{includedir}/story.adoc[tag=separation-ci]
 ====
 
+[.separation.background]
 == Séparation ?
 
 [NOTE.speaker]
@@ -22,6 +25,7 @@ include::{includedir}/story.adoc[tag=separation-ci]
 include::{includedir}/story.adoc[tag=separation-cd]
 ====
 
+[.ci-cd.background]
 == Médiation ?
 
 [NOTE.speaker]
@@ -29,6 +33,7 @@ include::{includedir}/story.adoc[tag=separation-cd]
 include::{includedir}/story.adoc[tag=mediation]
 ====
 
+[.ci-cd.background]
 == Et pourquoi pas...
 
 [NOTE.speaker]
@@ -36,6 +41,7 @@ include::{includedir}/story.adoc[tag=mediation]
 include::{includedir}/story.adoc[tag=transverse]
 ====
 
+[.devops.background]
 == Union ?
 
 [NOTE.speaker]
@@ -43,6 +49,7 @@ include::{includedir}/story.adoc[tag=transverse]
 include::{includedir}/story.adoc[tag=union]
 ====
 
+[.devops.background]
 == Aller plus loin ...
 
 [NOTE.speaker]
@@ -50,7 +57,7 @@ include::{includedir}/story.adoc[tag=union]
 include::{includedir}/story.adoc[tag=craft]
 ====
 
-[.transition]
+[.basics.background]
 == !
 
 [NOTE.speaker]

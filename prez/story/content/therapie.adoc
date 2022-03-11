@@ -1,3 +1,4 @@
+[.ci-cd.background]
 = La thérapie de couple
 :includedir: ../partials
 :figure-caption!:
@@ -7,13 +8,15 @@
 include::{includedir}/story.adoc[tag=therapie]
 ====
 
-== DRY ...
+[.ci-cd.background]
+== DRY...
 
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=dry]
 ====
 
+[.ci-cd.background]
 == Exemple
 
 [cols=2]
@@ -65,9 +68,10 @@ deliver_app:
 |===
 [NOTE.speaker]
 ====
-Dans les exemples présents, on va tout simplement 2 manières d'utiliser les templates gitlab pour factoriser les actions à faire avant et après le déploiement. Avec Jenkins, on pourrait définir des méthodes en groovy permettant de faire la même chose.
+include::{includedir}/story.adoc[tag=dry]
 ====
 
+[.ci-cd.background]
 == ...mais pas trop !
 
 [NOTE.speaker]
@@ -75,6 +79,7 @@ Dans les exemples présents, on va tout simplement 2 manières d'utiliser les te
 include::{includedir}/story.adoc[tag=dry-do]
 ====
 
+[.ci-cd.background]
 == Un couple SOLID ?
 
 image:../images/guylookingatgirl.png[]
@@ -84,6 +89,7 @@ image:../images/guylookingatgirl.png[]
 On peut se poser la question ...
 ====
 
+[.ci-cd.background]
 == Une responsabilité unique
 
 [NOTE.speaker]
@@ -91,6 +97,7 @@ On peut se poser la question ...
 include::{includedir}/story.adoc[tag=solid-s]
 ====
 
+[.ci-cd.background]
 == Exemple
 
 [cols="1,1",grid=none]
@@ -99,9 +106,9 @@ a|[source,yaml]
 ----
 deploy:
   script:
-    - ./deploy_doc.sh
-    - ./deploy_app.sh
-    - ./deploy_db.sh
+    - if [ -n $IS_PHP_PROJECT]; then vendor/bin/phpcs src; fi
+    - if [ -f Dockerfile ]; hadolint Dockerfile; fi
+    - sonar-scanner ...
 
 
 ----
@@ -129,7 +136,7 @@ image:../images/solid/single-respo-good.png[]
 Ici, on va préférer avec des jobs différents pour les différents types d'élément à déployer. Ce sera plus simple à maintenir dans le temps, et ce n'est tout simplement pas la même chose. De plus, de cette façon, vous pourrez plus facilement réutiliser vos jobs.
 ====
 
-
+[.ci-cd.background]
 == Rester ouvert...
 
 Mais pas trop !
@@ -139,6 +146,7 @@ Mais pas trop !
 include::{includedir}/story.adoc[tag=solid-o]
 ====
 
+[.ci-cd.background]
 == Exemple
 
 [cols=3, grid=none]
@@ -182,6 +190,7 @@ Dans le deuxième, le template nous propose deux manières d'étendre le job, on
 On conserve donc le fait que l'on exige la définition du project_key mais le reste de configuration est complètement modifiable.
 ====
 
+[.ci-cd.background]
 == Liskov à la rescousse...
 
 .Barbara Liskov
@@ -194,6 +203,7 @@ image::../images/barbara_liskov.png["Barbara Liskov", 75%]
 include::{includedir}/story.adoc[tag=solid-l]
 ====
 
+[.ci-cd.background]
 == Spécialisation
 
 [NOTE.speaker]
@@ -201,6 +211,7 @@ include::{includedir}/story.adoc[tag=solid-l]
 include::{includedir}/story.adoc[tag=solid-i]
 ====
 
+[.ci-cd.background]
 == Exemple
 
 [cols=3, grid=none]
@@ -242,6 +253,7 @@ Dans les templates suivants, on voit que le développeur cherche à factoriser l
 Il vaut mieux avoir des jobs/templates spécialisés qui permettront d'être réutiliser et/ou débrancher au besoin.
 ====
 
+[.ci-cd.background]
 == Une inversion de contrôle ?
 
 [NOTE.speaker]
@@ -249,6 +261,7 @@ Il vaut mieux avoir des jobs/templates spécialisés qui permettront d'être ré
 include::{includedir}/story.adoc[tag=solid-d]
 ====
 
+[.ci-cd.background]
 == Exemple
 
 [cols=3, grid=none]
@@ -287,6 +300,7 @@ Dans notre premier cas, le job deploy est dépendant de l'execution de deliver, 
 Mais pour rendre le job indépendant, on peut très bien définir un job "de contrôle" (une interface) qui va vérifier que l'artefact doit être bien présent au bon endroit avant de lancer le déploiement. Ainsi, c'est le job deliver (ou un job de transition ou "un adapter par exemple") qui doit "respecter" les règles imposées par le job deploy. Ce qui rend mécaniquement les jobs indépendants l'un de l'autre.
 ====
 
+[.ci-cd.background]
 == Un peu de lacher prise ?
 
 [NOTE.speaker]
@@ -294,6 +308,7 @@ Mais pour rendre le job indépendant, on peut très bien définir un job "de con
 include::{includedir}/story.adoc[tag=lacher]
 ====
 
+[.ci-cd.background]
 == Pouvoir debrayer !
 
 [NOTE.speaker]
@@ -301,6 +316,7 @@ include::{includedir}/story.adoc[tag=lacher]
 include::{includedir}/story.adoc[tag=debrayage]
 ====
 
+[.ci-cd.background]
 == Exemple
 
 [cols=2]
@@ -347,6 +363,7 @@ image::../images/solid/debrayable.png[]
 Ici, on voit deux façons d'intervenir pendant le déroulement d'un pipeline, on peut faire des pipelines différents qui se déclenchent les uns les autres :ce qui nous permet de déclencher soit toutes les actions, soit lancer les pipelines à différentes étapes. Et une autre possibilité, c'est de mettre des points d'arrêt dans les pipelines permettant d'attendre une action manuelle avant de continuer.
 ====
 
+[.ci-cd.background]
 == Le monde des Bisounours
 
 image::../images/bisounours.png[]
@@ -356,6 +373,7 @@ image::../images/bisounours.png[]
 include::{includedir}/story.adoc[tag=kiss]
 ====
 
+[.ci-cd.background]
 == Oups ...
 
 [NOTE.speaker]
@@ -363,7 +381,7 @@ include::{includedir}/story.adoc[tag=kiss]
 include::{includedir}/story.adoc[tag=accidentelle]
 ====
 
-[.transition]
+[.basics.background, .transition]
 == !
 
 [NOTE.speaker]
