@@ -2,6 +2,8 @@
 = Un plan à trois
 :includedir: ../partials
 
+image:../images/guylookingatgirl.png[]
+
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=a-trois]
@@ -16,7 +18,7 @@ include::{includedir}/story.adoc[tag=devops]
 ====
 
 [.devops.background]
-== La boucle DevOps
+== La boucle est bouclée
 
 image:../images/devops.png[]
 
@@ -38,6 +40,9 @@ include::{includedir}/story.adoc[tag=team]
 [.devops.background]
 == Une question de communication
 
+image::../images/bridge.jpg[]
+
+
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=communication]
@@ -51,7 +56,7 @@ include::{includedir}/story.adoc[tag=communication]
 include::{includedir}/story.adoc[tag=mediateur]
 ====
 
-[.basics.background, .transition]
+[.transition.background]
 == !
 
 [NOTE.speaker]

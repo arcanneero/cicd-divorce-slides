@@ -66,11 +66,11 @@ Part 6. : Thème DevOps
 
 Trouvez un jeu d'illustration cohérente
 
-* [ ] Slide 6.1 : illustrer avec le même du mec qui regarde une autre nana de dos
-* [ ] Slide 6.2 : Trouver une illustration
+* [x] Slide 6.1 : illustrer avec le même du mec qui regarde une autre nana de dos
+* [x] Slide 6.2 : Trouver une illustration
 * [x] Slide 6.3 : Mettre la boucle
 * [x] Slide 6.4 : Illustration
-* [ ] Slide 6.5 : 
+* [x] Slide 6.5 :
 
 Part 7. : Thème CI/CD
 

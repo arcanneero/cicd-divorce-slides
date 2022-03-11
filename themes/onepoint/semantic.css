@@ -165,3 +165,26 @@ section.separation.present:not(.stack) {
     color: darkgoldenrod;
 }
 
+
+div.backgrounds .transition {
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px 200px, 200px 200px ;
+    background-position: 0 0, 0 0;
+    background-image: url("images/angle-wh.png"), linear-gradient(black, black);
+}
+
+
+section.transition.present:not(.stack) {
+}
+
+.transition h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: black;
+    text-transform: none;
+}
+
+.transition p {
+    text-shadow: none;
+    color: black;
+}

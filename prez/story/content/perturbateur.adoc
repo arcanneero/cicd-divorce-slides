@@ -61,7 +61,7 @@ image::../images/fusion.png[]
 include::{includedir}/story.adoc[tag=all-as-code-end]
 ====
 
-[.basics.background, .transition]
+[.transition.background]
 == !
 
 [NOTE.speaker]
