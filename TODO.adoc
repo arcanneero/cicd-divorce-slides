@@ -52,13 +52,13 @@ Voir pour découper les items en deux slides, un principe, un exemple.
 
 Un qui expose le principe puis un l'exemple.
 
-- Slide 5.2 : découper le slide en deux slides
-- Slide 5.4 : Trouver une illustration
-- Slide 5.5 : 
+OK - Slide 5.2 : découper le slide en deux slides
+ - Slide 5.4 : Trouver une illustration
+OK - Slide 5.5 :
 
-- Slide 5.10 : 
-- Slide 5.11 : les reprendres
-- Slide 5.12 : Illustration cool
+OK - Slide 5.10 :
+OK - Slide 5.11 : les reprendres
+OK - Slide 5.12 : Illustration cool
 - Slide 5.13 : Les schémas de pipeline
 - Slide 5.14 : Slide de transition
 
