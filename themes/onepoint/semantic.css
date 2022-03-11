@@ -147,22 +147,36 @@ div.backgrounds .separation {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 100px 100px, 200px 200px, 200px 200px ;
     background-position: 25px 25px, 0 0, 0 0;
-    background-image: url("logo/heart-crack-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkgoldenrod, darkgoldenrod);
+    background-image: url("logo/heart-crack-solid.svg"), url("images/angle-wh.png"), linear-gradient(black, black);
 }
 
-section.separation.present:not(.stack) {
+div.backgrounds .mediation {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/user-doctor-solid.svg"), url("images/angle-wh.png"), linear-gradient(black, black);
 }
 
-.separation h2 {
+div.backgrounds .union {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/heart-solid.svg"), url("images/angle-wh.png"), linear-gradient(black, black);
+}
+
+section.separation.present:not(.stack), section.mediation.present:not(.stack), section.union.present:not(.stack)  {
+}
+
+.separation h2, .mediation h2, .union h2 {
     text-shadow: none;
     font-size: 3em;
-    color: darkgoldenrod;
+    color: black;
     text-transform: none;
 }
 
-.separation p {
+.separation p, .mediation p, .union p {
     text-shadow: none;
-    color: darkgoldenrod;
+    color: black;
 }
 
 

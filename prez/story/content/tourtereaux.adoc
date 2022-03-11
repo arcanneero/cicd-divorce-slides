@@ -1,4 +1,4 @@
-[.basics.background]
+[.basics.background, transition="zoom-in slide-out"]
 = Nos deux tourtereaux
 :includedir: ../partials
 
@@ -128,7 +128,7 @@ include::{includedir}/story.adoc[tag=yann]
 include::{includedir}/story.adoc[tag=nico]
 ====
 
-[.transition.background]
+[.transition.background, transition="slide-in zoom-out"]
 == !
 
 [NOTE.speaker]

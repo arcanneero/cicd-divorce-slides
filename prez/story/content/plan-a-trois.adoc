@@ -2,8 +2,6 @@
 = Un plan à trois
 :includedir: ../partials
 
-image:../images/guylookingatgirl.png[]
-
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=a-trois]
@@ -40,9 +38,6 @@ include::{includedir}/story.adoc[tag=team]
 [.devops.background]
 == Une question de communication
 
-image::../images/bridge.jpg[]
-
-
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=communication]
@@ -56,7 +51,7 @@ include::{includedir}/story.adoc[tag=communication]
 include::{includedir}/story.adoc[tag=mediateur]
 ====
 
-[.transition.background]
+[.transition.background, transition="slide-in zoom-out"]
 == !
 
 [NOTE.speaker]

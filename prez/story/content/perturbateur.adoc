@@ -61,7 +61,7 @@ image::../images/fusion.png[]
 include::{includedir}/story.adoc[tag=all-as-code-end]
 ====
 
-[.transition.background]
+[.transition.background, transition="slide-in zoom-out"]
 == !
 
 [NOTE.speaker]

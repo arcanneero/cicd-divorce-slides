@@ -494,22 +494,24 @@ Et c'est bien connu : Choisir c'est renoncer ! Mais renoncer à quoi ?
 
 === Séparation ?
 
-// tag::separation-ci[]
+// tag::monde-avant[]
 C'est un peu la facette _monde d'avant_ que l'on vous propose !
+// end::monde-avant[]
 
+// tag::separation[]
 Maintenir la responsabilité de la CI,
 et éventuellement du Delivery (production de package) à la main de la famille Dev.
 ELle possède ses propres outils, vie sa vie dans son coin sans embêter personne (ou presque).
-// end::separation-ci[]
 
-// tag::separation-cd[]
-CD lui conserve la responsabilité des mises en services quelques soit les envrionnements.
+CD lui conserve la responsabilité des mises en services quelques soit les envrionnements.s
 La famille Ops peut imposer certaines règles qui ne seront généralement pas comprise par Dev...
+// end::separation[]
 
+// tag::structure[]
 Mais finalement, est-ce que dans des organisations très (trop) structurée ça ne fonctionne pas bien comme ça ?
 Même si ce n'est pas notre point de vue,
 il vaut peut-être mieux ce type d'organisation qui fonctionnent que d'autre qui partent dans le mur...
-// end::separation-cd[]
+// end::structure[]
 
 === Médiation ?
 
@@ -539,9 +541,10 @@ elle peut avoir une vraie valeur dans la chaine CI/CD.
 
 // tag::union[]
 C'est sans aucuns doutes notre choix du cœur...
+Ici, le devops n'est plus une équipe, mais un culture et une pratique d'entreprise, comme imaginez à l'origine.
 
-On peut reconnaitre en revanche que c'est sans doute la plus délicate à mettre en oeuvre.
-Les compétences de l'ensemble de votre équipe (pas de vous seul hein : soyez conscient de vos limites)
+On peut reconnaitre en revanche que c'est sans doute la proposition la plus délicate à mettre en œuvre.
+Les compétences de l'ensemble de votre équipe (pas de vous seul hein !footnote:limite[soyez conscient de vos limites])
 et l'état d'esprit nécessaire pour que tout ce petit monde travaille ensemble n'est pas facile à obtenir.
 // end::union[]
 

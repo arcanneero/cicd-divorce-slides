@@ -145,7 +145,7 @@ include::{includedir}/story.adoc[tag=responsability-complexe]
 ====
 
 
-[.transition.background]
+[.transition.background, transition="slide-in zoom-out"]
 == !
 
 [NOTE.speaker]
