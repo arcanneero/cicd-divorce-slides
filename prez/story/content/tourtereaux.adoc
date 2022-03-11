@@ -128,7 +128,7 @@ include::{includedir}/story.adoc[tag=yann]
 include::{includedir}/story.adoc[tag=nico]
 ====
 
-[.basics.background, .transition]
+[.transition.background]
 == !
 
 [NOTE.speaker]

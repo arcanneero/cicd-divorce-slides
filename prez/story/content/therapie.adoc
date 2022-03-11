@@ -376,12 +376,14 @@ include::{includedir}/story.adoc[tag=kiss]
 [.ci-cd.background]
 == Oups ...
 
+image::../images/complexite.png[]
+
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=accidentelle]
 ====
 
-[.basics.background, .transition]
+[.transition.background]
 == !
 
 [NOTE.speaker]

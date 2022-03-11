@@ -57,7 +57,7 @@ include::{includedir}/story.adoc[tag=union]
 include::{includedir}/story.adoc[tag=craft]
 ====
 
-[.basics.background]
+[.transition.background]
 == !
 
 [NOTE.speaker]
