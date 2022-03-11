@@ -383,7 +383,7 @@ image::../images/complexite.png[]
 include::{includedir}/story.adoc[tag=accidentelle]
 ====
 
-[.transition.background]
+[.transition.background, transition="slide-in zoom-out"]
 == !
 
 [NOTE.speaker]

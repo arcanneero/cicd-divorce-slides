@@ -1,3 +1,4 @@
+* [ ] Faire la première slide !
 * [x] lister les  typologies de slides pour Design
 * [x] trouver un thème par persona
 * [ ] timer les slides sur les notes (pour savoir on devrait en être) 
@@ -74,12 +75,12 @@ Trouvez un jeu d'illustration cohérente
 
 Part 7. : Thème CI/CD
 
-* [ ] Slide 7.2 : On sépare les deux pictos
-* [ ] Slide 7.3 : Faire la partie séparation en 3 slides : La séparation, CI puis CD
-* [ ] Slide 7.4 : Thème DevOps : Mettre les trois pictos
-* [ ] Slide 7.5 :
-* [ ] Slide 7.6 : Thème Pipeline : Ici, le devops n'est plus une équipe mais un culture et une pratique d'entreprise, comme imaginez à l'origine
-* [ ] Slide 7.7 : Schéma Devops avec CI et CD dedans
+* [x] Slide 7.2 : On sépare les deux pictos
+* [x] Slide 7.3 : Faire la partie séparation en 3 slides : La séparation, CI puis CD
+* [x] Slide 7.4 : Thème DevOps : Mettre les trois pictos
+* [x] Slide 7.5 :
+* [x] Slide 7.6 : Thème Pipeline : Ici, le devops n'est plus une équipe mais un culture et une pratique d'entreprise, comme imaginez à l'origine
+* [x] Slide 7.7 : Schéma Devops avec CI et CD dedans
 
 Rajouter le fait que c'est une évolution 
 

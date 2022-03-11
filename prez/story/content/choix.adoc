@@ -10,30 +10,58 @@ On va vous proposer trois possibilités qui ne sont pas exhaustives !
 ====
 
 [.separation.background]
-== Séparation ?
+== !
+
+image:../images/choix/bolt-solid.svg[ci, 25%]
+image:../images/choix/gear-solid.svg[cd, 30%]
 
 [NOTE.speaker]
 ====
-include::{includedir}/story.adoc[tag=separation-ci]
+include::{includedir}/story.adoc[tag=monde-avant]
 ====
 
 [.separation.background]
-== Séparation ?
+== Séparation des responsabiilté
+
+[.step, .ci]
+* Construction
+[.ci]
+* Assemblage
+[.cd]
+* Mise en service
+* Règles
 
 [NOTE.speaker]
 ====
-include::{includedir}/story.adoc[tag=separation-cd]
+include::{includedir}/story.adoc[tag=separation]
 ====
 
-[.ci-cd.background]
-== Médiation ?
+
+[.separation.background]
+== !
+
+image:../images/choix/bolt-solid.svg[ci, 25%]
+image:../images/choix/gear-solid.svg[cd, 30%]
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=structure]
+====
+
+[.mediation.background]
+== !
+
+image:../images/choix/bolt-solid.svg[ci, 15%]
+image:../images/choix/gear-solid.svg[cd, 20%]
+
+image:../images/choix/infinity-solid.svg[cd, 30%]
 
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=mediation]
 ====
 
-[.ci-cd.background]
+[.mediation.background]
 == Et pourquoi pas...
 
 [NOTE.speaker]
@@ -41,15 +69,17 @@ include::{includedir}/story.adoc[tag=mediation]
 include::{includedir}/story.adoc[tag=transverse]
 ====
 
-[.devops.background]
-== Union ?
+[.union.background]
+== !
+
+image:../images/choix/devops.svg[cd]
 
 [NOTE.speaker]
 ====
 include::{includedir}/story.adoc[tag=union]
 ====
 
-[.devops.background]
+[.union.background]
 == Aller plus loin ...
 
 [NOTE.speaker]
@@ -57,7 +87,7 @@ include::{includedir}/story.adoc[tag=union]
 include::{includedir}/story.adoc[tag=craft]
 ====
 
-[.transition.background]
+[.transition.background, transition="slide-in zoom-out"]
 == !
 
 [NOTE.speaker]
