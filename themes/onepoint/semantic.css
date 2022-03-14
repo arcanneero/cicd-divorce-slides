@@ -102,6 +102,7 @@ div.backgrounds .code {
 }
 
 section.code.present:not(.stack) {
+
 }
 
 .code h2 {
@@ -182,14 +183,21 @@ section.separation.present:not(.stack), section.mediation.present:not(.stack), s
 
 div.backgrounds .transition {
     background-repeat: no-repeat, no-repeat;
-    background-size: 200px 200px, 200px 200px ;
+    background-size: 200px 200px, 200px 200px;
     background-position: 0 0, 0 0;
     background-image: url("images/angle-wh.png"), linear-gradient(black, black);
 }
 
 
 section.transition.present:not(.stack) {
+
+    background-image: url("images/pause.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    background-position: 50% 50%;
+    height: 100%;
 }
+
 
 .transition h2 {
     text-shadow: none;
@@ -202,3 +210,4 @@ section.transition.present:not(.stack) {
     text-shadow: none;
     color: black;
 }
+
