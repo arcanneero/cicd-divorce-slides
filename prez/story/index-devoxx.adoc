@@ -15,6 +15,7 @@
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=intro]
 ====
 

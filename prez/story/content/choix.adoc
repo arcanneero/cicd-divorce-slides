@@ -4,6 +4,7 @@
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=choice]
 
 On va vous proposer trois possibilités qui ne sont pas exhaustives !
@@ -17,6 +18,7 @@ image:../images/choix/gear-solid.svg[cd, 30%]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=monde-avant]
 ====
 
@@ -33,6 +35,7 @@ include::{includedir}/story.adoc[tag=monde-avant]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=separation]
 ====
 
@@ -45,6 +48,7 @@ image:../images/choix/gear-solid.svg[cd, 30%]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=structure]
 ====
 
@@ -58,6 +62,7 @@ image:../images/choix/infinity-solid.svg[cd, 30%]
 
 [NOTE.speaker]
 ====
+Yann :
 include::{includedir}/story.adoc[tag=mediation]
 ====
 
@@ -66,6 +71,7 @@ include::{includedir}/story.adoc[tag=mediation]
 
 [NOTE.speaker]
 ====
+Yann :
 include::{includedir}/story.adoc[tag=transverse]
 ====
 
@@ -76,6 +82,7 @@ image:../images/choix/devops.svg[cd]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=union]
 ====
 
@@ -84,6 +91,7 @@ include::{includedir}/story.adoc[tag=union]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=craft]
 ====
 
