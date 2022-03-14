@@ -4,6 +4,7 @@
 
 [NOTE.speaker]
 ====
+Yann :
 include::{includedir}/story.adoc[tag=tourtereaux]
 ====
 
@@ -12,6 +13,7 @@ include::{includedir}/story.adoc[tag=tourtereaux]
 
 [NOTE.speaker]
 ====
+Yann :
 include::{includedir}/story.adoc[tag=ci-start]
 ====
 
@@ -22,6 +24,7 @@ image::../images/cicd-cicd.build.png[]
 
 [NOTE.speaker]
 ====
+Yann :
 include::{includedir}/story.adoc[tag=ci-build]
 ====
 
@@ -33,6 +36,7 @@ image::../images/cicd-cicd.integration.png[]
 
 [NOTE.speaker]
 ====
+Yann :
 include::{includedir}/story.adoc[tag=ci-integration]
 ====
 
@@ -42,6 +46,7 @@ image::../images/geek-evolution.png[]
 
 [NOTE.speaker]
 ====
+Yann :
 include::{includedir}/story.adoc[tag=ci-end]
 ====
 
@@ -50,6 +55,7 @@ include::{includedir}/story.adoc[tag=ci-end]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=cd-start]
 ====
 
@@ -61,6 +67,7 @@ image::../images/cicd-cicd.delivery.png[]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=cd-delivery]
 ====
 
@@ -71,6 +78,7 @@ image::../images/cicd-cicd.deployment.png[]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=cd-deployment]
 ====
 
@@ -81,6 +89,7 @@ image::../images/cicd-cicd.development.png[]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=cd-development]
 ====
 
@@ -89,6 +98,7 @@ include::{includedir}/story.adoc[tag=cd-development]
 image::../images/geek-evolution.png[]
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=cd-end]
 ====
 
@@ -99,6 +109,7 @@ image::../images/cicd-cicd-split.png[]
 
 [NOTE.speaker]
 ====
+Yann :
 include::{includedir}/story.adoc[tag=rencontre-start]
 ====
 
@@ -109,6 +120,7 @@ image::../images/cicd-cicd.png[]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=rencontre-ensemble]
 ====
 
@@ -118,6 +130,7 @@ image::../images/yann.png[]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=yann]
 ====
 
@@ -125,6 +138,7 @@ include::{includedir}/story.adoc[tag=yann]
 
 [NOTE.speaker]
 ====
+Yann :
 include::{includedir}/story.adoc[tag=nico]
 ====
 
@@ -133,5 +147,6 @@ include::{includedir}/story.adoc[tag=nico]
 
 [NOTE.speaker]
 ====
+Yann :
 include::{includedir}/story.adoc[tag=rencontre-end]
 ====

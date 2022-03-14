@@ -5,6 +5,7 @@
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=therapie]
 ====
 
@@ -13,6 +14,7 @@ include::{includedir}/story.adoc[tag=therapie]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=dry]
 ====
 
@@ -68,6 +70,7 @@ deliver_app:
 |===
 [NOTE.speaker]
 ====
+Yann :
 include::{includedir}/story.adoc[tag=dry]
 ====
 
@@ -76,6 +79,7 @@ include::{includedir}/story.adoc[tag=dry]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=dry-do]
 ====
 
@@ -86,6 +90,7 @@ image:../images/guylookingatgirl.png[]
 
 [NOTE.speaker]
 ====
+Nico :
 On peut se poser la question ...
 ====
 
@@ -94,6 +99,7 @@ On peut se poser la question ...
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=solid-s]
 ====
 
@@ -133,6 +139,7 @@ image:../images/solid/single-respo-good.png[]
 
 [NOTE.speaker]
 ====
+Yann :
 Ici, on va préférer avec des jobs différents pour les différents types d'élément à déployer. Ce sera plus simple à maintenir dans le temps, et ce n'est tout simplement pas la même chose. De plus, de cette façon, vous pourrez plus facilement réutiliser vos jobs.
 ====
 
@@ -143,6 +150,7 @@ Mais pas trop !
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=solid-o]
 ====
 
@@ -183,6 +191,7 @@ image:../images/solid/open-closed-good.png[]
 
 [NOTE.speaker]
 ====
+Yann :
 Nous trouvons ici un template de job permettant de faire une analyse sonar. On peut voir dans le premier cas, que si on veut ajouter des nouveaux paramètres à Sonar, il va falloir modifier la ligne de commande ou la surcharger complètement.
 
 Dans le deuxième, le template nous propose deux manières d'étendre le job, on peut passer par le fichier de configuration de sonar ou ajouter directement des paramètres à la ligne de commande via les variables.
@@ -200,6 +209,7 @@ image::../images/barbara_liskov.png["Barbara Liskov", 75%]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=solid-l]
 ====
 
@@ -208,6 +218,7 @@ include::{includedir}/story.adoc[tag=solid-l]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=solid-i]
 ====
 
@@ -248,6 +259,7 @@ include::{includedir}/story.adoc[tag=solid-i]
 
 [NOTE.speaker]
 ====
+Yann :
 Dans les templates suivants, on voit que le développeur cherche à factoriser l'analyse de code, mais ici, l'"interface" permet de couvrir tous les outils et les technos. L'exemple est un peu grossier, mais on le retrouve de temps en temps.
 
 Il vaut mieux avoir des jobs/templates spécialisés qui permettront d'être réutiliser et/ou débrancher au besoin.
@@ -258,6 +270,7 @@ Il vaut mieux avoir des jobs/templates spécialisés qui permettront d'être ré
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=solid-d]
 ====
 
@@ -299,6 +312,7 @@ deploy:
 |===
 [NOTE.speaker]
 ====
+Yann :
 Dans notre premier cas, le job deploy est dépendant de l'execution de deliver, ce qui est assez classique.
 
 Mais pour rendre le job indépendant, on peut très bien définir un job "de contrôle" (une interface) qui va vérifier que l'artefact doit être bien présent au bon endroit avant de lancer le déploiement. Ainsi, c'est le job deliver (ou un job de transition ou "un adapter par exemple") qui doit "respecter" les règles imposées par le job deploy. Ce qui rend mécaniquement les jobs indépendants l'un de l'autre.
@@ -309,6 +323,7 @@ Mais pour rendre le job indépendant, on peut très bien définir un job "de con
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=lacher]
 ====
 
@@ -317,6 +332,7 @@ include::{includedir}/story.adoc[tag=lacher]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=debrayage]
 ====
 
@@ -364,6 +380,7 @@ image::../images/solid/debrayable.png[]
 
 [NOTE.speaker]
 ====
+Yann :
 Ici, on voit deux façons d'intervenir pendant le déroulement d'un pipeline, on peut faire des pipelines différents qui se déclenchent les uns les autres :ce qui nous permet de déclencher soit toutes les actions, soit lancer les pipelines à différentes étapes. Et une autre possibilité, c'est de mettre des points d'arrêt dans les pipelines permettant d'attendre une action manuelle avant de continuer.
 ====
 
@@ -374,6 +391,7 @@ image::../images/bisounours.png[]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=kiss]
 ====
 
@@ -384,6 +402,7 @@ image::../images/complexite.png[]
 
 [NOTE.speaker]
 ====
+Nico :
 include::{includedir}/story.adoc[tag=accidentelle]
 ====
 
