@@ -11,6 +11,8 @@ include::{includedir}/story.adoc[tag=pipelines]
 [.ci-cd.background]
 == La définition d'un pipeline
 
+image::../images/cicd-pipeline.png[]
+
 [NOTE.speaker]
 ====
 Nico :
@@ -41,6 +43,9 @@ include::{includedir}/story.adoc[tag=theories-atelier]
 
 [.ci-cd.background]
 == Dis, comment on fait des pipelines ?
+
+image:../images/processus.png[width=50%]
+footnote:eventstorm[https://pablopernot.fr/2019/07/event-storming-description/]
 
 [NOTE.speaker]
 ====
