@@ -107,7 +107,7 @@ include::{includedir}/story.adoc[tag=pipeline-outils]
 [.ci-cd.background, transition=none]
 == !
 
-image::pipeline-steps-6-warning.png[step 1, 75%]
+image::pipeline-steps-6-warning.png[step 1]
 
 [NOTE.speaker]
 ====
