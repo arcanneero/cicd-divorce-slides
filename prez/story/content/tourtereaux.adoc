@@ -124,9 +124,10 @@ Nico :
 include::{includedir}/story.adoc[tag=rencontre-ensemble]
 ====
 
+[.basics.background]
 == Yann
 
-image::../images/yann.png[]
+image::../images/intervenants-yann.png[]
 
 [NOTE.speaker]
 ====
@@ -134,7 +135,10 @@ Nico :
 include::{includedir}/story.adoc[tag=yann]
 ====
 
+[.basics.background]
 == Nicolas
+
+image::../images/intervenants-nicolas.png[]
 
 [NOTE.speaker]
 ====

@@ -3,8 +3,9 @@
 * [x] lister les  typologies de slides pour Design
 * [x] trouver un thème par persona
 * [ ] timer les slides sur les notes (pour savoir on devrait en être) 
-* [ ] Mettre une page de ref.
+* [x] Mettre une page de ref.
 * [ ] Revoir le style des references
+* [ ] Ajouter un disclamer "c'est un rex, pas une recette magique" après nos prez.
 
 Idée de représentation :
 
@@ -22,7 +23,7 @@ Part 2. : Thème CD et Thème CD
 * [x] Slide : 2.8 Schéma, Continuous Developpement => Continuous Development
 * [x] Slide : 2.9 Schéma, griser les services
 * [x] Slide : 2.10 schéma de l'évolution 2
-* [ ] Slide : 2.14 Picto pour Nico
+* [x] Slide : 2.14 Picto pour Nico
 * [x] Slide : 2.15 Slide de transition => trouver les illustrations
 
 Part 3. : Thème pipeline
@@ -61,7 +62,7 @@ Un qui expose le principe puis un l'exemple.
 
 Part 6. : Thème DevOps
 
-*   [ ] Trouvez un jeu d'illustration cohérente
+* [ ] Trouvez un jeu d'illustration cohérente
 * [x] Slide 6.1 : illustrer avec le même du mec qui regarde une autre nana de dos
 * [x] Slide 6.2 : Trouver une illustration
 * [x] Slide 6.3 : Mettre la boucle

@@ -1,0 +1,10 @@
+= Références
+
+* SOLID +
+https://fr.wikipedia.org/wiki/SOLID_(informatique)
+* Event Storming +
+https://pablopernot.fr/2019/07/event-storming-description/
+* Software crafter +
+https://www.slideshare.net/\\__MaxS__/software-craftsmanship-un-nouvel-eldorado
+* DevOps +
+https://fr.wikipedia.org/wiki/Devops
