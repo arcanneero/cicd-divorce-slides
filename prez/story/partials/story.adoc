@@ -244,7 +244,7 @@ Mais c'est généralement une fausse excuse pour ne pas s'y pencher sérieusemen
 
 Si
 // tag::responsability-citation[]
-_ce que l’on conçoit bien s’énonce clairement, et les mots pour le dire arrivent aisément_!footnote:nboileau[Nicolas Boileau]
+_Ce que l’on conçoit bien s’énonce clairement, et les mots pour le dire arrivent aisément_!footnote:nboileau[Nicolas Boileau]
 // end::responsability-citation[]
 ,Il en va de même pour les dessins. Et si vous ne pouvez pas représenter le processus,
 il y a de grandes chances que vous ne puissiez pas l'appréhender !
