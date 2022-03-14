@@ -23,7 +23,7 @@ Part 2. : Thème CD et Thème CD
 * [x] Slide : 2.10 schéma de l'évolution 2
 
 * [ ] Slide : 2.14 Picto pour Nico
-* [ ] Slide : 2.15 Slide de transition => trouver les illustrations
+* [x] Slide : 2.15 Slide de transition => trouver les illustrations
 
 Part 3. : Thème pipeline
 
@@ -36,7 +36,7 @@ Part 3. : Thème pipeline
 
 * [ ] Slide 3.14 : Refaire le faire-part
 * [ ] Slide 3.15 : Majuscule
-* [ ] Slide 3.16 : Slide de transition
+* [x] Slide 3.16 : Slide de transition
 
 Part 4. : Thème All as code
 
@@ -45,7 +45,7 @@ Part 4. : Thème All as code
 * [x] Slide 4.3 : Revoir tout le slide, déplacé l'image du code source dans le slide suivant
 * [ ] Slide 4.4 :
 * [x] Slide 4.5 : Mettre une image de fusion, attention les notes vont jusqu'à la fin
-* [ ] Slide 4.6 : Slide de transition
+* [x] Slide 4.6 : Slide de transition
 
 Part 5. : Thème pipeline
 
@@ -61,7 +61,7 @@ Un qui expose le principe puis un l'exemple.
 * [x] Slide 5.11 : les reprendres
 * [x] Slide 5.12 : Illustration cool
 * [ ] Slide 5.13 : Les schémas de pipeline
-* [ ] Slide 5.14 : Slide de transition
+* [x] Slide 5.14 : Slide de transition
 
 Part 6. : Thème DevOps
 
