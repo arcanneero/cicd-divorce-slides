@@ -106,9 +106,9 @@ a|[source,yaml]
 ----
 deploy:
   script:
-    - if [ -n $IS_PHP_PROJECT]; then vendor/bin/phpcs src; fi
-    - if [ -f Dockerfile ]; hadolint Dockerfile; fi
-    - sonar-scanner ...
+    - ./deploy_doc.sh
+    - ./deploy_app.sh
+    - ./deploy_db.sh
 
 
 ----
@@ -281,13 +281,17 @@ deploy: # Attend que l'étape de livraison soit ok
 2+a|
 [source,yaml]
 ----
-deliver: # Doit déposer l'artefact au bon endroit
+# Doit déposer l'artefact au bon endroit
+deliver:
   script: ./push_artefact_to_repo.sh
 
-check_artefact_readiness: # Vérifie que l'artefact soit bien présent
+# Vérifie que l'artefact soit bien présent
+check_artefact_readiness:
   script: ./check_artefact.sh
 
-deploy: # Vérifie que l'artefact soit bien présent
+# Déploie si l'artefact est au bon endroit
+# (contrat respecté)
+deploy:
   needs: [check_artefact_readiness]
   script: ./deploy.sh
 ----
