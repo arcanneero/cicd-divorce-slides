@@ -4,7 +4,7 @@
 
 [NOTE.speaker]
 ====
-Nico :
+**Nico  [17 min] **:
 include::{includedir}/story.adoc[tag=all-as-code]
 ====
 
@@ -73,5 +73,13 @@ include::{includedir}/story.adoc[tag=all-as-code-end]
 ====
 Yann :
 Il est temps ...
+
+Alors tant qu'on est en pause, on voudrait juste vous prévenir.
+
+Ce que nous allons vous présenter, ce sont des observations que nous avons faites,
+des idées que nous avons, et souvent des mises en application qui nous apporte chaque jour.
+
+Quoi qu'il en soit, ce n'est pas une recette magique qui marche à tous les coups,
+mais plus une approche qui, on l'espère, va vous aider.
 ====
 

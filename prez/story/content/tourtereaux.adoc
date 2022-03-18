@@ -4,7 +4,7 @@
 
 [NOTE.speaker]
 ====
-Yann :
+**Yann [1 min] **:
 include::{includedir}/story.adoc[tag=tourtereaux]
 ====
 
@@ -153,4 +153,5 @@ include::{includedir}/story.adoc[tag=nico]
 ====
 Yann :
 include::{includedir}/story.adoc[tag=rencontre-end]
+
 ====

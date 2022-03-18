@@ -1,8 +1,8 @@
-* [ ] Faire la première slide !
+* [x] Faire la première slide !
 * [ ] Mettre une illustration sur chaque partie (demi-écran)
 * [x] lister les  typologies de slides pour Design
 * [x] trouver un thème par persona
-* [ ] timer les slides sur les notes (pour savoir on devrait en être) 
+* [x] timer les slides sur les notes (pour savoir on devrait en être)
 * [x] Mettre une page de ref.
 * [ ] Revoir le style des references
 * [ ] Ajouter un disclamer "c'est un rex, pas une recette magique" après nos prez.

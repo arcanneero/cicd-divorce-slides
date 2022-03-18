@@ -4,7 +4,7 @@
 
 [NOTE.speaker]
 ====
-Nico :
+**Nico  [7 min] **:
 include::{includedir}/story.adoc[tag=pipelines]
 ====
 
