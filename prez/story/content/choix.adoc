@@ -4,7 +4,7 @@
 
 [NOTE.speaker]
 ====
-Nico :
+**Nico  [45 min] **:
 include::{includedir}/story.adoc[tag=choice]
 
 On va vous proposer trois possibilités qui ne sont pas exhaustives !

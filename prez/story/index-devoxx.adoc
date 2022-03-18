@@ -38,6 +38,7 @@ include::{contentdir}/choix.adoc[leveloffset=+1]
 
 [NOTE.speaker]
 ====
+**[50 min] **
 ====
 
 include::{contentdir}/references.adoc[leveloffset=+1]

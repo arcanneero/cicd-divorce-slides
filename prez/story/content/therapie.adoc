@@ -5,7 +5,7 @@
 
 [NOTE.speaker]
 ====
-Nico :
+**Nico  [20 min] **:
 include::{includedir}/story.adoc[tag=therapie]
 ====
 

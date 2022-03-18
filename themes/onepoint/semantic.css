@@ -1,4 +1,30 @@
 
+@keyframes changeBg{
+    0%,100%  {background-image: url("logo/heart-solid.svg"), radial-gradient(darkmagenta, transparent)}
+    50% {background-image: url("logo/heart-crack-solid.svg"), radial-gradient(black, transparent)}
+}
+
+.title h1 {
+    text-transform: none;
+}
+
+div.title {
+    background-repeat: no-repeat;
+    background-size: 12%, 18% auto ;
+    background-image: url("logo/heart-crack-solid.svg"), radial-gradient(black, transparent);
+    background-position: 3% center, 0 center;
+    padding-left: 28%;
+    max-width: 72%;
+    animation: changeBg 3s infinite;;
+
+}
+
+section.title.present:not(.stack) {
+    margin-left: 15%;
+}
+
+
+
 div.backgrounds .basics {
     background-repeat: no-repeat, no-repeat;
     background-size: 200px 200px, 200px 200px ;
@@ -124,6 +150,7 @@ div.backgrounds .devops {
     background-position: 25px 25px, 0 0, 0 0;
     background-image: url("logo/infinity-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkgreen, darkgreen);
 }
+
 
 section.devops.present:not(.stack) {
 }
