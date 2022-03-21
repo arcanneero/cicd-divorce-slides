@@ -71,7 +71,25 @@ deliver_app:
 [NOTE.speaker]
 ====
 Yann :
-include::{includedir}/story.adoc[tag=dry]
+
+Dans l'exemple suivant :
+
+Dans notre cas, on a une routine pour les déploiements
+
+* est-ce qu'on est vendredi ?
+* On livre => le script qui va bien
+* on prévient les ops (mail, notif, etc.)
+* on prévient le po de la livraison
+
+Deux façons de factoriser différentes
+
+* Soit on passe par des variables => comme des paramètres de fonction
+* Soit on s'appuie sur l'outillage => gitlab-ci avec after et before script
+
+L'interet de pouvoir réutiliser la routine pour plsuieurs type de déploiement.
+
+L'autre avantage est de bien faire la distinction entre le déploiement en tant que tel et ce qui tourne autour.
+
 ====
 
 [.ci-cd.background]
