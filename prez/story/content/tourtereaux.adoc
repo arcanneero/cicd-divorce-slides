@@ -224,6 +224,8 @@ Nico :
 
 Onepoint, Tech Lead, PHP, DevOps, Pas Java, Adore la POO, Mentorat, barbe et casquette
 
+Première conférence publique
+
 "
 include::{includedir}/story.adoc[tag=yann]
 "
