@@ -119,6 +119,9 @@ Yann :
 * Sinon risque de rejet des équipes
 * Des réponses existent déjà dans les process
 * Si trop de divergence, il faudra p-e faire des compris
+* Workflow Git par exemple, gestion du versionning, Méthode agile ou pas, etc.
+* Il faut partir du principe qu'aucun standard n'est respecté
+
 
 "
 include::{includedir}/story.adoc[tag=pipeline-process]
