@@ -5,7 +5,19 @@
 [NOTE.speaker]
 ====
 **Nico  [17 min] **:
+
+* Lire le texte, il est bien
+* Pendant des années, le process CI/CD aussi appelé industrialisation
+* Techniquement les deux restaient de leur côté
+* Tout se passait bien, même si chacun restait dans son coin
+* Beaucoup d'experience, process calé, CI avec ses outils, CD avec les siens
+* Pas forcement de besoin de livrer souvent, l'agilité balbutiante
+* Des gars dans leur cave, les confs dans les outils
+* On sentait qu'un truc manquait malgré tout et leur relation n'était pas très fluide
+
+"
 include::{includedir}/story.adoc[tag=all-as-code]
+"
 ====
 
 [.code.background]
@@ -16,7 +28,14 @@ image::../images/red-carpet.png[]
 [NOTE.speaker]
 ====
 Nico :
+
+* Puis la mode du Everything as code
+* CI habitué au code, donc hyper content
+* CD beaucoup moins (surtout sur les concepts, la maintenabilité, les bonnes pratiques, etc.)
+
+"
 include::{includedir}/story.adoc[tag=all-as-code-everything]
+"
 ====
 
 [.code.background]
@@ -25,9 +44,16 @@ include::{includedir}/story.adoc[tag=all-as-code-everything]
 [NOTE.speaker]
 ====
 Nico :
-include::{includedir}/story.adoc[tag=all-as-code-result]
 
-=> Même en suivant les 12 factors
+* On a TOUT mis dans les sources de nos projets
+* Donc CI avait la main sur tout
+* CD était un peu perdu
+* Dispute de couple
+* même CI se posait des questions étranges (un point ou pas devant les repertoires de cd)
+
+"
+include::{includedir}/story.adoc[tag=all-as-code-result]
+"
 ====
 
 [.code.background]
@@ -50,9 +76,9 @@ Dockerfile
 [NOTE.speaker]
 ====
 Nico :
+"
 include::{includedir}/story.adoc[tag=all-as-code-mess]
-
-=> Même en suivant les 12 factors
+"
 ====
 
 [.code.background]
@@ -63,7 +89,19 @@ image::../images/fusion.png[]
 [NOTE.speaker]
 ====
 Yann :
+
+* On se retrouve avec les fichiers de conf de CI et CD au même endroit
+* Il faut donc "merger","fusionner" les fichiers de conf et les pratiques au même endroit
+* Avant c'était dans des outils/repertoires/dépots différents
+* Avec chacun ces pratiques, habitudes
+* Alignement sur le système de branching git pour la CD
+* Risques d'échec important, embrouilles
+* les décisions de l'équipe de dev, côté CI, qui étaient autonome, on maintenant un impact sur CD
+* CD doit s'inscrire dans les habitudes de travail de CI
+
+"
 include::{includedir}/story.adoc[tag=all-as-code-end]
+"
 ====
 
 [.transition.background, transition="slide-in zoom-out"]
@@ -80,6 +118,6 @@ Ce que nous allons vous présenter, ce sont des observations que nous avons fait
 des idées que nous avons, et souvent des mises en application qui nous apporte chaque jour.
 
 Quoi qu'il en soit, ce n'est pas une recette magique qui marche à tous les coups,
-mais plus une approche qui, on l'espère, va vous aider.
+mais plus une approche pour l'implémentation des pipelines (oui, on va parler de code) qui, on l'espère, va vous aider.
 ====
 
