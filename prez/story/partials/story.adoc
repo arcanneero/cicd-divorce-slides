@@ -357,11 +357,10 @@ plus répétable (si ca plante...), et surtout plus simple à insérer dans un p
 // tag::solid-o[]
 Un des impacts de la factorisation, décrite précédemment,
 est que l'on va avoir tendance à rendre les actions figées pour tous
-Il est donc indispensable que des jobs factorisés puis contraindre ce qui est de sa responsabilité,
-mais laisser libre ce qui relève de son intégration dans le processus
+Il est donc indispensable que des jobs factorisés puissent contraindre ce qui est de leurs responsabilités,
+mais laisser libre ce qui relève de leur intégration dans le processus
 
-Un job qui assure un build java standardiser les outils qu'il utilise (gradle, version de java).
-Mais il va permettre de configurer le lieu du dépot d'artefact ou son mode de gestion de version.
+Par exemple, un job qui assure un build java, de standardiser les outils qu'il utilise (gradle, version de java). Mais il doit permettre de configurer le lieu du dépot d'artefact ou son mode de gestion de version.
 // end::solid-o[]
 
 // tag::solid-l[]
