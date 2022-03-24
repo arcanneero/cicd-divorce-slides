@@ -97,7 +97,10 @@ image::pipeline-steps-1.png[step 1]
 Yann :
 
 * Par où on commence pour définir un pipeline ?
-* Par les objectifs.
+* Par les objectifs, et pas seulement les objectifs tech
+** Classique : qualité, augmenté la vitesse de déploiement, simplifier les actions, etc...
+** Moins classique : Laisser les CP faire les livraisons, Automatiser des déploiements de nuit, cadencer la communication commerciale et la mise à disposition du produit, etc...
+** Mauvais objectif : faire comme tout le monde, "MAIS C'EST TROP COOL"
 * D'où l'importance d'avoir tout le monde autour de la table
 
 "
@@ -200,11 +203,11 @@ Yann :
 
 * On y arrive
 * Le choix des outils "ENFIN"
-* Ils doivent répondrent aux besoins de feedback, déclenchement, etc.
+* Ils doivent répondre aux besoins de feedback, déclenchement, etc.
 * Un seul pour tous ? Les meilleurs de chaque de domaine ?
 * Côté CI, c'est plus facile car indépendant du reste de l'entreprise
 * Côté CD, c'est toujours dépendant de l'infra de la boite, des stacks etc.
-* Grosse divergence
+* Grosse divergence entre CI et CD
 
 "
 include::{includedir}/story.adoc[tag=pipeline-outils]
@@ -219,7 +222,16 @@ image::pipeline-steps-6-warning.png[step 1]
 [NOTE.speaker]
 ====
 Nico :
+
+* Choix exotique = difficulté d'usage et de maintenance
+* Voir pas utilisé
+* Git ou SVN
+* XLDeploy ou un système de déploiment obscur écrit en Pascal
+* Ex.: pour iOS, un build sur un MAC ou via une commande g++ maison
+
+"
 include::{includedir}/story.adoc[tag=pipeline-outils-warn]
+"
 ====
 
 [.ci-cd.background, transition=none]
@@ -230,7 +242,14 @@ image::pipeline-steps-7.png[step 1]
 [NOTE.speaker]
 ====
 Yann :
+
+* On a les objectifs, les feedback, les actions clés, les outils, etc...
+* Et seulement maintenant on commence le "dev"
+* Comme d'habitude en développement et en archi, si on concoit correctement, le développement devrait bien se passer
+
+"
 include::{includedir}/story.adoc[tag=pipeline-implem]
+"
 ====
 
 [.ci-cd.background]
@@ -241,7 +260,14 @@ image::faire-part.png[step 1, 75%]
 [NOTE.speaker]
 ====
 Nico :
+
+* CI/CD ont enfin leurs pipelines
+* Malgré les échanges, les points de conflits, etc. on a enfin réussi à avoir quelque chose qui fonctionne et qui convient à tout le monde
+* C'est émouvant quand même ! Non ?
+
+"
 include::{includedir}/story.adoc[tag=responsability-start]
+"
 ====
 
 [.ci-cd.background]
@@ -252,7 +278,16 @@ include::{includedir}/story.adoc[tag=responsability-citation]
 [NOTE.speaker]
 ====
 Nico :
+
+* A dire comme ça, ça à l'air simple
+* Mais c'est au minimum complexe
+* Ce n'est pas une excuse pour ne pas faire l'exercice, sinon ça va aller dans le mur
+* Au début, c'est le bordel, évidemment, surtout que, comme tout bon dév, on veut coder !
+* Si vous mettez des trucs sous le tapis, vous allez, à un moment ou un autre, le voir revenir au galop
+
+"
 include::{includedir}/story.adoc[tag=responsability-complexe]
+"
 ====
 
 
