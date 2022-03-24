@@ -284,6 +284,7 @@ Nico :
 * Ce n'est pas une excuse pour ne pas faire l'exercice, sinon ça va aller dans le mur
 * Au début, c'est le bordel, évidemment, surtout que, comme tout bon dév, on veut coder !
 * Si vous mettez des trucs sous le tapis, vous allez, à un moment ou un autre, le voir revenir au galop
+* Mais vous allez y arriver, comme CI et CD dans leur jolie couple
 
 "
 include::{includedir}/story.adoc[tag=responsability-complexe]
