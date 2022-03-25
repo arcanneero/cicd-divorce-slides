@@ -6,9 +6,9 @@
 ====
 **Nico  [7 min] **:
 
-Naissance des pipelines
-Beaucoup de tentative pour faire fonctionner ce joli couple CI/CD
-Des experiences, des théories, des tests, etc..
+* Naissance des pipelines
+* Beaucoup de tentative pour faire fonctionner ce joli couple CI/CD
+* Des experiences, des théories, des tests, des pratiques, etc..
 
 "
 include::{includedir}/story.adoc[tag=pipelines]
@@ -24,11 +24,10 @@ image::../images/cicd-pipeline.png[]
 ====
 Nico :
 
-Prenons un peu de hauteur
-De manière générale, on arrive à ce type de pipeline (ref schéma)
-que tout le monde connait
-INCROYABLE, c'est le merge parfait de CI et CD
-Attention, ce n'est pas du code
+* Prenons un peu de hauteur
+* De manière générale, on arrive à ce type de pipeline (ref schéma) que tout le monde connait
+* INCROYABLE, c'est le merge parfait de CI et CD
+* Attention, ce n'est pas du code
 
 "
 include::{includedir}/story.adoc[tag=theories-workflow]

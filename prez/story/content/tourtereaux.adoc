@@ -84,6 +84,7 @@ include::{includedir}/story.adoc[tag=ci-end]
 ====
 Nico :
 
+* On vous propose UNE définition
 * CD : deployment, delivery, development
 * Un truc d'OPS à la base, emmener le code en prod.
 
@@ -148,7 +149,7 @@ Développement continue :
 
 * On "opère" un service => le RUN
 * Changement de paradigme, on ne fait pas que déployer une appli, on gère un service
-* Non automatiser, même si beaucoup d'outils
+* Non automatisé, même si beaucoup d'outils
 * Les admin sys
 
 "
