@@ -188,7 +188,7 @@ On ne fait pas des pipelines par contrainte, mais bien pour aider !!!
 Mais malgré toute leur bonne volonté, il n'en demeure pas moins qu'il y a forcément des étapes clés ou des cas particuliers.
 Pas la peine de les mettre sous le tapis, il faut les identifier !
 
-Est-ce qu'on ne peut déployer que tous les mois ? Ulcère assuré pour CD...
+Est-ce qu'on ne peut déployer que toutes les semaines ? Ulcère assuré pour CD...
 Est-ce qu'on a des personnes clé pour des actions particulières ?
 Validation, déclenchement, action technique, droit d'accès ne sont que des example de question qui se sont posées !
 // end::pipeline-steps[]

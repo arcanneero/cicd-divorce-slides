@@ -1,29 +1,11 @@
 * [ ] Mettre une illustration sur chaque partie (demi-écran)
 * [ ] Revoir le style des references
-* [ ] Remplacer le texte par les idées pour être lus fluide.
-
-Déroulé:
-
-* [ ] Recontextualiser, répéter, rappeler
-
-Part 1. : Intro
-
-Part 2. :
-
-* [ ] Yann : Onepoint, mot clé sur nos missions
-* [x] Nicolas : Onepoint, mot clé sur nos missions
 
 Part 3. : Thème pipeline
 
-* [x] Photo Event Storminige
-* [ ] Rajouter des exemples
-* [ ] Tous les mois -> toutes les semaines
+* [ ] Rajouter des exemples => à rebosser
 * [ ] Zoom sur les structures ?
-* [ ] Déclencheur qui enclenche...
-* [ ] Mandeleiev du devops
-* [ ] Ajouter sur chaque étapes une slide de "rex" / outils
-* [ ] Ne pas dire la citation
-* [ ] Transition -> Process, pas de code, pê déjà en place historiquement, etc...
+* [ ] Ajouter sur chaque étapes une slide de "rex" / outils => à finir
 * [ ] Slide 3.14 : Refaire le faire-part
 * [ ] Schéma à la couleur du thème
 
@@ -31,42 +13,21 @@ Part 4. : Thème All as code
 
 * [ ] Année, habitudes, outils, etc...
 * [ ] La doc
-* [ ] Twelves factors ???
-* [ ] Un exemple dense, un exemple plus ordonné.
 
+Part 5. : Therapie
 
-Part 5. :
-
-* [ ] Dire qu'on va pareler de dry, kiss, et solid
+* [ ] Revoir les schémas des exemples
 * [ ] Slide 5.4 : Trouver une illustration
-* [ ] Slide 5.13 : Les schémas de pipeline
-* [ ] Dry : Example pas assez parlants
-* [ ] Solid => on a perdu les speaker
-* [ ] Samples : Ne pas hésiter à faire 2 slides : Pb / solution
-* [ ] Spécialisation -> ségrégation d'interface
-* [ ] Illustrations !!!!!
-* [ ] IoC -> inversion de dépendance
-* [ ] Points d'inférences -> Transformer l'interface en inférence
-* [ ] Schéma formation Docker
-* [ ] Conclusion SOLID
+* [ ] Slide 5.17 : Les schémas de pipeline -> Schéma formation Docker
 * [ ] KISS : Ajouter un example - Simplicité, dans l'utilisation (faire de la doc ?)
-* [ ] Inverser KISS et complexité (pb -> solution)
 
 Part 6. : Thème DevOps
 
 * [ ] Trouvez un jeu d'illustration cohérente
-* [ ] Monitor aussi le déploiement
-* [ ] BRef, illustration de l'évolution
-* [ ] Faute séparation des responsabilités
 
 Part 7. : Thème CI/CD
 
-* [ ] Resynthétiser l'ensemble  (slide 1)
-* [ ] Rajouter le fait que c'est une évolution
-* [ ] Séparation pk trois Slides
 * [ ] Propose sans imposer  => l'écrire sur les slides
-* [ ] Déséquilibre de compétances - Bienveillance
-* [ ] Dernière transition à virer.
 
 Part 8. :
 
