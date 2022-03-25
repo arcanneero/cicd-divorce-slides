@@ -1,6 +1,15 @@
 * [ ] Mettre une illustration sur chaque partie (demi-écran)
 * [ ] Revoir le style des references
 
+Part 2. : CI
+
+* [ ] : Partie CI => Rappel des idées sur le slide
+* [ ] : Fin de la CI dans les schémas : Indiquer que le but de la CI, c'est de valider le code, métriques et !
+* [ ] : Ajouter un slide avec juste le rond du code
+* [ ] : Expliquer le principe de Continuous (à chaque commit)
+* [ ] : Indiquer que le but du delivery, c'est la mise à disposition du livrable
+* [ ] : Fleche blanche sur les schémas => indiquez que c'est une action humaine (ou ne pas mettre les flèches)
+
 Part 3. : Thème pipeline
 
 * [ ] Rajouter des exemples => à rebosser
@@ -8,6 +17,9 @@ Part 3. : Thème pipeline
 * [ ] Ajouter sur chaque étapes une slide de "rex" / outils => à finir
 * [ ] Slide 3.14 : Refaire le faire-part
 * [ ] Schéma à la couleur du thème
+* [ ] EventStorm : nommé les UX
+* [ ] Etape 4 - Feedback : Parler du fail fast
+* [ ] Virer le drole sur XLDeploy
 
 Part 4. : Thème All as code
 
@@ -16,10 +28,14 @@ Part 4. : Thème All as code
 
 Part 5. : Therapie
 
+* [ ] Mettre les acronymes en entier
 * [ ] Revoir les schémas des exemples
+* [ ] Ne pas dire que la clean archi c'est l'évolution logique vers une meilleure qualité
 * [ ] Slide 5.4 : Trouver une illustration
 * [ ] Slide 5.17 : Les schémas de pipeline -> Schéma formation Docker
 * [ ] KISS : Ajouter un example - Simplicité, dans l'utilisation (faire de la doc ?)
+* [ ] Exemple inversion de dépendances : en ajouter un autre
+* [ ] Graphe complexité : il faut une légende !
 
 Part 6. : Thème DevOps
 

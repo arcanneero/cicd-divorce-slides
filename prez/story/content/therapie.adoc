@@ -48,14 +48,14 @@ a|
 deliver_npm_package:
   script:
     - ./is_it_friday.sh
-    - npm publish
+    - npm publish # Livraison NPM
     - ./alert_ops_team.sh
     - ./send_an_email_to_PO.sh
 
 deliver_app:
   script:
     - ./is_it_friday.sh
-    - ftp -u myapp.tar.gz
+    - ftp -u myapp.tar.gz # Livraison FTP
     - ./alert_ops_team.sh
     - ./send_an_email_to_PO.sh
 ----
@@ -63,8 +63,6 @@ a|
 [source,yaml]
 ----
 .deliver:
-  variables:
-    DELIVER_TASK: ''
   before_script:
     - ./is_it_friday.sh
   after_script:
@@ -74,12 +72,12 @@ a|
 deliver_npm_package:
   extends: .deliver
   script:
-    - npm publish
+    - npm publish  # Livraison NPM
 
 deliver_app:
   extends: .deliver
   script:
-    - ftp -u myapp.tar.gz
+    - ftp -u myapp.tar.gz # Livraison FTP
 ----
 
 |===
@@ -451,7 +449,7 @@ deliver-on-artifactory:
   script: ./push_artefact_to_repo.sh
 
 deploy: # Attend que l'étape de livraison soit ok
-  needs: [deliver]
+  needs: [deliver-on-artifactory]
   script: ./deploy.sh
 ----
 |image:../images/solid/dependency-inversion-bad.png[]
