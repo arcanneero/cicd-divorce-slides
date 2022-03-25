@@ -6,7 +6,20 @@
 [NOTE.speaker]
 ====
 **Nico  [20 min] **:
+
+* Côté CI, on sais gérer du code, le maintenir
+* Côté CD, on sais anticiper l'imprévisible, réagir vite aux incidents
+
+* Côté CI, se tromper, c'est notre quotidien, défaire, refaire etc.
+* Côté CD, bah, non en fait
+
+* Comme nous sommes plus d'origine CI, on va filer quelques conseils à CD, autrement dit : la belle famille
+
+* Vu que maintenant tout le pipeline est écrit en code (et dans les sources d'autant plus)
+
+"
 include::{includedir}/story.adoc[tag=therapie]
+"
 ====
 
 [.ci-cd.background]
@@ -15,7 +28,13 @@ include::{includedir}/story.adoc[tag=therapie]
 [NOTE.speaker]
 ====
 Nico :
+
+* TOPO sur le DRY
+* Mais besoin de standardisation sur les pipelines
+
+"
 include::{includedir}/story.adoc[tag=dry]
+"
 ====
 
 [.ci-cd.background]
@@ -71,7 +90,25 @@ deliver_app:
 [NOTE.speaker]
 ====
 Yann :
-include::{includedir}/story.adoc[tag=dry]
+
+Dans l'exemple suivant :
+
+Dans notre cas, on a une routine pour les déploiements
+
+* est-ce qu'on est vendredi ?
+* On livre => le script qui va bien
+* on prévient les ops (mail, notif, etc.)
+* on prévient le po de la livraison
+
+Deux façons de factoriser différentes
+
+* Soit on passe par des variables => comme des paramètres de fonction
+* Soit on s'appuie sur l'outillage => gitlab-ci avec after et before script
+
+L'interet de pouvoir réutiliser la routine pour plsuieurs type de déploiement.
+
+L'autre avantage est de bien faire la distinction entre le déploiement en tant que tel et ce qui tourne autour.
+
 ====
 
 [.ci-cd.background]
@@ -80,7 +117,15 @@ include::{includedir}/story.adoc[tag=dry]
 [NOTE.speaker]
 ====
 Nico :
+
+* Attention à trop de factorisation
+* Même défaut que dans le code, impact plus important
+* CD aime pas trop ça
+* On va voir ce qu'on peut faire
+
+"
 include::{includedir}/story.adoc[tag=dry-do]
+"
 ====
 
 [.ci-cd.background]
@@ -91,6 +136,10 @@ image:../images/guylookingatgirl.png[]
 [NOTE.speaker]
 ====
 Nico :
+
+* Dans le monde du dev, nous avons la conception SOLID, alors la question se pose
+* Est-ce que l'on peut appliquer les principes SOLID à notre couple CI/CD et leur petits pipelines ?
+
 On peut se poser la question ...
 ====
 
@@ -100,7 +149,12 @@ On peut se poser la question ...
 [NOTE.speaker]
 ====
 Nico :
+
+* Commençons par le S de Solid
+
+"
 include::{includedir}/story.adoc[tag=solid-s]
+"
 ====
 
 [.ci-cd.background]
@@ -140,6 +194,8 @@ image:../images/solid/single-respo-good.png[]
 [NOTE.speaker]
 ====
 Ici, on va préférer avec des jobs différents pour les différents types d'élément à déployer. Ce sera plus simple à maintenir dans le temps, et ce n'est tout simplement pas la même chose. De plus, de cette façon, vous pourrez plus facilement réutiliser vos jobs.
+
+Ca peut paraitre bête dit comme ça, mais on voit souvent le build ou le deploiement dans les mêmes jobs, autant en faire plusieurs et les paralléliser
 ====
 
 [.ci-cd.background]
@@ -149,7 +205,13 @@ Mais pas trop !
 
 [NOTE.speaker]
 ====
+Nico:
+
+* Continuons avec le O, Open Closed Principles, probablement le principe le plus maltraité dans les pipelines
+
+"
 include::{includedir}/story.adoc[tag=solid-o]
+"
 ====
 
 [.ci-cd.background]
@@ -189,6 +251,8 @@ image:../images/solid/open-closed-good.png[]
 
 [NOTE.speaker]
 ====
+Yann :
+
 Nous trouvons ici un template de job permettant de faire une analyse sonar. On peut voir dans le premier cas, que si on veut ajouter des nouveaux paramètres à Sonar, il va falloir modifier la ligne de commande ou la surcharger complètement.
 
 Dans le deuxième, le template nous propose deux manières d'étendre le job, on peut passer par le fichier de configuration de sonar ou ajouter directement des paramètres à la ligne de commande via les variables.
@@ -206,7 +270,14 @@ image::../images/barbara_liskov.png["Barbara Liskov", 75%]
 
 [NOTE.speaker]
 ====
+Nico :
+
+- Le L de SOLID, La subsitution de Liskov
+- Dites bonjour à Barbara (c'est vraiment elle sur la photo qui a théorisé cette principe)
+
+"
 include::{includedir}/story.adoc[tag=solid-l]
+"
 ====
 
 [.ci-cd.background]
@@ -214,7 +285,13 @@ include::{includedir}/story.adoc[tag=solid-l]
 
 [NOTE.speaker]
 ====
+Nico :
+
+- I comme Interface Segregation
+
+"
 include::{includedir}/story.adoc[tag=solid-i]
+"
 ====
 
 [.ci-cd.background]
@@ -254,6 +331,8 @@ include::{includedir}/story.adoc[tag=solid-i]
 
 [NOTE.speaker]
 ====
+Yann :
+
 Dans les templates suivants, on voit que le développeur cherche à factoriser l'analyse de code, mais ici, l'"interface" permet de couvrir tous les outils et les technos. L'exemple est un peu grossier, mais on le retrouve de temps en temps.
 
 Il vaut mieux avoir des jobs/templates spécialisés qui permettront d'être réutiliser et/ou débrancher au besoin.
@@ -264,7 +343,14 @@ Il vaut mieux avoir des jobs/templates spécialisés qui permettront d'être ré
 
 [NOTE.speaker]
 ====
+Nico :
+
+* Et pour finir, l'inversion de dépendance
+* Qui va faire plaisir à CD surtout
+
+"
 include::{includedir}/story.adoc[tag=solid-d]
+"
 ====
 
 [.ci-cd.background]
@@ -317,7 +403,15 @@ Mais pour rendre le job indépendant, on peut très bien définir un job "de con
 [NOTE.speaker]
 ====
 Nico :
+
+* Comme dit precedement, CI et CD ont des divergences, des complémentarités et surtout un même objectif
+* Même si on arrive à construire un pipeline qui convienne à CI et CD
+* Et malgré tout ces principes SOLID, on a toujours un problème
+* Si le pipeline va de bout en bout, même si on fait attention, si le moindre grain de sable se met dans les rouages, ça va pété
+
+"
 include::{includedir}/story.adoc[tag=lacher]
+"
 ====
 
 [.ci-cd.background]
@@ -326,7 +420,16 @@ include::{includedir}/story.adoc[tag=lacher]
 [NOTE.speaker]
 ====
 Nico :
+
+* Il faut donc pouvoir debrayer
+* Mettre des points d'arrêt
+* L'importance de l'inversion de dépendance
+* Gain en lisibilité, surtout sur les points d'arrêt défini lors des ateliers de création des pipelines
+* Pouvoir reprendre/relancer
+
+"
 include::{includedir}/story.adoc[tag=debrayage]
+"
 ====
 
 [.ci-cd.background]
@@ -377,16 +480,6 @@ Yann :
 Ici, on voit deux façons d'intervenir pendant le déroulement d'un pipeline, on peut faire des pipelines différents qui se déclenchent les uns les autres :ce qui nous permet de déclencher soit toutes les actions, soit lancer les pipelines à différentes étapes. Et une autre possibilité, c'est de mettre des points d'arrêt dans les pipelines permettant d'attendre une action manuelle avant de continuer.
 ====
 
-[.ci-cd.background]
-== Le monde des Bisounours
-
-image::../images/bisounours.png[]
-
-[NOTE.speaker]
-====
-Nico :
-include::{includedir}/story.adoc[tag=kiss]
-====
 
 [.ci-cd.background]
 == Oups ...
@@ -396,12 +489,45 @@ image::../images/complexite.png[]
 [NOTE.speaker]
 ====
 Nico :
+
+* Bon ok, c'est devenu vraiment le bordel là
+* C'est normal, mieux connu par le monde CI (le monde de dev) que CD
+* Petit point sur la complexité
+
+"
 include::{includedir}/story.adoc[tag=accidentelle]
+"
 ====
+
+[.ci-cd.background]
+== Le monde des Bisounours
+
+image::../images/bisounours.png[]
+
+[NOTE.speaker]
+====
+Nico :
+
+* Mais il reste un dernier principe : KISS
+* Bon, on vous a présenté quelques principes et concepts
+* pour vous aider à implementer le pipeline : ref deuxième partie de la prez
+* pour faire plaisir et aider le couple CI/CD
+* Si vous n'avez pas besoin de tout ça, ne le faite pas
+* Restez simple
+
+"
+include::{includedir}/story.adoc[tag=kiss]
+"
+====
+
 
 [.transition.background, transition="slide-in zoom-out"]
 == !
 
 [NOTE.speaker]
 ====
+* Difficulté accrue de faire des pipelines
+* Comprehension technique globale de CI CD
+* Ce n'est ni du dev ni de l'ops, mais un peu des deux
+* Donc comment faire ?
 ====

@@ -5,9 +5,14 @@
 [NOTE.speaker]
 ====
 **Nico  [45 min] **:
-include::{includedir}/story.adoc[tag=choice]
 
-On va vous proposer trois possibilités qui ne sont pas exhaustives !
+* On va donc devoir faire un choix
+* On va vous proposer trois possibilités qui ne sont pas exhaustives !
+
+"
+include::{includedir}/story.adoc[tag=choice]
+"
+
 ====
 
 [.separation.background]
@@ -19,7 +24,12 @@ image:../images/choix/gear-solid.svg[cd, 30%]
 [NOTE.speaker]
 ====
 Nico :
+
+* CI et CD se sépare
+
+"
 include::{includedir}/story.adoc[tag=monde-avant]
+"
 ====
 
 [.separation.background]
@@ -36,7 +46,10 @@ include::{includedir}/story.adoc[tag=monde-avant]
 [NOTE.speaker]
 ====
 Nico :
+
+"
 include::{includedir}/story.adoc[tag=separation]
+"
 ====
 
 
@@ -49,7 +62,9 @@ image:../images/choix/gear-solid.svg[cd, 30%]
 [NOTE.speaker]
 ====
 Nico :
+"
 include::{includedir}/story.adoc[tag=structure]
+"
 ====
 
 [.mediation.background]
@@ -63,7 +78,15 @@ image:../images/choix/infinity-solid.svg[cd, 30%]
 [NOTE.speaker]
 ====
 Yann :
+
+* On met en place une équipe DevOps
+* On rajoute une couche de bordel dans l'organisation
+* Choix stratégique d'entreprise
+* Malgré ce qu'on a dit avant
+
+"
 include::{includedir}/story.adoc[tag=mediation]
+"
 ====
 
 [.mediation.background]
@@ -72,7 +95,10 @@ include::{includedir}/story.adoc[tag=mediation]
 [NOTE.speaker]
 ====
 Yann :
+
+"
 include::{includedir}/story.adoc[tag=transverse]
+"
 ====
 
 [.union.background]
@@ -83,7 +109,19 @@ image:../images/choix/devops.svg[cd]
 [NOTE.speaker]
 ====
 Nico :
+
+* Notre choix
+* Plus d'équipe DevOps, mais une vraie culture
+* Comme imaginez à la base
+* Le plus difficile, mais probablement le plus efficace
+* L'équipe est composée des devs et des ops
+* L'équipe doit avoir toutes les compétences (on parle de l'équipe, pas de vous tout seul)
+* Ouverture d'esprit
+* CI et CD forme un vrai couple pour faire de jolie pipeline ensemble
+
+"
 include::{includedir}/story.adoc[tag=union]
+"
 ====
 
 [.union.background]
@@ -92,6 +130,7 @@ include::{includedir}/story.adoc[tag=union]
 [NOTE.speaker]
 ====
 Nico :
+
 include::{includedir}/story.adoc[tag=craft]
 ====
 

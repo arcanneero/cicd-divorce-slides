@@ -5,7 +5,14 @@
 [NOTE.speaker]
 ====
 **Nico  [7 min] **:
+
+* Naissance des pipelines
+* Beaucoup de tentative pour faire fonctionner ce joli couple CI/CD
+* Des experiences, des théories, des tests, des pratiques, etc..
+
+"
 include::{includedir}/story.adoc[tag=pipelines]
+"
 ====
 
 [.ci-cd.background]
@@ -16,7 +23,15 @@ image::../images/cicd-pipeline.png[]
 [NOTE.speaker]
 ====
 Nico :
+
+* Prenons un peu de hauteur
+* De manière générale, on arrive à ce type de pipeline (ref schéma) que tout le monde connait
+* INCROYABLE, c'est le merge parfait de CI et CD
+* Attention, ce n'est pas du code
+
+"
 include::{includedir}/story.adoc[tag=theories-workflow]
+"
 ====
 
 [.ci-cd.background]
@@ -27,7 +42,14 @@ image::flowchart-draw.png[Dessin, 60%]
 [NOTE.speaker]
 ====
 Nico :
+
+* Un pipeline, c'est un DESSIN
+* Représente les actions/taches pour aboutir à un process qui part du code et qui va en prod.
+* Vu la quantité de taches de CI et CD, c'est indispensable
+
+"
 include::{includedir}/story.adoc[tag=theories-dessins]
+"
 ====
 
 [.ci-cd.background]
@@ -38,7 +60,18 @@ image::pipeline-people.png[Personnes, 80%]
 [NOTE.speaker]
 ====
 Yann :
+
+* Mais attention, c'est aussi des personnes
+* Autant côté dev que ops, le process CI/CD impacte beaucoup plus de monde que les équipes de réal.
+* Market', Direction, Dev, Ops, Designers, Agiliste, etc.
+* Pour mettre tout le monde d'accord
+* mais comme tout le monde à toujours raison dans ce milieu
+* on vous propose une méthode pour vous aider à définir ce pipeline pour que notre couple CI/CD aille bien
+* Tiré de nos experiences respectives
+
+"
 include::{includedir}/story.adoc[tag=theories-atelier]
+"
 ====
 
 [.ci-cd.background]
@@ -61,7 +94,17 @@ image::pipeline-steps-1.png[step 1]
 [NOTE.speaker]
 ====
 Yann :
+
+* Par où on commence pour définir un pipeline ?
+* Par les objectifs, et pas seulement les objectifs tech
+** Classique : qualité, augmenté la vitesse de déploiement, simplifier les actions, etc...
+** Moins classique : Laisser les CP faire les livraisons, Automatiser des déploiements de nuit, cadencer la communication commerciale et la mise à disposition du produit, etc...
+** Mauvais objectif : faire comme tout le monde, "MAIS C'EST TROP COOL"
+* D'où l'importance d'avoir tout le monde autour de la table
+
+"
 include::{includedir}/story.adoc[tag=pipeline-objectifs]
+"
 ====
 
 [.ci-cd.background, transition=none]
@@ -72,7 +115,19 @@ image::pipeline-steps-2.png[step 1]
 [NOTE.speaker]
 ====
 Yann :
+
+* Un point très important
+* Il faut analyser les process existants de l'entreprise/équipes si ils existent
+* Sinon risque de rejet des équipes
+* Des réponses existent déjà dans les process
+* Si trop de divergence, il faudra p-e faire des compris
+* Workflow Git par exemple, gestion du versionning, Méthode agile ou pas, etc.
+* Il faut partir du principe qu'aucun standard n'est respecté
+
+
+"
 include::{includedir}/story.adoc[tag=pipeline-process]
+"
 ====
 
 [.ci-cd.background, transition=none]
@@ -83,7 +138,14 @@ image::pipeline-steps-3.png[step 1]
 [NOTE.speaker]
 ====
 Yann :
+
+* Lors des échanges autour du process, il faut bien identifier les étapes clés
+* Ne pas les ranger dans un coin
+* Donnerons probablement lieu à des étapes spécifiques dans le pipeline
+
+"
 include::{includedir}/story.adoc[tag=pipeline-steps]
+"
 ====
 
 [.ci-cd.background, transition=none]
@@ -94,7 +156,16 @@ image::pipeline-steps-4.png[step 1]
 [NOTE.speaker]
 ====
 Yann :
+
+* Comme dit précedement, il y a beaucoup de personne qui gravite autour des pipelines
+* Qui doit voir quoi, quand et avec quel granularité ?
+* Equipe dev, equipe ops, CP, Agiliste, Big boss, Testeur, etc. pas les mêmes besoins de retour => Prendre des exemples
+* Attention si besoin d'intégration aux outils existants (board de direction par exemple, JIRA ...)
+* Faire simple, c'est compliqué
+
+"
 include::{includedir}/story.adoc[tag=pipeline-feedback]
+"
 ====
 
 [.ci-cd.background, transition=none]
@@ -106,7 +177,18 @@ image::pipeline-steps-5.png[step 1]
 [NOTE.speaker]
 ====
 Yann :
+
+* Les premières prises de décision difficile
+* Conflits CI/CD, CI veut tout automatiser, CD veut garder le contrôle
+* D'où l'importance des étapes clés, feedback, etc.
+* Tout auto n'est pas forcement le mieux
+* Surtout si process complexe, et silotage important
+* Définition des déclencheurs, humain ou auto
+* Debrayage => on verra après
+
+"
 include::{includedir}/story.adoc[tag=pipeline-auto]
+"
 ====
 
 [.ci-cd.background, transition=none]
@@ -117,7 +199,18 @@ image::pipeline-steps-6.png[step 1]
 [NOTE.speaker]
 ====
 Yann :
+
+* On y arrive
+* Le choix des outils "ENFIN"
+* Ils doivent répondre aux besoins de feedback, déclenchement, etc.
+* Un seul pour tous ? Les meilleurs de chaque de domaine ?
+* Côté CI, c'est plus facile car indépendant du reste de l'entreprise
+* Côté CD, c'est toujours dépendant de l'infra de la boite, des stacks etc.
+* Grosse divergence entre CI et CD
+
+"
 include::{includedir}/story.adoc[tag=pipeline-outils]
+"
 ====
 
 [.ci-cd.background, transition=none]
@@ -128,7 +221,16 @@ image::pipeline-steps-6-warning.png[step 1]
 [NOTE.speaker]
 ====
 Nico :
+
+* Choix exotique = difficulté d'usage et de maintenance
+* Voir pas utilisé
+* Git ou SVN
+* XLDeploy ou un système de déploiment obscur écrit en Pascal
+* Ex.: pour iOS, un build sur un MAC ou via une commande g++ maison
+
+"
 include::{includedir}/story.adoc[tag=pipeline-outils-warn]
+"
 ====
 
 [.ci-cd.background, transition=none]
@@ -139,7 +241,14 @@ image::pipeline-steps-7.png[step 1]
 [NOTE.speaker]
 ====
 Yann :
+
+* On a les objectifs, les feedback, les actions clés, les outils, etc...
+* Et seulement maintenant on commence le "dev"
+* Comme d'habitude en développement et en archi, si on concoit correctement, le développement devrait bien se passer
+
+"
 include::{includedir}/story.adoc[tag=pipeline-implem]
+"
 ====
 
 [.ci-cd.background]
@@ -150,7 +259,14 @@ image::faire-part.png[step 1, 75%]
 [NOTE.speaker]
 ====
 Nico :
+
+* CI/CD ont enfin leurs pipelines
+* Malgré les échanges, les points de conflits, etc. on a enfin réussi à avoir quelque chose qui fonctionne et qui convient à tout le monde
+* C'est émouvant quand même ! Non ?
+
+"
 include::{includedir}/story.adoc[tag=responsability-start]
+"
 ====
 
 [.ci-cd.background]
@@ -161,7 +277,17 @@ include::{includedir}/story.adoc[tag=responsability-citation]
 [NOTE.speaker]
 ====
 Nico :
+
+* A dire comme ça, ça à l'air simple
+* Mais c'est au minimum complexe
+* Ce n'est pas une excuse pour ne pas faire l'exercice, sinon ça va aller dans le mur
+* Au début, c'est le bordel, évidemment, surtout que, comme tout bon dév, on veut coder !
+* Si vous mettez des trucs sous le tapis, vous allez, à un moment ou un autre, le voir revenir au galop
+* Mais vous allez y arriver, comme CI et CD dans leur jolie couple
+
+"
 include::{includedir}/story.adoc[tag=responsability-complexe]
+"
 ====
 
 
