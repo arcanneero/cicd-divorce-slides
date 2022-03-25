@@ -45,24 +45,19 @@ include::{includedir}/story.adoc[tag=dry]
 a|
 [source,yaml]
 ----
-.deliver:
-  variables:
-    DELIVER_TASK: ''
+deliver_npm_package:
   script:
     - ./is_it_friday.sh
-    - $DELIVER_TASK
+    - npm publish
     - ./alert_ops_team.sh
     - ./send_an_email_to_PO.sh
 
-deliver_npm_package:
-  extends: .deliver
-  variables:
-    DELIVER_TASK: npm publish
-
 deliver_app:
-  extends: .deliver
-  variables:
-    DELIVER_TASK: ftp -u myapp.tar.gz
+  script:
+    - ./is_it_friday.sh
+    - ftp -u myapp.tar.gz
+    - ./alert_ops_team.sh
+    - ./send_an_email_to_PO.sh
 ----
 a|
 [source,yaml]
@@ -86,7 +81,9 @@ deliver_app:
   script:
     - ftp -u myapp.tar.gz
 ----
+
 |===
+
 [NOTE.speaker]
 ====
 Yann :
@@ -109,6 +106,51 @@ L'interet de pouvoir réutiliser la routine pour plsuieurs type de déploiement.
 
 L'autre avantage est de bien faire la distinction entre le déploiement en tant que tel et ce qui tourne autour.
 
+====
+
+[.ci-cd.background]
+== Exemple
+
+[cols=2]
+|===
+a|
+[source,yaml]
+.top-jobs.yaml
+----
+.deliver:
+  variables:
+    DELIVER_TASK: ''
+  script:
+    - ./is_it_friday.sh
+    - $DELIVER_TASK
+    - ./alert_ops_team.sh
+    - ./send_an_email_to_PO.sh
+
+----
+a|
+[source,yaml]
+.gitlab-ci.yml
+----
+
+include:
+  - project: 'devops-team/tools'
+    file: 'top-jobs.yaml'
+
+deliver_npm_package:
+  extends: .deliver
+  script:
+    - npm publish
+
+deliver_app:
+  extends: .deliver
+  script:
+    - ftp -u myapp.tar.gz
+----
+|===
+[NOTE.speaker]
+====
+Yann :
+Et on peut aller plus loin à en globalisant entre projets !
 ====
 
 [.ci-cd.background]
@@ -164,17 +206,62 @@ include::{includedir}/story.adoc[tag=solid-s]
 |===
 a|[source,yaml]
 ----
-deploy:
+package:
+  image: node
+  before_script:
+    - # install my tools :-D
   script:
-    - if [ -n $IS_PHP_PROJECT]; then vendor/bin/phpcs src; fi
-    - if [ -f Dockerfile ]; hadolint Dockerfile; fi
+    - npm run build
     - sonar-scanner ...
-
-
+    - docker build
 ----
 |
 image:../images/solid/single-respo-bad.png[]
-2+^|VS
+a|[source,yaml]
+----
+build:
+  image: node
+  script:
+    - npm ...
+
+analyse:
+  image : sonar-scanner
+  script:
+    - sonar-scanner ...
+
+publish:
+  image: gcr.io/kaniko-project/executor:debug
+  script:
+    - /kaniko/executor ...
+
+----
+
+|
+image:../images/solid/single-respo-good.png[]
+|===
+
+[NOTE.speaker]
+====
+Ici, on va préférer avec des jobs différents pour les différents types d'élément à déployer. Ce sera plus simple à maintenir dans le temps, et ce n'est tout simplement pas la même chose. De plus, de cette façon, vous pourrez plus facilement réutiliser vos jobs.
+
+Ca peut paraitre bête dit comme ça, mais on voit souvent le build ou le deploiement dans les mêmes jobs, autant en faire plusieurs et les paralléliser
+====
+
+[.ci-cd.background]
+== Exemple
+
+[cols="1,1",grid=none]
+|===
+a|[source,yaml]
+----
+deploy:
+  script:
+    - deploy-db.sh
+    - deploy-app.sh
+    - deploy-doc.sh
+----
+|
+image:../images/solid/single-respo-bad.png[]
 a|[source,yaml]
 ----
 deploy_doc:
@@ -232,7 +319,6 @@ include::{includedir}/story.adoc[tag=solid-o]
 ----
 
 |image:../images/solid/open-closed-bad.png[]
-3+^|VS
 2+a|
 [source,yaml]
 ----
@@ -281,7 +367,7 @@ include::{includedir}/story.adoc[tag=solid-l]
 ====
 
 [.ci-cd.background]
-== Spécialisation
+== Ségrégation d'interface
 
 [NOTE.speaker]
 ====
@@ -291,7 +377,6 @@ Nico :
 
 "
 include::{includedir}/story.adoc[tag=solid-i]
-"
 ====
 
 [.ci-cd.background]
@@ -309,7 +394,6 @@ include::{includedir}/story.adoc[tag=solid-i]
     - sonar-scanner ...
 ----
 |image:../images/solid/interface-segragation-bad.png[]
-3+^|VS
 2+a|
 [source,yaml]
 ----
@@ -369,7 +453,6 @@ deploy: # Attend que l'étape de livraison soit ok
   script: ./deploy.sh
 ----
 |image:../images/solid/dependency-inversion-bad.png[]
-3+^|VS
 2+a|
 [source,yaml]
 ----

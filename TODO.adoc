@@ -10,11 +10,12 @@ Part 1. : Intro
 
 Part 2. :
 
-* [ ] Onepoint, mot clé sur nos missions
+* [ ] Yann : Onepoint, mot clé sur nos missions
+* [x] Nicolas : Onepoint, mot clé sur nos missions
 
 Part 3. : Thème pipeline
 
-* [ ] Photo Event Storminig
+* [x] Photo Event Storminige
 * [ ] Rajouter des exemples
 * [ ] Tous les mois -> toutes les semaines
 * [ ] Zoom sur les structures ?
