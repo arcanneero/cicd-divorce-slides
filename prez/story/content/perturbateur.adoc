@@ -61,16 +61,79 @@ include::{includedir}/story.adoc[tag=all-as-code-result]
 
 [source,bash]
 ----
-.eslintrc
-.jenkins/
-.terraform/
-.docker/
-docs/
-Jenkinsfile
-sonar-project.properties
-package.json
+.angular
+.idea
+conf
+dist
+aws
+build
+docker
+docs
+node_modules
+proxy-backend
+src
+.browserslistrc
+.dockerignore
+.editorconfig
+.eslintrc.json
+.gitignore
+.prettierrc
+angular.json
+CHANGELOG.md
 Dockerfile
-...
+docker-compose.yml
+karma.conf.js
+package.json
+package-lock.json
+README.md
+tsconfig.app.json
+tsconfig.json
+tsconfig.spec.json
+Jenkinsfile
+launch.bat
+site.yml
+
+----
+
+[NOTE.speaker]
+====
+Nico :
+include::{includedir}/story.adoc[tag=all-as-code-mess]
+
+=> Même en suivant les 12 factors
+====
+
+[.code.background]
+== C'est le bordel
+
+[source,bash]
+----
+.idea
+api
+docs
+ihm
+ | .angular
+ | conf
+ | src
+ | .browserslistrc
+ | .dockerignore
+ | .editorconfig
+ | .eslintrc.json
+ | .prettierrc
+ | angular.json
+ | Dockerfile
+ | karma.conf.js
+ | package.json
+ | package-lock.json
+ | tsconfig.app.json
+ | tsconfig.json
+ | tsconfig.spec.json
+infra
+.gitattributes
+.gitignore
+.gitlab-ci.yml
+docker-compose.yml
+README.md
 ----
 
 [NOTE.speaker]

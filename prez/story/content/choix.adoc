@@ -19,6 +19,7 @@ include::{includedir}/story.adoc[tag=choice]
 == !
 
 image:../images/choix/bolt-solid.svg[ci, 25%]
+image:../images/solid/slash-solid.svg[ci, 40%]
 image:../images/choix/gear-solid.svg[cd, 30%]
 
 [NOTE.speaker]
@@ -57,6 +58,7 @@ include::{includedir}/story.adoc[tag=separation]
 == !
 
 image:../images/choix/bolt-solid.svg[ci, 25%]
+image:../images/solid/slash-solid.svg[ci, 40%]
 image:../images/choix/gear-solid.svg[cd, 30%]
 
 [NOTE.speaker]
@@ -71,6 +73,7 @@ include::{includedir}/story.adoc[tag=structure]
 == !
 
 image:../images/choix/bolt-solid.svg[ci, 15%]
+image:../images/solid/slash-solid.svg[ci, 20%]
 image:../images/choix/gear-solid.svg[cd, 20%]
 
 image:../images/choix/infinity-solid.svg[cd, 30%]
@@ -134,9 +137,17 @@ Nico :
 include::{includedir}/story.adoc[tag=craft]
 ====
 
-[.transition.background, transition="slide-in zoom-out"]
-== !
+[.mediation.background]
+== Warning
 
 [NOTE.speaker]
 ====
+Si vous vous reconnaissez dans tous les examples qu'on a montré, +
+si vous envisager appliquer chacun des concepts, ou de nos examples, +
+si avez compris que le code est la solution à toutes vos difficultés, +
+vous allez avoir un problème...
+
+Repasser par la méthodo de définition, et focalisez vous sur KISS !!!! +
+Et comment simlplifier vos processus, sinon, vos pipelines ne seront pas maintenable ! +
+Et CI et CD seront vraiment très triste
 ====

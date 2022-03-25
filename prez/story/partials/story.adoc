@@ -166,12 +166,14 @@ Il y a cependant un tas de questions qui vont se poser...
 Ca peut vous sembler évident, mais avant de se lancer, la première question qui se pose est *pourquoi ?*
 Bien évidement commencer par définir les objectifs est essentiel à la construction d'un projet commun.
 Mais les raisons d'être et contraintes des parties prenantes étant tellement différente, cette étape est indispensable.
+// end::pipeline-objectifs[]
 
+// tag::pipeline-objectifs-example[]
 Besoins spécifiques (perf/sécurité/qualité/accessibilité),
 complexité de la construction ou du déploiement (multiplatforme par example),
 règles imposé par le contexte (nommage, disponibilité, etc...),
 ou encore qui peut voir et faire quoi, ne sont que des examples !
-// end::pipeline-objectifs[]
+// end::pipeline-objectifs-example[]
 
 // tag::pipeline-process[]
 Ensuite, nos tourtereaux ne partent pas de rien ! Ils ont leur existant.

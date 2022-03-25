@@ -94,6 +94,7 @@ include::{includedir}/story.adoc[tag=communication]
 
 [.devops.background]
 == Bref...
+image::../images/geek-evolution.png[]
 
 [NOTE.speaker]
 ====
@@ -115,5 +116,10 @@ include::{includedir}/story.adoc[tag=mediateur]
 Yann :
 
 On arrive donc à la fin de notre exposé
+
+* Méthodo de conception
+* Les éléments problématiques
+* Quelques solutions issues du dev
+* La mouvance DevOps
 
 ====

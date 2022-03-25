@@ -240,6 +240,11 @@ image::../images/intervenants-nicolas.png[]
 ====
 Yann :
 
+* Leat tech à onepoint.
+* Dev d'origine java et accompagnement à la transfo DevOps
+* Couteau suisse (un peu crafter)
+
+
 "
 include::{includedir}/story.adoc[tag=nico]
 "
