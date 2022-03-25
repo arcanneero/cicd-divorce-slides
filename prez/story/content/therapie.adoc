@@ -526,4 +526,8 @@ include::{includedir}/story.adoc[tag=kiss]
 
 [NOTE.speaker]
 ====
+* Difficulté accrue de faire des pipelines
+* Comprehension technique globale de CI CD
+* Ce n'est ni du dev ni de l'ops, mais un peu des deux
+* Donc comment faire ?
 ====

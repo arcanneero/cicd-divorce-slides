@@ -18,7 +18,8 @@ include::{includedir}/story.adoc[tag=tourtereaux]
 ====
 Yann :
 
-Nous parlons bien évidemment de CI. Intégration continue. que tout le monde, normalement, connait
+* Nous parlons bien évidemment de CI.
+* Intégration continue. que tout le monde, normalement, connait
 
 "
 include::{includedir}/story.adoc[tag=ci-start]
@@ -34,9 +35,9 @@ image::../images/cicd-cicd.build.png[]
 ====
 Yann :
 
-Première chose : build en continue. Pour automatiser, indus. Avec pour objectif de faciliter le build, c'est la naissance de la CI.
+* Première chose : build en continue. Pour automatiser, indus. Avec pour objectif de faciliter le build, c'est la naissance de la CI.
 
-ATTENTION : on ne parle pas encore de pipeline au sens script, on parle pipeline au sens étape
+* ATTENTION : on ne parle pas encore de pipeline au sens script, on parle pipeline au sens étape
 
 "
 include::{includedir}/story.adoc[tag=ci-build]
@@ -68,9 +69,8 @@ image::../images/geek-evolution.png[]
 ====
 Yann :
 
-Sur des années, CI a évolué, de plus en plus de technos/d'outils/technique.
-
-Mais reste dans le contexte du dev.
+* Sur des années, CI a évolué, de plus en plus de technos/d'outils/technique.
+* Mais reste dans le contexte du dev.
 
 "
 include::{includedir}/story.adoc[tag=ci-end]
@@ -84,9 +84,8 @@ include::{includedir}/story.adoc[tag=ci-end]
 ====
 Nico :
 
-CD : deployment, delivery, development
-
-Un truc d'OPS à la base, emmener le code en prod.
+* CD : deployment, delivery, development
+* Un truc d'OPS à la base, emmener le code en prod.
 
 "
 include::{includedir}/story.adoc[tag=cd-start]
