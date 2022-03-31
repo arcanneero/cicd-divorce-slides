@@ -3,7 +3,7 @@
 
 Part 2. : CI
 
-* [ ] : Partie CI => Rappel des idées sur le slide
+* [x] : Partie CI => Rappel des idées sur le slide
 * [x] : Fin de la CI dans les schémas : Indiquer que le but de la CI, c'est de valider le code, métriques et !
 * [x] : Ajouter un slide avec juste le rond du code
 * [x] : Expliquer le principe de Continuous (à chaque commit)
