@@ -25,6 +25,8 @@ include::{includedir}/story.adoc[tag=therapie]
 [.ci-cd.background]
 == DRY...
 
+_Don't Repeat Yourself_
+
 [NOTE.speaker]
 ====
 Nico :
@@ -95,10 +97,9 @@ Dans notre cas, on a une routine pour les déploiements
 * on prévient les ops (mail, notif, etc.)
 * on prévient le po de la livraison
 
-Deux façons de factoriser différentes
+Ici on peut factoriser grace aux outils fournis par la CI
 
-* Soit on passe par des variables => comme des paramètres de fonction
-* Soit on s'appuie sur l'outillage => gitlab-ci avec after et before script
+* gitlab-ci avec after et before script
 
 L'interet de pouvoir réutiliser la routine pour plsuieurs type de déploiement.
 
@@ -148,7 +149,10 @@ deliver_app:
 [NOTE.speaker]
 ====
 Yann :
-Et on peut aller plus loin à en globalisant entre projets !
+On voit ici une autre façon de factoriser :
+* Soit on passe par des variables => comme des paramètres de fonction
+
+Mais en plus, en sortant le template dans un autre fichier : on peut aller plus loin à en globalisant entre projets !
 ====
 
 [.ci-cd.background]
@@ -185,6 +189,8 @@ On peut se poser la question ...
 
 [.ci-cd.background]
 == Une responsabilité unique
+
+_**S**OLID (Single responsibility)_
 
 [NOTE.speaker]
 ====
@@ -287,8 +293,8 @@ Ca peut paraitre bête dit comme ça, mais on voit souvent le build ou le deploi
 
 [.ci-cd.background]
 == Rester ouvert...
+_S**O**LID (Open/Closed principle)_
 
-Mais pas trop !
 
 [NOTE.speaker]
 ====
@@ -349,10 +355,10 @@ On conserve donc le fait que l'on exige la définition du project_key mais le re
 [.ci-cd.background]
 == Liskov à la rescousse...
 
-.Barbara Liskov
-image::../images/barbara_liskov.png["Barbara Liskov", 75%]
+_SO**L**ID (Liskov substitution)_ ...ou pas !
 
-...ou pas !
+.Barbara Liskov
+image::../images/barbara_liskov.png["Barbara Liskov", 50%]
 
 [NOTE.speaker]
 ====
@@ -368,6 +374,8 @@ include::{includedir}/story.adoc[tag=solid-l]
 
 [.ci-cd.background]
 == Ségrégation d'interface
+
+_SOL**I**D (Interface segregation)_
 
 [NOTE.speaker]
 ====
@@ -424,6 +432,8 @@ Il vaut mieux avoir des jobs/templates spécialisés qui permettront d'être ré
 
 [.ci-cd.background]
 == Une inversion de dépendance ?
+
+_SOLI**D** (Dependency inversion)_
 
 [NOTE.speaker]
 ====
