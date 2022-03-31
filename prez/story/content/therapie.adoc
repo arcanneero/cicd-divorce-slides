@@ -220,7 +220,7 @@ package:
     - docker build
 ----
 |
-image:../images/solid/single-respo-bad.png[]
+image:../images/solid/single-respo-1-bad.png[]
 a|[source,yaml]
 ----
 build:
@@ -241,16 +241,22 @@ publish:
 ----
 
 |
-image:../images/solid/single-respo-good.png[]
+image:../images/solid/single-respo-1-good.png[]
 |===
 
 [NOTE.speaker]
 ====
 Yann:
 
-Ici, on va préférer avec des jobs différents pour les différents types d'élément à déployer. Ce sera plus simple à maintenir dans le temps, et ce n'est tout simplement pas la même chose. De plus, de cette façon, vous pourrez plus facilement réutiliser vos jobs.
+Dans ce premier exemple, on voit que les étapes pour pouvoir packager passe par le build, le scanner de qualité et finalement le build de l'image docker
+Dans le cas présent, gitlab-ci, une image docker, nécessité d'installé tout les outils pour toutes les étapes.
 
-Ca peut paraitre bête dit comme ça, mais on voit souvent le build ou le deploiement dans les mêmes jobs, autant en faire plusieurs et les paralléliser
+Complexe, difficilement maintenable et pas modulable
+
+Donc, on va faire plusieurs jobs, plusieurs stages, image spécifique avec les outils déjà présent.
+
+(on peut faire pareil avec jenkins :))
+
 ====
 
 [.ci-cd.background]
