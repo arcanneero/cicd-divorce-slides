@@ -41,6 +41,8 @@ Yann :
 
 image::../images/cicd-cicd.build.png[]
 
+Objectif : Construire l'applicatif
+
 [NOTE.speaker]
 ====
 Yann :
@@ -62,6 +64,8 @@ include::{includedir}/story.adoc[tag=ci-build]
 
 image::../images/cicd-cicd.integration.png[]
 
+Objectif : Valider le code et les métriques
+
 [NOTE.speaker]
 ====
 Yann :
@@ -78,7 +82,6 @@ include::{includedir}/story.adoc[tag=ci-integration]
 [.ci.background]
 == Bref...
 image::../images/geek-evolution.png[]
-Objectif de CI : Valider le code et les métriques
 
 [NOTE.speaker]
 ====
@@ -115,6 +118,8 @@ include::{includedir}/story.adoc[tag=cd-start]
 
 image::../images/cicd-cicd.delivery.png[]
 
+Objectif : Mettre un livrable à disposition
+
 [NOTE.speaker]
 ====
 Nico :
@@ -135,6 +140,8 @@ include::{includedir}/story.adoc[tag=cd-delivery]
 == Deployment
 
 image::../images/cicd-cicd.deployment.png[]
+
+Objectif : Deployer l'application
 
 [NOTE.speaker]
 ====
@@ -158,6 +165,8 @@ include::{includedir}/story.adoc[tag=cd-deployment]
 
 image::../images/cicd-cicd.development.png[]
 
+Objectif : S'assurer que le service fonctionne
+
 [NOTE.speaker]
 ====
 Nico :
@@ -177,8 +186,6 @@ include::{includedir}/story.adoc[tag=cd-development]
 [.cd.background]
 == Bref...
 image::../images/geek-evolution.png[]
-
-L'objectif de CD : Mettre un service à disposition
 
 [NOTE.speaker]
 ====
