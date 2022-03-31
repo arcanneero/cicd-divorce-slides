@@ -8,7 +8,7 @@
     text-transform: none;
 }
 
-div.title {
+div.main-title {
     background-repeat: no-repeat;
     background-size: 12%, 18% auto ;
     background-image: url("logo/heart-crack-solid.svg"), radial-gradient(black, transparent);
