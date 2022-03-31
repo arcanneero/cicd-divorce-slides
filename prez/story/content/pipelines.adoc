@@ -82,7 +82,12 @@ image:event-storming.jpg[]
 [NOTE.speaker]
 ====
 Nico :
+
+* Technique d'UX
+
+"
 include::{includedir}/story.adoc[tag=theories-eventstorming]
+"
 ====
 
 [.ci-cd.background, transition="slide-in fade-out"]
@@ -172,6 +177,7 @@ Yann :
 * Equipe dev, equipe ops, CP, Agiliste, Big boss, Testeur, etc. pas les mêmes besoins de retour => Prendre des exemples
 * Attention si besoin d'intégration aux outils existants (board de direction par exemple, JIRA ...)
 * Faire simple, c'est compliqué
+* Zoom sur le Fail Fast : un feedback efficace
 
 "
 include::{includedir}/story.adoc[tag=pipeline-feedback]
@@ -247,7 +253,7 @@ Nico :
 * Choix exotique = difficulté d'usage et de maintenance
 * Voir pas utilisé
 * Git ou SVN
-* XLDeploy ou un système de déploiment obscur écrit en Pascal
+* XLDeploy (un bon outil) ou un système de déploiment obscur écrit en Pascal
 * Ex.: pour iOS, un build sur un MAC ou via une commande g++ maison
 
 "
