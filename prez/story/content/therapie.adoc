@@ -499,6 +499,8 @@ Mais pour rendre le job indépendant, on peut très bien définir un job "de con
 [.ci-cd.background]
 == Un peu de lacher prise ?
 
+_Le risque du "tout automatique"_
+
 [NOTE.speaker]
 ====
 Nico :
@@ -515,6 +517,8 @@ include::{includedir}/story.adoc[tag=lacher]
 
 [.ci-cd.background]
 == Pouvoir debrayer !
+
+_Ou l'art de faire des pauses_
 
 [NOTE.speaker]
 ====

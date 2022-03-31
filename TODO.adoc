@@ -28,7 +28,7 @@ Part 4. : Thème All as code
 
 Part 5. : Therapie
 
-* [ ] Mettre les acronymes en entier
+* [x] Mettre les acronymes en entier
 * [ ] Revoir les schémas des exemples
 * [ ] Ne pas dire que la clean archi c'est l'évolution logique vers une meilleure qualité
 * [ ] Slide 5.4 : Trouver une illustration
