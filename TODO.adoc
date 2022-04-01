@@ -35,7 +35,7 @@ Part 5. : Therapie
 * [ ] Slide 5.17 : Les schémas de pipeline -> Schéma formation Docker
 * [ ] KISS : Ajouter un example - Simplicité, dans l'utilisation (faire de la doc ?)
 * [ ] Exemple inversion de dépendances : en ajouter un autre
-* [ ] Graphe complexité : il faut une légende !
+* [x] Graphe complexité : il faut une légende !
 
 Part 6. : Thème DevOps
 
