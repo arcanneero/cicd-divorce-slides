@@ -58,7 +58,7 @@ include::{includedir}/story.adoc[tag=infinite]
 [.devops.background]
 == L'émergence
 
-image::../images/puzzle.png[width=50%]
+image::../images/pipeline-people-devops.png[]
 
 [NOTE.speaker]
 ====
