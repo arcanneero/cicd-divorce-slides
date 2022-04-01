@@ -3,11 +3,11 @@
 
 Part 2. : CI
 
-* [ ] : Partie CI => Rappel des idées sur le slide
-* [ ] : Fin de la CI dans les schémas : Indiquer que le but de la CI, c'est de valider le code, métriques et !
-* [ ] : Ajouter un slide avec juste le rond du code
-* [ ] : Expliquer le principe de Continuous (à chaque commit)
-* [ ] : Indiquer que le but du delivery, c'est la mise à disposition du livrable
+* [x] : Partie CI => Rappel des idées sur le slide
+* [x] : Fin de la CI dans les schémas : Indiquer que le but de la CI, c'est de valider le code, métriques et !
+* [x] : Ajouter un slide avec juste le rond du code
+* [x] : Expliquer le principe de Continuous (à chaque commit)
+* [x] : Indiquer que le but du delivery, c'est la mise à disposition du livrable
 * [ ] : Fleche blanche sur les schémas => indiquez que c'est une action humaine (ou ne pas mettre les flèches)
 
 Part 3. : Thème pipeline

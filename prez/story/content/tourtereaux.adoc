@@ -12,18 +12,28 @@ include::{includedir}/story.adoc[tag=tourtereaux]
 ====
 
 [.ci.background]
+== L'origine
+
+image::../images/cicd-cicd.code.png[]
+
+[NOTE.speaker]
+====
+Yann :
+"
+include::{includedir}/story.adoc[tag=ci-start]
+"
+====
+
+[.ci.background]
 == CI
 
 [NOTE.speaker]
 ====
 Yann :
 
-* Nous parlons bien évidemment de CI.
+* Nous allons parler bien évidemment de CI.
 * Intégration continue. que tout le monde, normalement, connait
 
-"
-include::{includedir}/story.adoc[tag=ci-start]
-"
 ====
 
 [.ci.background, transition="slide-in fade-out"]
@@ -31,11 +41,15 @@ include::{includedir}/story.adoc[tag=ci-start]
 
 image::../images/cicd-cicd.build.png[]
 
+Objectif : Construire l'applicatif
+
 [NOTE.speaker]
 ====
 Yann :
 
 * Première chose : build en continue. Pour automatiser, indus. Avec pour objectif de faciliter le build, c'est la naissance de la CI.
+
+* Continue => à chaque commit (au fil du développement tout cas)
 
 * ATTENTION : on ne parle pas encore de pipeline au sens script, on parle pipeline au sens étape
 
@@ -50,11 +64,15 @@ include::{includedir}/story.adoc[tag=ci-build]
 
 image::../images/cicd-cicd.integration.png[]
 
+Objectif : Valider le code et les métriques
+
 [NOTE.speaker]
 ====
 Yann :
 
 L'intégration continue, que nous faisons tous aujourd'hui.
+
+* Nouveau terme : Intégration => on test/intègre notre code avec d'autres composants
 
 "
 include::{includedir}/story.adoc[tag=ci-integration]
@@ -71,6 +89,7 @@ Yann :
 
 * Sur des années, CI a évolué, de plus en plus de technos/d'outils/technique.
 * Mais reste dans le contexte du dev.
+* L'objectif de CI, Valider le code, les métriques, que notre code fonctionne avec les autres composants, Tout ça au fil du développement
 
 "
 include::{includedir}/story.adoc[tag=ci-end]
@@ -99,6 +118,8 @@ include::{includedir}/story.adoc[tag=cd-start]
 
 image::../images/cicd-cicd.delivery.png[]
 
+Objectif : Mettre un livrable à disposition
+
 [NOTE.speaker]
 ====
 Nico :
@@ -108,6 +129,7 @@ Une fois que CI a fait son job, CD prend le relai.
 * Binaire/package => Livrables package deb, tarball, executable windows, etc.
 * Code tout seul, ne sert à rien
 * On script la créa des livrables facilement
+* But de delivery : mettre à dispo un livrable
 
 "
 include::{includedir}/story.adoc[tag=cd-delivery]
@@ -118,6 +140,8 @@ include::{includedir}/story.adoc[tag=cd-delivery]
 == Deployment
 
 image::../images/cicd-cicd.deployment.png[]
+
+Objectif : Deployer l'application
 
 [NOTE.speaker]
 ====
@@ -141,6 +165,8 @@ include::{includedir}/story.adoc[tag=cd-deployment]
 
 image::../images/cicd-cicd.development.png[]
 
+Objectif : S'assurer que le service fonctionne
+
 [NOTE.speaker]
 ====
 Nico :
@@ -160,6 +186,7 @@ include::{includedir}/story.adoc[tag=cd-development]
 [.cd.background]
 == Bref...
 image::../images/geek-evolution.png[]
+
 [NOTE.speaker]
 ====
 Nico :
