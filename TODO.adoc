@@ -28,18 +28,18 @@ Part 4. : Thème All as code
 
 Part 5. : Therapie
 
-* [ ] Mettre les acronymes en entier
+* [x] Mettre les acronymes en entier
 * [ ] Revoir les schémas des exemples
 * [ ] Ne pas dire que la clean archi c'est l'évolution logique vers une meilleure qualité
 * [ ] Slide 5.4 : Trouver une illustration
 * [ ] Slide 5.17 : Les schémas de pipeline -> Schéma formation Docker
 * [ ] KISS : Ajouter un example - Simplicité, dans l'utilisation (faire de la doc ?)
 * [ ] Exemple inversion de dépendances : en ajouter un autre
-* [ ] Graphe complexité : il faut une légende !
+* [x] Graphe complexité : il faut une légende !
 
 Part 6. : Thème DevOps
 
-* [ ] Trouvez un jeu d'illustration cohérente
+* [x] Trouvez un jeu d'illustration cohérente
 
 Part 7. : Thème CI/CD
 

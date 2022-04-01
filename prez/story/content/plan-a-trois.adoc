@@ -18,6 +18,8 @@ include::{includedir}/story.adoc[tag=a-trois]
 [.devops.background]
 == L'arrivée...
 
+image:../images/devops-arrival.png[width=50%]
+
 [NOTE.speaker]
 ====
 Yann :
@@ -56,7 +58,7 @@ include::{includedir}/story.adoc[tag=infinite]
 [.devops.background]
 == L'émergence
 
-image::../images/puzzle.png[width=50%]
+image::../images/pipeline-people-devops.png[]
 
 [NOTE.speaker]
 ====
