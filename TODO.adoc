@@ -16,10 +16,10 @@ Part 3. : Thème pipeline
 * [ ] Zoom sur les structures ?
 * [ ] Ajouter sur chaque étapes une slide de "rex" / outils => à finir
 * [ ] Slide 3.14 : Refaire le faire-part
-* [ ] Schéma à la couleur du thème
-* [ ] EventStorm : nommé les UX
-* [ ] Etape 4 - Feedback : Parler du fail fast
-* [ ] Virer le drole sur XLDeploy
+* [x] Schéma à la couleur du thème
+* [x] EventStorm : nommé les UX
+* [x] Etape 4 - Feedback : Parler du fail fast
+* [x] Virer le drole sur XLDeploy
 
 Part 4. : Thème All as code
 
