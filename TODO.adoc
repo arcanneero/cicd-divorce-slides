@@ -39,7 +39,7 @@ Part 5. : Therapie
 
 Part 6. : Thème DevOps
 
-* [ ] Trouvez un jeu d'illustration cohérente
+* [x] Trouvez un jeu d'illustration cohérente
 
 Part 7. : Thème CI/CD
 
