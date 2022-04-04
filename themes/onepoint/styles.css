@@ -330,7 +330,7 @@ body:before {
  * IMAGES
  *********************************************/
 .reveal section img {
-    margin: 15px 0px;
+    margin: 0px 0px;
     background: rgba(255, 255, 255, 0.12);
     border: 0px;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0);

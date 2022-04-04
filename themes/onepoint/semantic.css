@@ -1,7 +1,7 @@
 
 @keyframes changeBg{
-    0%,100%  {background-image: url("logo/heart-solid.svg"), radial-gradient(darkmagenta, transparent)}
-    50% {background-image: url("logo/heart-crack-solid.svg"), radial-gradient(black, transparent)}
+    0%,100%  {background-image: url("logo/heart-solid-color.svg")}
+    50% {background-image: url("logo/heart-crack-solid-color.svg")}
 }
 
 .title h1 {

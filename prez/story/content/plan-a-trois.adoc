@@ -78,6 +78,8 @@ include::{includedir}/story.adoc[tag=team]
 [.devops.background]
 == Une question de communication
 
+image::https://media.giphy.com/media/WySK0nQiJKLy25HLhp/giphy.gif[]
+
 [NOTE.speaker]
 ====
 Nico :

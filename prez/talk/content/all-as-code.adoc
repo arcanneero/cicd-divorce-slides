@@ -39,7 +39,6 @@ Voici à quoi ressemble la racine de nos projets maintenant
 * La configuration des outils
 * La configuraiton de l'appli
 
-=> Même en suivant les 12 factors
 --
 
 == C'est le bordel
