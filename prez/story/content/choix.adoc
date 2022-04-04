@@ -34,15 +34,13 @@ include::{includedir}/story.adoc[tag=monde-avant]
 ====
 
 [.separation.background]
-== Séparation des responsabiilté
+== Séparation des responsabilités
 
-[.step, .ci]
-* Construction
-[.ci]
-* Assemblage
-[.cd]
-* Mise en service
-* Règles
+[.step]
+* image:../images/choix/bolt-solid.svg[ci, 4%] Construction
+* image:../images/choix/bolt-solid.svg[ci, 4%] Assemblage
+* image:../images/choix/gear-solid.svg[ci, 5%] Mise en service
+* image:../images/choix/gear-solid.svg[ci, 5%] Règles
 
 [NOTE.speaker]
 ====
@@ -95,6 +93,11 @@ include::{includedir}/story.adoc[tag=mediation]
 [.mediation.background]
 == Et pourquoi pas...
 
+[%step%]
+Proposer sans imposer, critiquer sans discréditer
+[%step%]
+Vecteur de la culture DevOps
+
 [NOTE.speaker]
 ====
 Yann :
@@ -129,6 +132,8 @@ include::{includedir}/story.adoc[tag=union]
 
 [.union.background]
 == Aller plus loin ...
+
+image::../images/matrice-maturite.png[]
 
 [NOTE.speaker]
 ====

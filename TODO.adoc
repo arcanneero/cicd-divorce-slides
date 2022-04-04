@@ -8,7 +8,7 @@ Part 2. : CI
 * [x] : Ajouter un slide avec juste le rond du code
 * [x] : Expliquer le principe de Continuous (à chaque commit)
 * [x] : Indiquer que le but du delivery, c'est la mise à disposition du livrable
-* [ ] : Fleche blanche sur les schémas => indiquez que c'est une action humaine (ou ne pas mettre les flèches)
+* [x] : Fleche blanche sur les schémas => indiquez que c'est une action humaine (ou ne pas mettre les flèches)
 
 Part 3. : Thème pipeline
 
@@ -29,12 +29,12 @@ Part 4. : Thème All as code
 Part 5. : Therapie
 
 * [x] Mettre les acronymes en entier
-* [ ] Revoir les schémas des exemples
-* [ ] Ne pas dire que la clean archi c'est l'évolution logique vers une meilleure qualité
+* [x] Revoir les schémas des exemples
+* [x] Ne pas dire que la clean archi c'est l'évolution logique vers une meilleure qualité
 * [ ] Slide 5.4 : Trouver une illustration
-* [ ] Slide 5.17 : Les schémas de pipeline -> Schéma formation Docker
-* [ ] KISS : Ajouter un example - Simplicité, dans l'utilisation (faire de la doc ?)
-* [ ] Exemple inversion de dépendances : en ajouter un autre
+* [x] Slide 5.17 : Les schémas de pipeline -> Schéma formation Docker
+* [x] KISS : Ajouter un example - Simplicité, dans l'utilisation (faire de la doc ?)
+* [x] Exemple inversion de dépendances : en ajouter un autre
 * [x] Graphe complexité : il faut une légende !
 
 Part 6. : Thème DevOps
@@ -43,11 +43,11 @@ Part 6. : Thème DevOps
 
 Part 7. : Thème CI/CD
 
-* [ ] Propose sans imposer  => l'écrire sur les slides
+* [x] Propose sans imposer  => l'écrire sur les slides
 
 Part 8. :
 
-* [ ] Le aller plus loin ne colle pas ...
+* [x] Le aller plus loin ne colle pas ...
 
 
 

@@ -221,7 +221,7 @@ include::{includedir}/story.adoc[tag=rencontre-start]
 "
 ====
 
-[.ci-cd.background, transition=none]
+[.ci-cd.background, transition=fade]
 == Un avenir tout tracé !
 
 image::../images/cicd-cicd.png[]
