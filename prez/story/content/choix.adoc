@@ -123,7 +123,7 @@ Nico :
 * L'équipe est composée des devs et des ops
 * L'équipe doit avoir toutes les compétences (on parle de l'équipe, pas de vous tout seul)
 * Ouverture d'esprit
-* CI et CD forme un vrai couple pour faire de jolie pipeline ensemble
+* CI et CD forme un vrai couple pour faire de jolis pipelines ensemble
 
 "
 include::{includedir}/story.adoc[tag=union]
