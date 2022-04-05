@@ -14,19 +14,25 @@ Part 3. : Thème pipeline
 
 * [ ] Rajouter des exemples => à rebosser
 * [ ] Zoom sur les structures ?
-* [ ] Ajouter sur chaque étapes une slide de "rex" / outils => à finir
+* [ ] Ajouter sur chaques étapes une slide de "rex" / outils => à finir
 * [ ] Slide 3.14 : Refaire le faire-part
 * [x] Schéma à la couleur du thème
 * [x] EventStorm : nommé les UX
 * [x] Etape 4 - Feedback : Parler du fail fast
-* [x] Virer le drole sur XLDeploy
+* [x] Virer le drôle sur XLDeploy
+* [ ] Mettre la boucle de rétroaction sur la définition du pipeline => On n'essaye pas de tout prendre d'un coup, on améliore au fur et à mesure
+* [ ] Contraintes de sécu : dire que le dev sec ops existe mais qu'on en parlera pas
+* [ ] Enlever le slide sur la boucle XP
+* [ ] Choix des outils : mettre l'accent sur le fait qu'il y a déjà probablement des outils existants dans l'entreprise qui sont connus et maitrisés, posez la question
+* [ ] Virer les slides de transition entre les étapes du pipeline (allegement de la prez) ?
+* [ ] Switcher de speaker entre les étapes
 
 Part 4. : Thème All as code
 
 * [ ] Année, habitudes, outils, etc...
 * [ ] La doc
 
-Part 5. : Therapie
+Part 5. : Thérapie
 
 * [x] Mettre les acronymes en entier
 * [x] Revoir les schémas des exemples
@@ -48,4 +54,5 @@ Part 7. : Thème CI/CD
 Part 8. :
 
 * [x] Le aller plus loin ne colle pas ...
+* [ ] La conclusion est pas ouf, peut-être pas besoin du warning
 
