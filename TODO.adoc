@@ -22,7 +22,7 @@ Part 3. : Thème pipeline
 * [x] Etape 4 - Feedback : Parler du fail fast
 * [x] Virer le drôle sur XLDeploy
 * [ ] Bien parler de déploiement en PROD
-* [ ] Mettre la boucle de rétroaction sur la définition du pipeline => On n'essaye pas de tout prendre d'un coup, on améliore au fur et à mesure
+* [x] Mettre la boucle de rétroaction sur la définition du pipeline => On n'essaye pas de tout prendre d'un coup, on améliore au fur et à mesure
 * [ ] Contraintes de sécu : dire que le dev sec ops existe mais qu'on en parlera pas
 * [x] Enlever le slide sur la boucle XP
 * [x] Choix des outils : mettre l'accent sur le fait qu'il y a déjà probablement des outils existants dans l'entreprise qui sont connus et maitrisés, rationnalisé, posez la question
