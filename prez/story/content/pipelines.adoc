@@ -322,9 +322,15 @@ include::{includedir}/story.adoc[tag=responsability-complexe]
 ====
 
 
-[.transition.background, transition="slide-in zoom-out"]
-== !
+[.basics.background, transition="slide-in zoom-out"]
+== Une révolution arrive ?
 
 [NOTE.speaker]
 ====
+
+* Tout ce petit monde allait plutot bien
+* CI et CD avait leur indépendance
+* Une révolution dans leur vie allait arriver
+* Et là, c'est le drame !
+
 ====

@@ -112,8 +112,8 @@ include::{includedir}/story.adoc[tag=mediateur]
 "
 ====
 
-[.transition.background, transition="slide-in zoom-out"]
-== !
+[.basics.background, transition="slide-in zoom-out"]
+== Faisons le point
 
 [NOTE.speaker]
 ====
