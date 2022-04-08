@@ -277,8 +277,8 @@ include::{includedir}/story.adoc[tag=nico]
 "
 ====
 
-[.transition.background, transition="slide-in zoom-out"]
-== !
+[.basics.background, transition="slide-in zoom-out"]
+== Découvrons la suite de leur histoire
 
 [NOTE.speaker]
 ====
