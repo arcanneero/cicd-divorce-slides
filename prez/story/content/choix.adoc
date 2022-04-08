@@ -8,6 +8,7 @@
 
 * On va donc devoir faire un choix
 * On va vous proposer trois possibilités qui ne sont pas exhaustives !
+* Rappel du thème de la prez : CI/CD, le divorce est-il prononcé ?
 
 "
 include::{includedir}/story.adoc[tag=choice]
@@ -26,7 +27,7 @@ image:../images/choix/gear-solid.svg[cd, 30%]
 ====
 Nico :
 
-* CI et CD se sépare
+* CI et CD se sépare, oui, le divorce
 
 "
 include::{includedir}/story.adoc[tag=monde-avant]
@@ -80,6 +81,7 @@ image:../images/choix/infinity-solid.svg[cd, 30%]
 ====
 Yann :
 
+* Ils restent en couple, mais accompagné par un thérapeute
 * On met en place une équipe DevOps
 * On rajoute une couche de bordel dans l'organisation
 * Choix stratégique d'entreprise
@@ -116,9 +118,10 @@ image:../images/choix/devops.svg[cd]
 ====
 Nico :
 
+* Leur union est plus forte que jamais
 * Notre choix
 * Plus d'équipe DevOps, mais une vraie culture
-* Comme imaginez à la base
+* Comme imaginé à la base
 * Le plus difficile, mais probablement le plus efficace
 * L'équipe est composée des devs et des ops
 * L'équipe doit avoir toutes les compétences (on parle de l'équipe, pas de vous tout seul)
@@ -128,6 +131,21 @@ Nico :
 "
 include::{includedir}/story.adoc[tag=union]
 "
+====
+
+[.main-title.background.end-title]
+== CI/CD, le divorce est-il prononcé ?
+
+[NOTE.speaker]
+====
+Yann
+
+* Peut-être, mais on aura appris à se connaitre les uns les autres
+* Tout est une histoire d'empathie et de communication
+* Un thérapeute externe peut parfois être nécessaire
+* et de tout façon, rien n'est jamais définitif, peut-être qu'un jour ce petit couple sera heureux et que auront tout plein de petits pipelines.
+
+* Merci !
 ====
 
 [.union.background]

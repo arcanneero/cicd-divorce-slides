@@ -8,6 +8,10 @@
     text-transform: none;
 }
 
+.end-title h2 {
+    text-transform: none;
+}
+
 div.main-title {
     background-repeat: no-repeat;
     background-size: 12%, 18% auto ;
