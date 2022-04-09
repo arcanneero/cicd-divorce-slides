@@ -8,6 +8,15 @@
     text-transform: none;
 }
 
+section.end-title {
+    padding-left: 14% !important;
+}
+
+.end-title h2 {
+    text-transform: none;
+    font-size: 3em;
+}
+
 div.main-title {
     background-repeat: no-repeat;
     background-size: 12%, 18% auto ;
