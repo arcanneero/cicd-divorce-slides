@@ -328,6 +328,8 @@ include::{includedir}/story.adoc[tag=responsability-complexe]
 [NOTE.speaker]
 ====
 
+Yann :
+
 * Tout ce petit monde allait plutot bien
 * CI et CD avait leur indépendance
 * Une révolution dans leur vie allait arriver
