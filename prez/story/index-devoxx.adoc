@@ -34,7 +34,7 @@ include::{contentdir}/choix.adoc[leveloffset=+1]
 [.end]
 == A vous de jouer !
 
-@nicogiro / @YannSchepens
+@nicgiro / @YannSchepens
 
 [NOTE.speaker]
 ====
