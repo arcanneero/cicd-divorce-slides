@@ -545,7 +545,7 @@ C'est sans aucuns doutes notre choix du cœur...
 Ici, le devops n'est plus une équipe, mais un culture et une pratique d'entreprise, comme imaginez à l'origine.
 
 On peut reconnaitre en revanche que c'est sans doute la proposition la plus délicate à mettre en œuvre.
-Les compétences de l'ensemble de votre équipe (pas de vous seul hein !footnote:limite[soyez conscient de vos limites])
+Les compétences de l'ensemble de votre équipe (pas de vous seul hein !)
 et l'état d'esprit nécessaire pour que tout ce petit monde travaille ensemble n'est pas facile à obtenir.
 // end::union[]
 
