@@ -105,4 +105,4 @@ dist
 
 # IntelliJ configuration files
 .idea
-!/docs/prez/node_modules/
+!/docs/node_modules/
