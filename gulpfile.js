@@ -21,9 +21,9 @@ const srcDir = 'prez';
 // Dossier de sortie du build
 const outDir = 'docs';
 // Dossier racine des presentations au runtime (=path d'accès dans l'url. ex: http://..../prez)
-const runtimePrezDir = srcDir;
+let runtimePrezDir = '/cicd-divorce-slides';
 // Dossier de sortie du build des présentations
-const prezOutDir = `${outDir}/${runtimePrezDir}`;
+const prezOutDir = `${outDir}`;
 
 // Constantes des extensions à prendre en compte pour les différents items du build
 const adocIndexFiles = [`${srcDir}/**/index.adoc`, `${srcDir}/**/index-*.adoc`];
@@ -116,15 +116,26 @@ gulp.task('default', gulp.series(
     )
 );
 
+
+gulp.task('prepare', prepare);
+
+function prepare(cb) {
+    runtimePrezDir = ''
+    cb();
+}
+
 // Build dev files
-gulp.task('serve', gulp.series('default', 'serveAndWatch')
+gulp.task('serve', gulp.series(
+    'prepare',
+    'default',
+    'serveAndWatch')
 );
 
 function convertAdocToHtml() {
 
   const attributes = {
-      'revealjsdir': `/${runtimePrezDir}/node_modules/reveal.js@`,
-      'runtimePrezDir': ``
+      'revealjsdir': `${runtimePrezDir}/node_modules/reveal.js@`,
+      'runtimePrezDir': `${runtimePrezDir}`
   };
   const options = {
     safe: 'safe',
