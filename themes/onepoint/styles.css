@@ -443,3 +443,17 @@ intégration des librairies d'image
 section.stack.present {
     background-color: transparent;
 }
+
+.footnotes {
+    font-size: 0.65em;
+    position: fixed;
+    bottom: 0;
+}
+.reveal sup {
+    vertical-align: super;
+    font-size: 0.35em;
+}
+
+table.frame-all {
+    border-width: 0px;
+}

@@ -7,25 +7,30 @@
 .title h1 {
     text-transform: none;
     margin-right: 10%;
+    color: #49384D;
 }
 
 section.end-title {
     padding-left: 14% !important;
+
 }
 
 .end-title h2 {
     text-transform: none;
     font-size: 3em;
+    color: #49384D;
+    margin-right: 14%;
 }
 
 div.main-title {
     background-repeat: no-repeat;
     background-size: 12%, 18% auto ;
-    background-image: url("logo/heart-crack-solid.svg"), radial-gradient(black, transparent);
+    background-image: url("logo/heart-crack-solid.svg"), radial-gradient(#49384D, transparent);
     background-position: 3% center, 0 center;
     padding-left: 28%;
     max-width: 72%;
-    animation: changeBg 3s infinite;;
+    animation: changeBg 3s infinite;
+    color: #49384D;
 
 }
 
@@ -39,7 +44,7 @@ div.backgrounds .basics {
     background-repeat: no-repeat, no-repeat;
     background-size: 200px 200px, 200px 200px ;
     background-position: 0 0, 0 0;
-    background-image: url("images/angle-wh.png"), linear-gradient(black, black);
+    background-image: url("images/angle-wh.png"), linear-gradient(#49384D, #49384D);
 }
 
 
@@ -49,20 +54,20 @@ section.basics.present:not(.stack) {
 .basics h2 {
     text-shadow: none;
     font-size: 3em;
-    color: black;
+    color: #49384D;
     text-transform: none;
 }
 
 .basics p {
     text-shadow: none;
-    color: black;
+    color: #49384D;
 }
 
 div.backgrounds .ci {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 100px 100px, 200px 200px, 200px 200px ;
     background-position: 25px 25px, 0 0, 0 0;
-    background-image: url("logo/bolt-solid.svg"), url("images/angle-wh.png"), linear-gradient(#ffcd22, #ffcd22);
+    background-image: url("logo/bolt-solid.svg"), url("images/angle-wh.png"), linear-gradient(#F0B129, #F0B129);
 }
 
 
@@ -72,13 +77,13 @@ section.ci.present:not(.stack) {
 .ci h2 {
     text-shadow: none;
     font-size: 3em;
-    color: #ffcd22;
+    color: #F0B129;
     text-transform: none;
 }
 
 .ci p {
     text-shadow: none;
-    color: black;
+    color: #49384D;
 }
 
 
@@ -86,7 +91,7 @@ div.backgrounds .cd {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 100px 100px, 200px 200px, 200px 200px ;
     background-position: 25px 25px, 0 0, 0 0;
-    background-image: url("logo/gear-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkblue, darkblue);
+    background-image: url("logo/gear-solid.svg"), url("images/angle-wh.png"), linear-gradient(#1DBFBF, #1DBFBF);
 }
 
 section.cd.present:not(.stack) {
@@ -95,13 +100,13 @@ section.cd.present:not(.stack) {
 .cd h2 {
     text-shadow: none;
     font-size: 3em;
-    color: darkblue;
+    color: #1DBFBF;
     text-transform: none;
 }
 
 .cd p {
     text-shadow: none;
-    color: black;
+    color: #49384D;
 }
 
 
@@ -125,7 +130,7 @@ section.ci-cd.present:not(.stack) {
 
 .ci-cd p {
     text-shadow: none;
-    color: black;
+    color: #49384D;
 }
 
 
@@ -134,7 +139,7 @@ div.backgrounds .code {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 100px 100px, 200px 200px, 200px 200px ;
     background-position: 25px 25px, 0 0, 0 0;
-    background-image: url("logo/code-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkred, darkred);
+    background-image: url("logo/code-solid.svg"), url("images/angle-wh.png"), linear-gradient(#EB8038, #EB8038);
 }
 
 section.code.present:not(.stack) {
@@ -144,13 +149,13 @@ section.code.present:not(.stack) {
 .code h2 {
     text-shadow: none;
     font-size: 3em;
-    color: darkred;
+    color: #EB8038;
     text-transform: none;
 }
 
 .code p {
     text-shadow: none;
-    color: black;
+    color: #49384D;
 }
 
 
@@ -158,7 +163,7 @@ div.backgrounds .devops {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 100px 100px, 200px 200px, 200px 200px ;
     background-position: 25px 25px, 0 0, 0 0;
-    background-image: url("logo/infinity-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkgreen, darkgreen);
+    background-image: url("logo/infinity-solid.svg"), url("images/angle-wh.png"), linear-gradient(#236148, #236148);
 }
 
 
@@ -168,13 +173,13 @@ section.devops.present:not(.stack) {
 .devops h2 {
     text-shadow: none;
     font-size: 3em;
-    color: darkgreen;
+    color: #236148;
     text-transform: none;
 }
 
 .devops p {
     text-shadow: none;
-    color: darkgreen;
+    color: #236148;
 }
 
 
@@ -183,21 +188,21 @@ div.backgrounds .separation {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 100px 100px, 200px 200px, 200px 200px ;
     background-position: 25px 25px, 0 0, 0 0;
-    background-image: url("logo/heart-crack-solid.svg"), url("images/angle-wh.png"), linear-gradient(black, black);
+    background-image: url("logo/heart-crack-solid.svg"), url("images/angle-wh.png"), linear-gradient(#49384D, #49384D);
 }
 
 div.backgrounds .mediation {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 100px 100px, 200px 200px, 200px 200px ;
     background-position: 25px 25px, 0 0, 0 0;
-    background-image: url("logo/user-doctor-solid.svg"), url("images/angle-wh.png"), linear-gradient(black, black);
+    background-image: url("logo/user-doctor-solid.svg"), url("images/angle-wh.png"), linear-gradient(#49384D, #49384D);
 }
 
 div.backgrounds .union {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 100px 100px, 200px 200px, 200px 200px ;
     background-position: 25px 25px, 0 0, 0 0;
-    background-image: url("logo/heart-solid.svg"), url("images/angle-wh.png"), linear-gradient(black, black);
+    background-image: url("logo/heart-solid.svg"), url("images/angle-wh.png"), linear-gradient(#49384D, #49384D);
 }
 
 section.separation.present:not(.stack), section.mediation.present:not(.stack), section.union.present:not(.stack)  {
@@ -206,13 +211,13 @@ section.separation.present:not(.stack), section.mediation.present:not(.stack), s
 .separation h2, .mediation h2, .union h2 {
     text-shadow: none;
     font-size: 3em;
-    color: black;
+    color: #49384D;
     text-transform: none;
 }
 
 .separation p, .mediation p, .union p {
     text-shadow: none;
-    color: black;
+    color: #49384D;
 }
 
 
@@ -220,7 +225,7 @@ div.backgrounds .transition {
     background-repeat: no-repeat, no-repeat;
     background-size: 200px 200px, 200px 200px;
     background-position: 0 0, 0 0;
-    background-image: url("images/angle-wh.png"), linear-gradient(black, black);
+    background-image: url("images/angle-wh.png"), linear-gradient(#49384D, #49384D);
 }
 
 
@@ -237,12 +242,12 @@ section.transition.present:not(.stack) {
 .transition h2 {
     text-shadow: none;
     font-size: 3em;
-    color: black;
+    color: #49384D;
     text-transform: none;
 }
 
 .transition p {
     text-shadow: none;
-    color: black;
+    color: #49384D;
 }
 

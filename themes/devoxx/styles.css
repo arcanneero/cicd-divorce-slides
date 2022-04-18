@@ -28,8 +28,11 @@ section.has-dark-background h6 {
  * GLOBAL STYLES
  *********************************************/
 body {
-    background: #fefefe;
-    background: url(images/background/full/fond_ecran_1080.png);
+    background-color: #fefefe;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 20%, 100% auto;
+    background-image: url("2022/logo devoxx fr 2022.png"), url("2022/footer.png");
+    background-position: 98% 2%, bottom;
 }
 
 .reveal {
@@ -417,4 +420,18 @@ intégration des librairies d'image
 
 section.stack.present {
     background-color: transparent;
+}
+
+.footnotes {
+    font-size: 0.65em;
+    position: fixed;
+    bottom: 0;
+}
+.reveal sup {
+    vertical-align: super;
+    font-size: 0.35em;
+}
+
+table.frame-all {
+     border-width: 0px;
 }

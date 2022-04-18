@@ -5,9 +5,9 @@
 :revealjs_progress: true
 :revealjs_slideNumber: true
 :revealjs_history: true
-:revealjs_history: true
+:revealjs_controls: false
+:revealjs_slideNumber: false
 :revealjs_defaultTiming: 30
-:defaultTiming: 30
 :customcss: {runtimePrezDir}style-devoxx.css
 :includedir: partials
 :contentdir: content
