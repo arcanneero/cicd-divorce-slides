@@ -82,11 +82,10 @@ site.yml
 ====
 Nico :
 
-* On a TOUT mis dans les sources de nos projets
-* Donc CI avait la main sur tout
-* CD était un peu perdu
-* Dispute de couple
-* même CI se posait des questions étranges (un point ou pas devant les repertoires de cd)
+* On a TOUT mis dans les sources de nos projets +
+Donc CI avait la main sur tout +
+CD était un peu perdu
+* Discussions/Disputes de couple =>
 
 "
 include::{includedir}/story.adoc[tag=all-as-code-result]
@@ -101,7 +100,10 @@ image::../images/sacdenoeuds.jpg[]
 [NOTE.speaker]
 ====
 Nico :
+
+"
 include::{includedir}/story.adoc[tag=all-as-code-mess]
+"
 ====
 
 [.code.background]
@@ -140,9 +142,11 @@ README.md
 [NOTE.speaker]
 ====
 Nico :
-"
-include::{includedir}/story.adoc[tag=all-as-code-mess]
-"
+
+Alors après il y a des solutions pour que chacun reste chez soi, +
+mais c'est ce qui va éviter des disputes, +
+pas forcément résoudre les dissonances.
+
 ====
 
 [.code.background]

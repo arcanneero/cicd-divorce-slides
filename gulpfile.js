@@ -28,7 +28,7 @@ const prezOutDir = `${outDir}/${runtimePrezDir}`;
 // Constantes des extensions à prendre en compte pour les différents items du build
 const adocIndexFiles = [`${srcDir}/**/index.adoc`, `${srcDir}/**/index-*.adoc`];
 const adocWatchExtensions = [`${srcDir}/**/*.adoc`];
-const mediasExtensions = [`${srcDir}/**/*.{svg,png,jpg,gif,webm}`];
+const mediasExtensions = [`${srcDir}/**/*.{svg,png,jpg,gif,webp}`];
 const mermaidWatchExtensions = [`${srcDir}/**/*.mmd`];
 const cssExtensions = [`${srcDir}/**/*.css`];
 const jsExtensions = [`${srcDir}/**/*.js`];

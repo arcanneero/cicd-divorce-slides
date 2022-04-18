@@ -7,15 +7,12 @@
 ====
 **Nico  [20 min] **:
 
-* Côté CI, on sais gérer du code, le maintenir
-* Côté CD, on sais anticiper l'imprévisible, réagir vite aux incidents
+* Côté CI, on sais gérer du code, le maintenir +
+Côté CI, se tromper, c'est notre quotidien, défaire, refaire etc.
+* Côté CD, on sais anticiper l'imprévisible, réagir vite aux incidents +
+Côté CD, bah, non en fait
 
-* Côté CI, se tromper, c'est notre quotidien, défaire, refaire etc.
-* Côté CD, bah, non en fait
-
-* Comme nous sommes plus d'origine CI, on va filer quelques conseils à CD, autrement dit : la belle famille
-
-* Vu que maintenant tout le pipeline est écrit en code (et dans les sources d'autant plus)
+=> P2
 
 "
 include::{includedir}/story.adoc[tag=therapie]
@@ -179,7 +176,7 @@ image:../images/guylookingatgirl.png[]
 
 [NOTE.speaker]
 ====
-Nico :
+Yann :
 
 * Dans le monde du dev, nous avons la conception SOLID, alors la question se pose
 * Est-ce que l'on peut appliquer les principes SOLID à notre couple CI/CD et leur petits pipelines ?
@@ -292,6 +289,8 @@ image:../images/solid/single-respo-good.png[]
 
 [NOTE.speaker]
 ====
+Yann :
+
 Ici, on va préférer avec des jobs différents pour les différents types d'élément à déployer. Ce sera plus simple à maintenir dans le temps, et ce n'est tout simplement pas la même chose. De plus, de cette façon, vous pourrez plus facilement réutiliser vos jobs.
 
 Ca peut paraitre bête dit comme ça, mais on voit souvent le build ou le deploiement dans les mêmes jobs, autant en faire plusieurs et les paralléliser
@@ -307,6 +306,8 @@ _S**O**LID (Open/Closed principle)_
 Nico:
 
 * Continuons avec le O, Open Closed Principles, probablement le principe le plus maltraité dans les pipelines
+* Fermé sur sa responsabilité
+* Ouvert à la configuration
 
 "
 include::{includedir}/story.adoc[tag=solid-o]
@@ -363,8 +364,7 @@ On conserve donc le fait que l'on exige la définition du project_key mais le re
 
 _SO**L**ID (Liskov substitution)_ ...ou pas !
 
-.Barbara Liskov
-image::../images/barbara_liskov.png["Barbara Liskov", 50%]
+image:../images/barbara_liskov.png["Barbara Liskov", 50%]footnote:liskovz[Barbara Liskov]
 
 [NOTE.speaker]
 ====
