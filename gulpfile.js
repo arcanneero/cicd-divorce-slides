@@ -22,6 +22,7 @@ const srcDir = 'prez';
 const outDir = 'docs';
 // Dossier racine des presentations au runtime (=path d'accès dans l'url. ex: http://..../prez)
 let runtimePrezDir = '/cicd-divorce-slides';
+let cdn = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0';
 // Dossier de sortie du build des présentations
 const prezOutDir = `${outDir}`;
 
@@ -121,6 +122,7 @@ gulp.task('prepare', prepare);
 
 function prepare(cb) {
     runtimePrezDir = ''
+    cdn = '/node_modules/reveal.js';
     cb();
 }
 
@@ -134,7 +136,7 @@ gulp.task('serve', gulp.series(
 function convertAdocToHtml() {
 
   const attributes = {
-      'revealjsdir': `${runtimePrezDir}/node_modules/reveal.js@`,
+      'revealjsdir': `${cdn}@`,
       'runtimePrezDir': `${runtimePrezDir}`
   };
   const options = {
