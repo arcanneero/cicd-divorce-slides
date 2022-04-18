@@ -39,6 +39,16 @@ include::{contentdir}/choix.adoc[leveloffset=+1]
 [NOTE.speaker]
 ====
 **[50 min] **
+
+Si vous vous reconnaissez dans tous les examples qu'on a montré, +
+si vous envisager appliquer chacun des concepts, ou de nos examples, +
+si avez compris que le code est la solution à toutes vos difficultés, +
+vous allez avoir un problème...
+
+Repasser par la méthodo de définition, et focalisez vous sur KISS !!!! +
+Et comment simlplifier vos processus, sinon, vos pipelines ne seront pas maintenable ! +
+Et CI et CD seront vraiment très triste
+
 ====
 
 include::{contentdir}/references.adoc[leveloffset=+1]

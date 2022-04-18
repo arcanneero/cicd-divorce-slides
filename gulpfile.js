@@ -19,7 +19,7 @@ asciidoctorRevealjs.register();
 // Dossier des sources à builder
 const srcDir = 'prez';
 // Dossier de sortie du build
-const outDir = 'dist';
+const outDir = 'docs';
 // Dossier racine des presentations au runtime (=path d'accès dans l'url. ex: http://..../prez)
 const runtimePrezDir = srcDir;
 // Dossier de sortie du build des présentations
@@ -33,6 +33,7 @@ const mermaidWatchExtensions = [`${srcDir}/**/*.mmd`];
 const cssExtensions = [`${srcDir}/**/*.css`];
 const jsExtensions = [`${srcDir}/**/*.js`];
 const themesExtensions = [`themes/**/*.*`];
+const pagesExtensions = [`pages/**/*.*`];
 const extReplace = require('gulp-ext-replace');
 
 gulp.task('convert', () =>
@@ -76,6 +77,10 @@ gulp.task('copy-themes', () =>
   gulp.src(themesExtensions).pipe(gulp.dest(`${outDir}/themes/`))
 );
 
+gulp.task('copy-pages', () =>
+    gulp.src(pagesExtensions).pipe(gulp.dest(`${outDir}/`))
+);
+
 gulp.task('serveAndWatch', () => {
     browserSync.init({
         server: {
@@ -107,7 +112,7 @@ gulp.task('clean', () => del(outDir, { dot: true }));
 gulp.task('default', gulp.series(
         'clean',
         'convert',
-        gulp.parallel('dependencies', 'copy-css', 'copy-js', 'copy-medias', 'copy-themes', 'copy-and-generate-mermaid-png')
+        gulp.parallel('dependencies', 'copy-css', 'copy-js', 'copy-medias', 'copy-themes', 'copy-pages', 'copy-and-generate-mermaid-png')
     )
 );
 

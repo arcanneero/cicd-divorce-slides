@@ -1,2 +1,0 @@
-# cdcd-divorce-slides
-Slides
