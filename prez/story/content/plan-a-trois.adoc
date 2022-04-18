@@ -76,6 +76,21 @@ include::{includedir}/story.adoc[tag=team]
 ====
 
 [.devops.background]
+== Des accompagnateurs
+
+image::../images/matrice-maturite.png[width=80%]
+
+[NOTE.speaker]
+====
+Nico :
+
+* Technique bien sur ! +
+Sur des compétences fortes, transverses, d'outils
+* Un accompagnement méthodologique +
+Positionnement, Culture, amélioratisons
+====
+
+[.devops.background]
 == Une question de communication
 
 image::https://media.giphy.com/media/WySK0nQiJKLy25HLhp/giphy.gif[]

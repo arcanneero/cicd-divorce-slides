@@ -77,17 +77,16 @@ include::{includedir}/story.adoc[tag=theories-atelier]
 [.ci-cd.background]
 == Dis, comment on fait des pipelines ?
 
-image:event-storming.jpg[]
+image:dis-comment.webp[]
 
 [NOTE.speaker]
 ====
 Nico :
 
-* Technique d'UX
+On vous a prévenus, on n'est plus tout jeune...
 
-"
-include::{includedir}/story.adoc[tag=theories-eventstorming]
-"
+On vous propose des axes, des pistes, pour vous aider à définir vos besoins, et vous aiguiller dans la réalisation de vos pipelines.
+
 ====
 
 [.ci-cd.background, transition="slide-in fade-out"]
@@ -156,6 +155,22 @@ include::{includedir}/story.adoc[tag=pipeline-steps]
 ====
 
 [.ci-cd.background, transition=fade]
+== Event storming
+
+image:event-storming.jpg[]
+
+[NOTE.speaker]
+====
+Nico :
+
+* Technique d'UX
+
+"
+include::{includedir}/story.adoc[tag=theories-eventstorming]
+"
+====
+
+[.ci-cd.background, transition=fade]
 == !
 
 image::pipeline-steps-4.png[step 1]
@@ -181,10 +196,9 @@ include::{includedir}/story.adoc[tag=pipeline-feedback]
 
 image::pipeline-steps-5.png[step 1]
 
-
 [NOTE.speaker]
 ====
-Yann :
+Nico :
 
 * Les premières prises de décision difficile
 * Conflits CI/CD, CI veut tout automatiser, CD veut garder le contrôle
@@ -225,8 +239,7 @@ include::{includedir}/story.adoc[tag=pipeline-outils]
 [.ci-cd.background, transition=fade]
 == !
 
-image::periodic.png[width=80%]
-footnote:periodic[https://digital.ai/periodic-table-of-devops-tools]
+image:periodic.png[width=80%]footnote:periodic[https://digital.ai/periodic-table-of-devops-tools]
 
 [NOTE.speaker]
 ====
