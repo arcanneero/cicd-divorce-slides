@@ -162,7 +162,7 @@ image::pipeline-steps-4.png[step 1]
 
 [NOTE.speaker]
 ====
-Nico :
+Yann :
 
 * Comme dit précedement, il y a beaucoup de personne qui gravite autour des pipelines
 * Qui doit voir quoi, quand et avec quel granularité ?
@@ -206,7 +206,7 @@ image::pipeline-steps-6.png[step 1]
 
 [NOTE.speaker]
 ====
-Nico :
+Yann :
 
 * On y arrive
 * Le choix des outils "ENFIN"
