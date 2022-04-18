@@ -22,7 +22,7 @@ const srcDir = 'prez';
 const outDir = 'docs';
 // Dossier racine des presentations au runtime (=path d'accès dans l'url. ex: http://..../prez)
 let runtimePrezDir = '/cicd-divorce-slides';
-let cdn = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0';
+let cdn = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2';
 // Dossier de sortie du build des présentations
 const prezOutDir = `${outDir}`;
 
