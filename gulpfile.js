@@ -19,12 +19,12 @@ asciidoctorRevealjs.register();
 // Dossier des sources à builder
 const srcDir = 'prez';
 // Dossier de sortie du build
-const outDir = 'docs';
+let outDir = 'docs';
 // Dossier racine des presentations au runtime (=path d'accès dans l'url. ex: http://..../prez)
 let runtimePrezDir = '/cicd-divorce-slides';
 let cdn = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2';
 // Dossier de sortie du build des présentations
-const prezOutDir = `${outDir}`;
+let prezOutDir = `${outDir}`;
 
 // Constantes des extensions à prendre en compte pour les différents items du build
 const adocIndexFiles = [`${srcDir}/**/index.adoc`, `${srcDir}/**/index-*.adoc`];
@@ -121,6 +121,8 @@ gulp.task('default', gulp.series(
 gulp.task('prepare', prepare);
 
 function prepare(cb) {
+    outDir = 'dist'
+    prezOutDir = `${outDir}`
     runtimePrezDir = ''
     cdn = '/node_modules/reveal.js';
     cb();
