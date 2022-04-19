@@ -399,30 +399,49 @@ include::{includedir}/story.adoc[tag=solid-i]
 [cols=3, grid=none]
 |===
 2+a|
+.template.yaml
 [source,yaml]
 ----
-.analyse_code: # Le truc fait toutes les analyses
-  script:
-    - if [ -n $IS_PHP_PROJECT]; then vendor/bin/phpcs src; fi
-    - if [ -f Dockerfile ]; hadolint Dockerfile; fi
-    - sonar-scanner ...
+build:            #Assemble le Jar
+  stage: build
+analyse-code:     #Faire les analyses qualité
+  stage: test
+analyse-package:  #Faire les analyses qualité
+  stage: test
+package:          #Construire l'image Docker
+  stage: package
+can-i-deploy:     #Faire les analyses qualité
+  stage: test
+deploy:           #Déploie dans l'infra
+  stage: deploy
 ----
 |image:../images/solid/interface-segragation-bad.png[]
 2+a|
+.maven-template.yaml
 [source,yaml]
 ----
+build:            #Assemble le Jar
+    ...
+analyse-build:    #Faire les analyses qualité
+    ...
+----
 
-.php_lint:
-  script:
-    - vendor/bin/phpcs src
+.docker-template.yaml
+[source,yaml]
+----
+analyse-package:  #Faire les analyses qualité
+    ...
+package:          #Construire l'image Docker
+    ...
+----
 
-.hadolint:
-  script:
-    - hadolint Dockerfile
-
-.sonar_analysis:
-  script:
-    - sonar-scanner ...
+.terrform-template.yaml
+[source,yaml]
+----
+can-i-deploy:     #Faire les analyses qualité
+    ...
+deploy:           #Déploie dans l'infra
+    ...
 ----
 |image:../images/solid/interface-segragation-good.png[]
 |===
@@ -431,9 +450,12 @@ include::{includedir}/story.adoc[tag=solid-i]
 ====
 Yann :
 
-Dans les templates suivants, on voit que le développeur cherche à factoriser l'analyse de code, mais ici, l'"interface" permet de couvrir tous les outils et les technos. L'exemple est un peu grossier, mais on le retrouve de temps en temps.
+Dans l'exemple suivant :
 
-Il vaut mieux avoir des jobs/templates spécialisés qui permettront d'être réutiliser et/ou débrancher au besoin.
+* pipeline/template de pipeline unique pour tout le monde
+* Dans l'idée c'est bien
+* Mais problèmatique si on a des besoins différents, exemple application vs librairie
+* Segregation d'interface : on va faire des templates par besoin puis potentiellement avec des templates qui rassemble d'autres templates
 ====
 
 [.ci-cd.background]
