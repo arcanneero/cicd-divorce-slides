@@ -93,7 +93,7 @@ Positionnement, Culture, amélioratisons
 [.devops.background]
 == Une question de communication
 
-image::https://media.giphy.com/media/WySK0nQiJKLy25HLhp/giphy.gif[]
+image::communication.gif[]
 
 [NOTE.speaker]
 ====
