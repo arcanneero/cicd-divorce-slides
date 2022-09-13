@@ -30,9 +30,9 @@ section.has-dark-background h6 {
 body {
     background: #fefefe;
     background-repeat: no-repeat, no-repeat;
-    background-size: 20%, 15%;
-    background-image: url("images/angle.svg"), url("images/tadx.png");
-    background-position: 100% 100%, 0% 100%;
+    background-size: 10%, 10%, 10%;
+    background-image: url("images/angle.svg"), url("images/tadx.png"), url("images/onepoint_black.ico");
+    background-position: 100% 100%, 0% 100%, 50% 100%;
 }
 
 
