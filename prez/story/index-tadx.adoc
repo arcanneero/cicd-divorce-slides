@@ -1,0 +1,54 @@
+[.main-title.background]
+= CI/CD, le divorce serait-il prononcé ?
+:source-highlighter: highlightjs
+:revealjs_theme: league
+:revealjs_progress: false
+:revealjs_slideNumber: true
+:revealjs_history: true
+:revealjs_history: true
+:revealjs_defaultTiming: 30
+:defaultTiming: 30
+:customcss: style-tadx.css
+:includedir: partials
+:contentdir: content
+:imagesdir: ./images
+
+[NOTE.speaker]
+====
+Nico :
+include::{includedir}/story.adoc[tag=intro]
+====
+
+include::{contentdir}/tourtereaux.adoc[leveloffset=+1]
+
+include::{contentdir}/pipelines.adoc[leveloffset=+1]
+
+include::{contentdir}/perturbateur.adoc[leveloffset=+1]
+
+include::{contentdir}/therapie.adoc[leveloffset=+1]
+
+include::{contentdir}/plan-a-trois.adoc[leveloffset=+1]
+
+include::{contentdir}/choix.adoc[leveloffset=+1]
+
+[.end.code.background]
+== A vous de jouer !
+
+@nicgiro / @YannSchepens
+
+[NOTE.speaker]
+====
+**[50 min] **
+
+Si vous vous reconnaissez dans tous les examples qu'on a montré, +
+si vous envisager appliquer chacun des concepts, ou de nos examples, +
+si avez compris que le code est la solution à toutes vos difficultés, +
+vous allez avoir un problème...
+
+Repasser par la méthodo de définition, et focalisez vous sur KISS !!!! +
+Et comment simlplifier vos processus, sinon, vos pipelines ne seront pas maintenable ! +
+Et CI et CD seront vraiment très triste
+====
+
+include::{contentdir}/references.adoc[leveloffset=+1]
+
