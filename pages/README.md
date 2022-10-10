@@ -36,17 +36,15 @@ Pour que maintenir vos pipelines reste un jeu d'enfant...
     * Synthèse autour de quelques références afin de pouvoir creuser les éléments précédents.
 
     
-### Compléments
-
-
-
 ### Resources
 
 * Les slides (45mins) : 
     * [Devoxx]( ./story/index-devoxx.html)
     * [Onepoint]( ./story/index-onepoint.html)
+    * [TADx]( ./story/index-tadx.html)
 * Captation vidéo :
-    * [Devoxx (A venir...)](https://www.youtube.com/watch...)
+    * [Devoxx](https://www.youtube.com/watch?v=rZKAPyKdbXM&ab_channel=DevoxxFR)
+    * [TADx](https://www.youtube.com/watch?v=k9G5R-WJdys&ab_channel=TADxAgile%26DevOps)
 
 
 ## Références  
