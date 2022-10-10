@@ -1,0 +1,248 @@
+
+@keyframes changeBg{
+    0%,100%  {background-image: url("logo/heart-solid-color.svg")}
+    50% {background-image: url("logo/heart-crack-solid-color.svg")}
+}
+
+.title h1 {
+    text-transform: none;
+    margin-right: 10%;
+}
+
+section.end-title {
+    padding-left: 14% !important;
+}
+
+.end-title h2 {
+    text-transform: none;
+    font-size: 3em;
+}
+
+div.main-title {
+    background-repeat: no-repeat;
+    background-size: 12%, 18% auto ;
+    background-image: url("logo/heart-crack-solid.svg"), radial-gradient(black, transparent);
+    background-position: 3% center, 0 center;
+    padding-left: 28%;
+    max-width: 72%;
+    animation: changeBg 3s infinite;;
+
+}
+
+section.title.present:not(.stack) {
+    margin-left: 15%;
+}
+
+
+
+div.backgrounds .basics {
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px 200px, 200px 200px ;
+    background-position: 0 0, 0 0;
+    background-image: url("images/angle-wh.png"), linear-gradient(black, black);
+}
+
+
+section.basics.present:not(.stack) {
+}
+
+.basics h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: black;
+    text-transform: none;
+}
+
+.basics p {
+    text-shadow: none;
+    color: black;
+}
+
+div.backgrounds .ci {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/bolt-solid.svg"), url("images/angle-wh.png"), linear-gradient(#ffcd22, #ffcd22);
+}
+
+
+section.ci.present:not(.stack) {
+}
+
+.ci h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: #ffcd22;
+    text-transform: none;
+}
+
+.ci p {
+    text-shadow: none;
+    color: black;
+}
+
+
+div.backgrounds .cd {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/gear-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkblue, darkblue);
+}
+
+section.cd.present:not(.stack) {
+}
+
+.cd h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: darkblue;
+    text-transform: none;
+}
+
+.cd p {
+    text-shadow: none;
+    color: black;
+}
+
+
+
+div.backgrounds .ci-cd {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/heart-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkmagenta, darkmagenta);
+}
+
+section.ci-cd.present:not(.stack) {
+}
+
+.ci-cd h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: darkmagenta;
+    text-transform: none;
+}
+
+.ci-cd p {
+    text-shadow: none;
+    color: black;
+}
+
+
+
+div.backgrounds .code {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/code-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkred, darkred);
+}
+
+section.code.present:not(.stack) {
+
+}
+
+.code h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: darkred;
+    text-transform: none;
+}
+
+.code p {
+    text-shadow: none;
+    color: black;
+}
+
+
+div.backgrounds .devops {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/infinity-solid.svg"), url("images/angle-wh.png"), linear-gradient(darkgreen, darkgreen);
+}
+
+
+section.devops.present:not(.stack) {
+}
+
+.devops h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: darkgreen;
+    text-transform: none;
+}
+
+.devops p {
+    text-shadow: none;
+    color: darkgreen;
+}
+
+
+
+div.backgrounds .separation {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/heart-crack-solid.svg"), url("images/angle-wh.png"), linear-gradient(black, black);
+}
+
+div.backgrounds .mediation {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/user-doctor-solid.svg"), url("images/angle-wh.png"), linear-gradient(black, black);
+}
+
+div.backgrounds .union {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, 200px 200px, 200px 200px ;
+    background-position: 25px 25px, 0 0, 0 0;
+    background-image: url("logo/heart-solid.svg"), url("images/angle-wh.png"), linear-gradient(black, black);
+}
+
+section.separation.present:not(.stack), section.mediation.present:not(.stack), section.union.present:not(.stack)  {
+}
+
+.separation h2, .mediation h2, .union h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: black;
+    text-transform: none;
+}
+
+.separation p, .mediation p, .union p {
+    text-shadow: none;
+    color: black;
+}
+
+
+div.backgrounds .transition {
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px 200px, 200px 200px;
+    background-position: 0 0, 0 0;
+    background-image: url("images/angle-wh.png"), linear-gradient(black, black);
+}
+
+
+section.transition.present:not(.stack) {
+
+    background-image: url("images/pause.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    background-position: 50% 50%;
+    height: 100%;
+}
+
+
+.transition h2 {
+    text-shadow: none;
+    font-size: 3em;
+    color: black;
+    text-transform: none;
+}
+
+.transition p {
+    text-shadow: none;
+    color: black;
+}
+
